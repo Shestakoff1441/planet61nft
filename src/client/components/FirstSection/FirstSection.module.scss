@@ -1,0 +1,60 @@
+.firsSection {
+  background-size: cover;
+  padding: 50px 0;
+  color: #fff;
+}
+.largeHeader {
+  position: relative;
+  background: #333;
+  background-image: url('https://www.hdwallpapers.in/download/black_and_white_picture_of_stars_during_nighttime_4k_5k_hd_galaxy-5120x2880.jpg');
+  width: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  z-index: 1;
+}
+
+.mainTitle {
+  position: absolute;
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  color: #f9f1e9;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.demo-1 .mainTitle {
+  text-transform: uppercase;
+  font-size: 4.2em;
+  letter-spacing: 0.1em;
+}
+
+.maintitle .thin {
+  font-weight: 200;
+}
+
+.buttonsBlock {
+  position: absolute;
+  bottom: 50px;
+  right: 150px;
+}
+
+.firstSectionButton {
+  color: #42687f;
+  padding: 8px 12px;
+  background-color: #fff;
+  border: none;
+  border-radius: 8px;
+  &:first-child{
+	margin-right: 30px;
+}
+}
+@media only screen and (max-width: 768px) {
+  .demo-1 .mainTitle {
+    font-size: 3em;
+  }
+}

@@ -1,0 +1,26 @@
+.mobileHeaderContainer{
+    display: flex;
+   
+    flex-direction: column;
+    background-color: #241941;
+}
+
+  
+.mobileHeaderNav{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+.mobileSocialBlock{
+    display: flex;
+}
+.iconLink{
+    margin: 12px;
+}
+
+@media screen and (min-width: 986px) {
+    .mobileHeaderContainer {
+      display: none;
+    }
+  }
+

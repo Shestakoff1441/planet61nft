@@ -1,0 +1,11 @@
+.arrowElement {
+    margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+@media screen and (min-width: 986px) {
+  .arrowElement {
+    display: none;
+  }
+}

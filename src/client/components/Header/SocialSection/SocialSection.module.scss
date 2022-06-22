@@ -1,0 +1,19 @@
+.socialContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconLink{
+    // width: 35px;
+    // height: 35px;
+    // margin: 0 8px;
+}
+.iconWidth{
+    background-color: red;
+}
+
+@media screen and (max-width: 1190px) {
+    .socialContainer {
+      display: none;
+    }
+  }

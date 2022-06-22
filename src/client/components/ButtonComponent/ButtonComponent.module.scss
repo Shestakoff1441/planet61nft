@@ -1,0 +1,17 @@
+.customBtn{
+    background: -webkit-gradient(linear,left top,right top,color-stop(4.52%,#f8d0ce),color-stop(94.89%,#faf4ba));
+    background: linear-gradient(90deg,#f8d0ce 4.52%,#faf4ba 94.89%);
+    background-size: 200% auto;
+    border: none;
+    border-radius: 52px;
+    color: #191b21;
+    font-family: Josefin Sans,sans-serif;
+    font-size: .9rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    height: 40px;
+    padding: 8px 15px;
+    text-transform: uppercase;
+    -webkit-transition: .5s;
+    transition: .5s;
+}

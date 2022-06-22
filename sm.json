@@ -1,0 +1,7 @@
+{
+  "_latest": "0.3.7",
+  "apiEndpoint": "https://planet61-proto.prismic.io/api/v2",
+  "libraries": [
+    "@/slices"
+  ]
+}
