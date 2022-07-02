@@ -36,6 +36,7 @@ jobs:
           CI: true
           SITE_URL: ${{ steps.project.outputs.site-url }}
         run: |
+          npm install
           npm run dev
           npm run build
 
