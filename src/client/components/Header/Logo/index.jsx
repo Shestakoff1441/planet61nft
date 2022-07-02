@@ -7,7 +7,7 @@ const Logo = () => {
     <div className={styles.logo}>
       <Link href="/">
         <>
-          <span className={styles.text}>PLANET 61</span>
+          <span className={styles.text}>PLANET 611</span>
         </>
       </Link>
     </div>
