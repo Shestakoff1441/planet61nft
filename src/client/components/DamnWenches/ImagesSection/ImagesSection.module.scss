@@ -1,0 +1,43 @@
+.clothColloborationBlock {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.clothTitle {
+  font-family: Risque;
+  font-size: 60px;
+}
+.imagesBlock {
+  display: flex;
+  position: relative;
+  margin-top: 100px;
+  justify-content: space-evenly;
+  width: 100%;
+
+  .purplekJacket {
+    position: relative;
+    .smoke {
+      position: absolute;
+      bottom: -75px;
+      right: -120px;
+    }
+  }
+
+  .pinkJacket {
+    position: relative;
+    .lolyPop {
+      position: absolute;
+      top: -75px;
+      left: -120px;
+    }
+  }
+}
+.linkTo {
+  align-self: center;
+  margin-top: 155px;
+  border-radius: 8px;
+  background-color: #f5f799;
+  padding: 12px;
+  color: #1a213a;
+  min-width: 220px;
+}

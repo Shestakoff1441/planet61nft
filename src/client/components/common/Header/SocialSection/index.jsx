@@ -1,8 +1,8 @@
 import LinkComponent from "../../LinkComponent";
-import facebook from "../../../assets/images/facebook.png";
-import twitter from "../../../assets/images/twitter.png";
-import instagram from "../../../assets/images/instagram.png";
-import telegram from "../../../assets/images/telegram.png";
+import facebook from "../../../../assets/images/facebook.png";
+import twitter from "../../../../assets/images/twitter.png";
+import instagram from "../../../../assets/images/instagram.png";
+import telegram from "../../../../assets/images/telegram.png";
 
 import styles from "./SocialSection.module.scss";
 

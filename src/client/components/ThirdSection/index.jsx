@@ -1,8 +1,9 @@
-import Section from "../Section";
+import Section from "../common/Section";
 import styles from "./ThirdSection.module.scss";
 import frida from "../../assets/images/fridaBack.svg";
-import NFTelement from "../NFTelement";
+import NFTelement from "./NFTelement";
 import { cartsData } from "./NftCardsData";
+import ImagesSection from "./ImagesSection";
 
 const ThirdSection = () => {
   return (
@@ -17,6 +18,7 @@ const ThirdSection = () => {
             <NFTelement {...el} key={el.name} />
           ))}
         </div>
+        <ImagesSection />
       </div>
     </Section>
   );

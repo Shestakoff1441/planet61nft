@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import { animatedSky } from "./canvasAnimation";
-import styles from "./FirstSection.module.scss";
+import styles from "./InitialSection.module.scss";
 
-const FirstSection = () => {
+const InitialSection = () => {
   useEffect(() => {
     animatedSky();
   }, []);
@@ -22,4 +22,4 @@ const FirstSection = () => {
     </div>
   );
 };
-export default FirstSection;
+export default InitialSection;

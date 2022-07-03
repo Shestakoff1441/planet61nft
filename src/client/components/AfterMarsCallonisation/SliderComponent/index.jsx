@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import Carousel from "react-simply-carousel";
 import Image from "next/image";
-import cart1 from "../../assets/images/14.png";
-import cart2 from "../../assets/images/25.png";
-import cart3 from "../../assets/images/38.png";
-import cart4 from "../../assets/images/39.png";
-import cart5 from "../../assets/images/47.png";
-import cart6 from "../../assets/images/54.png";
-import cart7 from "../../assets/images/59.png";
-import cart8 from "../../assets/images/63.png";
-import cart9 from "../../assets/images/85.png";
+import cart1 from "../../../assets/images/14.png";
+import cart2 from "../../../assets/images/25.png";
+import cart3 from "../../../assets/images/38.png";
+import cart4 from "../../../assets/images/39.png";
+import cart5 from "../../../assets/images/47.png";
+import cart6 from "../../../assets/images/54.png";
+import cart7 from "../../../assets/images/59.png";
+import cart8 from "../../../assets/images/63.png";
+import cart9 from "../../../assets/images/85.png";
 import styles from "./Slider.module.scss";
 
 const sliderElements = [

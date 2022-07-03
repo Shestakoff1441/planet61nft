@@ -1,4 +1,4 @@
-import LinkComponent from "../LinkComponent";
+import LinkComponent from "../../common/LinkComponent";
 import styles from "./NFTelement.module.scss";
 
 const NFTElement = ({
