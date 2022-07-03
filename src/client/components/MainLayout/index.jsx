@@ -1,6 +1,6 @@
 import Header from "../common/Header";
 import InitialSection from "../InitialSection";
-import AfterMarsCallonisation from "../AfterMarsCallonisation";
+import AfterMarsColonization from "../AfterMarsCollonization";
 import DamnWenches from "../DamnWenches";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
@@ -15,7 +15,7 @@ const MainLayout = () => {
       </Head>
       <Header />
       <InitialSection />
-      <AfterMarsCallonisation />
+      <AfterMarsColonization />
       <DamnWenches />
     </main>
   );

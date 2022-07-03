@@ -1,6 +1,6 @@
 import Section from "../common/Section";
 import Slider from "./SliderComponent";
-import styles from "./AfterMarsCallonisation.module.scss";
+import styles from "./AfterMarsColonization.module.scss";
 
 const SecondSection = () => {
   return (
