@@ -1,6 +1,5 @@
-
-import classnames from 'classnames'
-import styles from './ButtonComponent.module.scss'
+import classnames from "classnames";
+import styles from "./ButtonComponent.module.scss";
 
 const Button = ({ text, onClick, classes }) => {
   return (
@@ -10,7 +9,7 @@ const Button = ({ text, onClick, classes }) => {
     >
       {text}
     </button>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;

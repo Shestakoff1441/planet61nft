@@ -1,6 +1,6 @@
-import Section from '../Section'
-import Slider from '../SliderComponent'
-import styles from './SecondSection.module.scss'
+import Section from "../Section";
+import Slider from "../SliderComponent";
+import styles from "./SecondSection.module.scss";
 
 const SecondSection = () => {
   return (
@@ -31,6 +31,6 @@ const SecondSection = () => {
         </div>
       </div>
     </Section>
-  )
-}
-export default SecondSection
+  );
+};
+export default SecondSection;

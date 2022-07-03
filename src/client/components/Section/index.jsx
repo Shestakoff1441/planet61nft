@@ -1,4 +1,4 @@
-import styles from './Section.module.scss'
+import styles from "./Section.module.scss";
 
 const getHeader = (content, size) => {
   return [
@@ -7,21 +7,21 @@ const getHeader = (content, size) => {
     <h3>{content}</h3>,
     <h4>{content}</h4>,
     <h5>{content}</h5>,
-    <h6>{content}</h6>,
-  ][size]
-}
+    <h6>{content}</h6>
+  ][size];
+};
 
 const Section = (props) => {
-  const { background: { src } = '', title = '', titleSize = 2, bgc } = props
+  const { background: { src } = "", title = "", titleSize = 2, bgc } = props;
 
-  const text = getHeader(title, titleSize)
+  const text = getHeader(title, titleSize);
 
   return (
     <section
       className={styles.section}
       style={{
         backgroundImage: `url(${src})`,
-        backgroundColor: bgc ? bgc : '#1A213A',
+        backgroundColor: bgc ? bgc : "#1A213A"
       }}
     >
       <div className={styles.sectionContainer}>
@@ -29,6 +29,6 @@ const Section = (props) => {
         {props.children}
       </div>
     </section>
-  )
-}
-export default Section
+  );
+};
+export default Section;

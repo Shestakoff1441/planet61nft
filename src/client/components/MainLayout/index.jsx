@@ -1,9 +1,9 @@
-import Header from '../Header'
-import FirstSection from '../FirstSection'
-import SecondSection from '../SecondSection'
-import ThirdSection from '../ThirdSection'
-import styles from './MainLayout.module.scss'
-import Head from 'next/head'
+import Header from "../Header";
+import FirstSection from "../FirstSection";
+import SecondSection from "../SecondSection";
+import ThirdSection from "../ThirdSection";
+import styles from "./MainLayout.module.scss";
+import Head from "next/head";
 
 const MainLayout = () => {
   return (
@@ -17,6 +17,6 @@ const MainLayout = () => {
       <SecondSection />
       <ThirdSection />
     </main>
-  )
-}
-export default MainLayout
+  );
+};
+export default MainLayout;

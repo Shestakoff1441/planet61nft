@@ -1,6 +1,6 @@
-import Link from 'next/link'
+import Link from "next/link";
 
-import styles from './Logo.module.scss'
+import styles from "./Logo.module.scss";
 
 const Logo = () => {
   return (
@@ -11,7 +11,7 @@ const Logo = () => {
         </>
       </Link>
     </div>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;

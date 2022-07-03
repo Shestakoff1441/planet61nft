@@ -1,13 +1,12 @@
-import classnames from 'classnames'
-import LinkComponent from '../LinkComponent'
-import styles from './NFTelement.module.scss'
+import LinkComponent from "../LinkComponent";
+import styles from "./NFTelement.module.scss";
 
 const NFTElement = ({
-  name = '',
-  text = '',
-  image = '',
-  href = '',
-  buttonText = '',
+  name = "",
+  text = "",
+  image = "",
+  href = "/",
+  buttonText = ""
 }) => {
   return (
     <div className={styles.container}>
@@ -19,9 +18,9 @@ const NFTElement = ({
         <span className={styles.name}>{name}</span>
         <div className={styles.description}>{text}</div>
       </div>
-      <LinkComponent text={buttonText} href="/" classes={styles.linkTo}/>
+      <LinkComponent text={buttonText} href={href} classes={styles.linkTo} />
     </div>
-  )
-}
+  );
+};
 
-export default NFTElement
+export default NFTElement;
