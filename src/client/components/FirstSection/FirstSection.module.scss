@@ -6,7 +6,7 @@
 .largeHeader {
   position: relative;
   background: #333;
-  background-image: url('https://www.hdwallpapers.in/download/black_and_white_picture_of_stars_during_nighttime_4k_5k_hd_galaxy-5120x2880.jpg');
+  background-image: url("https://www.hdwallpapers.in/download/black_and_white_picture_of_stars_during_nighttime_4k_5k_hd_galaxy-5120x2880.jpg");
   width: 100%;
   overflow: hidden;
   background-size: cover;
@@ -49,9 +49,9 @@
   background-color: #fff;
   border: none;
   border-radius: 8px;
-  &:first-child{
-	margin-right: 30px;
-}
+  &:first-child {
+    margin-right: 30px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .demo-1 .mainTitle {

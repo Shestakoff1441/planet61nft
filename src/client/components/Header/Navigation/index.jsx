@@ -3,10 +3,10 @@ import LinkComponent from "../../LinkComponent";
 import styles from "./Navigation.module.scss";
 
 const navigationLinks = [
-  { text: "1000 AMC", href: "/amc" },
-  { text: "LOST IN UNIVERSE", href: "/liu" },
-  { text: "DAMN WENCHES", href: "/dw" },
-  { text: "ROADMAP", href: "/rm" }
+  { text: "1000 AMC", href: "#amc" },
+  { text: "LOST IN UNIVERSE", href: "#liu" },
+  { text: "DAMN WENCHES", href: "#dw" },
+  { text: "ROADMAP", href: "#rm" }
 ];
 
 const Navigation = () => {

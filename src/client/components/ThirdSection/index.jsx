@@ -7,7 +7,7 @@ import { cartsData } from "./NftCardsData";
 const ThirdSection = () => {
   return (
     <Section background={frida} bgc="#120B20">
-      <div className={styles.container}>
+      <div className={styles.container} id="dw">
         <div className={styles.sectionTitle}>DAMN WENCHES</div>
         <div className={styles.sectionDescription}>
           Let&apos;s dive into the world of damn art full of madness

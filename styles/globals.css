@@ -3,6 +3,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Josefin Sans, sans-serif !important;
+  scroll-behavior: smooth;
 }
 
 a {
