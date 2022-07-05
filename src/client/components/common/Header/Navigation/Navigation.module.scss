@@ -1,22 +1,22 @@
-.linker{
-    color: red;
+.linker {
+  color: red;
 }
-.navigation{
-    display: flex;
-    width: 70%;
-    align-items: center;
-    justify-content: center;
+.navigation {
+  display: flex;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
 }
-.navigationElement{
+.navigationElement {
   display: flex;
   align-items: center;
   margin: 0 20px 0 0;
   font-size: 16px;
-  color:#000;
+  color: #101423;
 }
 
 @media screen and (max-width: 986px) {
-    .navigation {
-      display: none;
-    }
+  .navigation {
+    display: none;
   }
+}

@@ -28,7 +28,7 @@ const SecondSection = () => {
     <Section>
       <div className={styles.container} id="amc">
         <div className={styles.sectionTitle}>
-          1000 years after mars colonization
+          1000 YEARS AFTER MARS COLONIZATION
         </div>
         <div className={styles.sectionDescription}>
           The Earth has always been threatened by something... but the
@@ -41,7 +41,7 @@ const SecondSection = () => {
       </div>
       <CollectionBanner
         btnText="CHOOSE ANDROMEDA ON BINANCE"
-        bannerText="1000 years after Mars colonisation. New race comes up with the specific
+        bannerText="1000 years after Mars colonization. New race comes up with the specific
         climat on Mars. This is limited collection with 2000 NFT. Choose your
         version of Andromeda and be a part of Meta Universe"
       />

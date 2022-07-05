@@ -28,11 +28,15 @@ const LostInUniverse = () => {
             <Image src={woman} width={350} height={450} alt="" />
           </div>
           <div className={styles.description}>
-            This collection is the result of a passion for space and art.
-            Inspired by the theme of space exploration and human attempts to
-            bring life beyond the boundaries of planet Earth, Kim goes into
-            space on an adventure. But her spaceship crashed, and now she is
-            forced to wander the galaxy in search of friends and a new home.
+            <div className={styles.descriptionText}>
+              This collection is the result of a passion for space and art.
+              <br />
+              <br />
+              Inspired by the theme of space exploration and human attempts to
+              bring life beyond the boundaries of planet Earth, Kim goes into
+              space on an adventure. But her spaceship crashed, and now she is
+              forced to wander the galaxy in search of friends and a new home.
+            </div>
           </div>
         </div>
         <Slider slides={data} />

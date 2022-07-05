@@ -5,14 +5,15 @@
 }
 .title {
   font-family: Rubik Mono One;
-  margin-top: 275px;
-  font-size: 32px;
+  margin-top: 325px;
+  font-size: 60px;
   color: #985f2a;
 }
 .pictureDescription {
-  display: grid;
+  display: flex;
+  width: 1115px;
+  justify-content: space-between;
   margin-top: 50px;
-  grid-template-columns: 1fr 1fr;
 }
 .picture {
   display: flex;
@@ -21,9 +22,14 @@
 
 .description {
   display: flex;
-  color: #985f2a;
   padding-bottom: 50px;
-  font-family: Ruda;
-  font-size: 28px;
   align-items: flex-end;
+}
+
+.descriptionText {
+  width: 560px;
+  color: #985f2a;
+  font-family: Ruda;
+  font-size: 16px;
+  font-family: Rubik Mono One;
 }
