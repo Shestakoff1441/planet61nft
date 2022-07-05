@@ -64,7 +64,8 @@ const App = () => {
         }}
         innerProps={{
           style: {
-            minWidth: "950px"
+            minWidth: "950px",
+            maxWidth: "950px"
           }
         }}
         itemsToShow={3}

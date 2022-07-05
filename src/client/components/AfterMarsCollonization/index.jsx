@@ -1,6 +1,7 @@
 import Section from "../common/Section";
 import Slider from "./SliderComponent";
 import styles from "./AfterMarsColonization.module.scss";
+import Carousel from "../common/Carousel";
 
 const SecondSection = () => {
   return (
@@ -16,6 +17,7 @@ const SecondSection = () => {
           they stumbled upon her.... Be part of the colony and build a new world
           with us
         </div>
+        <Carousel />
         <Slider />
       </div>
       <div className={styles.bannerBlock}>
