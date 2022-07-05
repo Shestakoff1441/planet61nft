@@ -8,9 +8,7 @@ const ImageLink = ({ href = "/", image, classes }) => {
   return (
     <div className={classnames([styles.imageSize, classes ? classes : []])}>
       <Link href={href || "/"} passHref>
-        <>
-          <Image src={image.src} layout="fill" objectFit="contain" alt="" />
-        </>
+        <Image src={image.src} layout="fill" objectFit="contain" alt="" />
       </Link>
     </div>
   );

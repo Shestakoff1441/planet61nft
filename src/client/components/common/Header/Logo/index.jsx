@@ -5,10 +5,8 @@ import styles from "./Logo.module.scss";
 const Logo = () => {
   return (
     <div className={styles.logo}>
-      <Link href="/">
-        <>
-          <span className={styles.text}>PLANET 61</span>
-        </>
+      <Link href="/" passHref>
+        <span className={styles.text}>PLANET 61</span>
       </Link>
     </div>
   );

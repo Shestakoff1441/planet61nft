@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  font-family: Rubik Mono One;
+  margin-top: 275px;
+  font-size: 32px;
+  color: #985f2a;
+}
+.pictureDescription {
+  display: grid;
+  margin-top: 50px;
+  grid-template-columns: 1fr 1fr;
+}
+.picture {
+  display: flex;
+  justify-content: center;
+}
+
+.description {
+  display: flex;
+  color: #985f2a;
+  padding-bottom: 50px;
+  font-family: Ruda;
+  font-size: 28px;
+  align-items: flex-end;
+}

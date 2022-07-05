@@ -1,0 +1,26 @@
+.bannerBlock {
+  display: flex;
+  margin: auto;
+  margin-top: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border: 3px solid grey;
+}
+
+.contentBlock {
+  width: 45%;
+  font-size: 19px;
+}
+.buttonBlock {
+  display: flex;
+  height: 100%;
+  align-self: end;
+}
+
+.yellowBtnBlock {
+  padding: 10px 30px;
+  border-radius: 8px;
+  background-color: #e8eb5a;
+  color: #282b36;
+}

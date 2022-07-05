@@ -14,7 +14,7 @@ export const animatedSky = () => {
   const initHeader = () => {
     width = window.innerWidth;
 
-    height = 600;
+    height = 500;
     target = { x: width / 2, y: height / 2 };
 
     largeHeader = document.getElementById("large-header");

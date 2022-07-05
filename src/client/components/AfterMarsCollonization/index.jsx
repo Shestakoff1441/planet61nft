@@ -1,11 +1,32 @@
 import Section from "../common/Section";
-import Slider from "./SliderComponent";
+import Slider from "../common/SliderComponent";
 import styles from "./AfterMarsColonization.module.scss";
+import CollectionBanner from "../common/CollectionBanner";
+import cart1 from "../../assets/images/14.png";
+import cart2 from "../../assets/images/25.png";
+import cart3 from "../../assets/images/38.png";
+import cart4 from "../../assets/images/39.png";
+import cart5 from "../../assets/images/47.png";
+import cart6 from "../../assets/images/54.png";
+import cart7 from "../../assets/images/59.png";
+import cart8 from "../../assets/images/63.png";
+import cart9 from "../../assets/images/85.png";
 
+const sliderElements = [
+  { url: cart3 },
+  { url: cart4 },
+  { url: cart1 },
+  { url: cart5 },
+  { url: cart6 },
+  { url: cart7 },
+  { url: cart2 },
+  { url: cart8 },
+  { url: cart9 }
+];
 const SecondSection = () => {
   return (
     <Section>
-      <div className={styles.container}>
+      <div className={styles.container} id="amc">
         <div className={styles.sectionTitle}>
           1000 years after mars colonization
         </div>
@@ -16,20 +37,14 @@ const SecondSection = () => {
           they stumbled upon her.... Be part of the colony and build a new world
           with us
         </div>
-        <Slider />
+        <Slider slides={sliderElements}/>
       </div>
-      <div className={styles.bannerBlock}>
-        <div className={styles.contentBlock}>
-          1000 years after Mars colonisation. New race comes up with the
-          specific climat on Mars. This is limited collection with 2000 NFT.
-          Choose your version of Andromeda and be a part of Meta Universe
-        </div>
-        <div className={styles.buttonBlock}>
-          <div className={styles.yellowBtnBlock}>
-            CHOOSE ANDROMEDA ON BINANCE
-          </div>
-        </div>
-      </div>
+      <CollectionBanner
+        btnText="CHOOSE ANDROMEDA ON BINANCE"
+        bannerText="1000 years after Mars colonisation. New race comes up with the specific
+        climat on Mars. This is limited collection with 2000 NFT. Choose your
+        version of Andromeda and be a part of Meta Universe"
+      />
     </Section>
   );
 };
