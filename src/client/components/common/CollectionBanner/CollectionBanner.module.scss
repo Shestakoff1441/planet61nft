@@ -21,8 +21,13 @@
 }
 
 .yellowBtnBlock {
-  padding: 10px 30px;
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+  font-weight: 500;
   border-radius: 8px;
-  background-color: #e8eb5a;
-  color: #282b36;
+  background-color: #f5f799;
+  padding: 12px;
+  color: #2d303b;
+  width: 220px;
 }

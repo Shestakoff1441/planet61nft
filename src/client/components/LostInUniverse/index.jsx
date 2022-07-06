@@ -4,18 +4,19 @@ import woman from "../../assets/images/lostInUniverse/woman.svg";
 import Image from "next/image";
 import CollectionBanner from "../common/CollectionBanner";
 import styles from "./LostInUniverse.module.scss";
-import picture_1 from "../../assets/images/lostInUniverse/picture_1.svg";
-import picture_2 from "../../assets/images/lostInUniverse/picture_1.svg";
-import picture_3 from "../../assets/images/lostInUniverse/picture_1.svg";
-import picture_4 from "../../assets/images/lostInUniverse/picture_1.svg";
-import picture_5 from "../../assets/images/lostInUniverse/picture_1.svg";
-import Slider from "../common/SliderComponent";
+import picture_1 from "../../assets/images/lostInUniverse/7.png";
+import picture_2 from "../../assets/images/lostInUniverse/18.png";
+import picture_3 from "../../assets/images/lostInUniverse/24.png";
+import picture_4 from "../../assets/images/lostInUniverse/28.png";
+import picture_5 from "../../assets/images/lostInUniverse/61.png";
+import Carousel from "../common/Carousel";
 
 const data = [
+  { url: picture_4 },
+  { url: picture_3 },
   { url: picture_1 },
   { url: picture_2 },
-  { url: picture_3 },
-  { url: picture_4 },
+
   { url: picture_5 }
 ];
 const LostInUniverse = () => {
@@ -39,9 +40,15 @@ const LostInUniverse = () => {
             </div>
           </div>
         </div>
-        <Slider slides={data} />
+        <div className={styles.carouselContainer}>
+          <Carousel slides={data} />
+        </div>
+
         <CollectionBanner
-          btnText="VIEW ON OPENSEA"
+          href="https://www.binance.com/fr/nft/profile/planet61-3949254e9009569f223e41a9c530aef2"
+          textStyles={styles.bannerText}
+          bannerStyles={styles.bannerStyles}
+          btnText="VIEW COLLECTION"
           bannerText="This is limited collection of 2000NFT. Book NFT beforelaes start on spetial price"
         />
       </div>

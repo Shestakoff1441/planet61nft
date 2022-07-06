@@ -25,7 +25,7 @@ const ImagesSection = () => (
       </div>
     </div>
     <LinkComponent
-      text={"VIEW COLLECTION ON OPENSEA"}
+      text={"VIEW COLLECTION"}
       href={"/"}
       classes={styles.linkTo}
     />

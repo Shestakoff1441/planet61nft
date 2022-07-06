@@ -17,8 +17,8 @@ const InitialSection = () => {
         </h1>
         <div className={styles.buttonsBlock}>
           <LinkComponent
-            text="VIEW IN BINANCE"
-            classes={styles.firstSectionButton}
+            text="VIEW ON MARKETPLACE"
+            classes={styles.initialSectionButton}
             href="https://www.binance.com/fr/nft/profile/planet61-3949254e9009569f223e41a9c530aef2"
           />
         </div>

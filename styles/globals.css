@@ -14,3 +14,16 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.slick-center {
+  height: 350px;
+  background-size: cover;
+  width: 350px;
+  -webkit-transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  transform: scale(1.25);
+}
+
+.slick-list { 
+  padding:45px 0!important;
+}

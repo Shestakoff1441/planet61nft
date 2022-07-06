@@ -1,12 +1,24 @@
+import Link from "next/link";
 import styles from "./CollectionBanner.module.scss";
-const CollectionBanner = ({ bannerText = "", btnText = "" }) => {
+
+const CollectionBanner = ({
+  bannerText = "",
+  btnText = "",
+  textStyles,
+  bannerStyles,
+  href
+}) => {
   return (
-    <div className={styles.bannerBlock}>
-      <div className={styles.contentBlock}>{bannerText}</div>
-      <div className={styles.buttonBlock}>
-        <div className={styles.yellowBtnBlock}>{btnText}</div>
+    <Link href={href} passHref>
+      <div className={[styles.bannerBlock, bannerStyles].join(" ")}>
+        <div className={[styles.contentBlock, textStyles].join(" ")}>
+          {bannerText}
+        </div>
+        <div className={styles.buttonBlock}>
+          <div className={styles.yellowBtnBlock}>{btnText}</div>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 export default CollectionBanner;
