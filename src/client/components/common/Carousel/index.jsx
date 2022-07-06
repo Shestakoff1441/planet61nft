@@ -37,7 +37,7 @@ const Carousel = ({ slides }) => {
     centerPadding: "0px",
     slidesToShow: 3,
     prevArrow: <PrevtArrow />,
-    nextArrow: <NextArrow />,
+    nextArrow: <NextArrow />
   };
   const renderSlides = () =>
     slides.map((el) => (
@@ -45,14 +45,15 @@ const Carousel = ({ slides }) => {
         <div
           className={styles.slideElement}
           style={{
-            backgroundImage: `url(${el.url.src})`
+            backgroundImage: `url(${el.url.src})`,
+            marginLeft: "34px"
           }}
         ></div>
       </>
     ));
 
   return (
-    <div className={styles.App}>
+    <div>
       <Slider {...setting}>{renderSlides()}</Slider>
     </div>
   );
