@@ -18,12 +18,13 @@ a {
 .slick-center {
   height: 350px;
   background-size: cover;
+  margin: 0 10px 0 17px;
   width: 350px;
   -webkit-transform: scale(1.25);
   -moz-transform: scale(1.25);
   transform: scale(1.25);
 }
 
-.slick-list { 
-  padding:45px 0!important;
+.slick-list {
+  padding: 45px 0 !important;
 }

@@ -37,7 +37,7 @@ const Carousel = ({ slides }) => {
     centerPadding: "0px",
     slidesToShow: 3,
     prevArrow: <PrevtArrow />,
-    nextArrow: <NextArrow />
+    nextArrow: <NextArrow />,
   };
   const renderSlides = () =>
     slides.map((el) => (
