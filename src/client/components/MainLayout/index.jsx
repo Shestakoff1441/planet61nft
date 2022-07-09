@@ -2,7 +2,7 @@ import Header from "../common/Header";
 import InitialSection from "../InitialSection";
 import AfterMarsColonization from "../AfterMarsCollonization";
 import DamnWenches from "../DamnWenches";
-import LostInUniverse from "../LostInUniverse";
+// import LostInUniverse from "../LostInUniverse";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
 
@@ -19,7 +19,7 @@ const MainLayout = () => {
       <InitialSection />
       <AfterMarsColonization />
       <DamnWenches />
-      <LostInUniverse />
+      {/* <LostInUniverse /> */}
     </main>
   );
 };

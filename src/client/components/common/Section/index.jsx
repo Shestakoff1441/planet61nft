@@ -1,3 +1,4 @@
+import classes from "classnames";
 import styles from "./Section.module.scss";
 
 const getHeader = (content, size) => {
@@ -11,14 +12,19 @@ const getHeader = (content, size) => {
   ][size];
 };
 
-const Section = (props) => {
-  const { background: { src } = "", title = "", titleSize = 2, bgc } = props;
-
+const Section = ({
+  background: { src } = "",
+  title = "",
+  titleSize = 2,
+  bgc,
+  children,
+  customStyles
+}) => {
   const text = getHeader(title, titleSize);
 
   return (
     <section
-      className={styles.section}
+      className={classes(styles.section, customStyles)}
       style={{
         backgroundImage: `url(${src})`,
         backgroundColor: bgc ? bgc : "#1A213A"
@@ -26,7 +32,7 @@ const Section = (props) => {
     >
       <div className={styles.sectionContainer}>
         {title ? text : null}
-        {props.children}
+        {children}
       </div>
     </section>
   );

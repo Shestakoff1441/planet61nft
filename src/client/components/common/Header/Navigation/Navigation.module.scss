@@ -11,11 +11,19 @@
   display: flex;
   align-items: center;
   margin: 0 20px 0 0;
-  font-size: 16px;
+  font-size: 14px;
   color: #101423;
 }
 
-@media screen and (max-width: 986px) {
+@media screen and (max-width: 800px) {
+  .navigation {
+    width: auto;
+  }
+  .navigationElement{
+    color: #fff;
+  }
+}
+@media screen and (max-width: 701px) {
   .navigation {
     display: none;
   }

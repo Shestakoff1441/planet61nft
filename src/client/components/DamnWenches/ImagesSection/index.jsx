@@ -3,8 +3,8 @@ import pinkJ from "../../../assets/images/clothColoboration/pinkJacket.svg";
 import purpleJ from "../../../assets/images/clothColoboration/purpleJacket.svg";
 import smoke from "../../../assets/images/clothColoboration/smoke.svg";
 import lolyPop from "../../../assets/images/clothColoboration/lolyPop.svg";
-import LinkComponent from "../../common/LinkComponent";
 import styles from "./ImagesSection.module.scss";
+import ViewButton from "../../common/ViewButton";
 
 const ImagesSection = () => (
   <div className={styles.clothColloborationBlock}>
@@ -24,10 +24,10 @@ const ImagesSection = () => (
         </div>
       </div>
     </div>
-    <LinkComponent
+    <ViewButton
       text={"VIEW COLLECTION"}
       href={"/"}
-      classes={styles.linkTo}
+      classes={styles.viewBtn}
     />
   </div>
 );

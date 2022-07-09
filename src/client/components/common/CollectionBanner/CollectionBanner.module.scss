@@ -1,9 +1,6 @@
 .bannerBlock {
   display: flex;
-  max-width: 1115px;
-  min-width: 1115px;
-  margin: auto;
-  margin-top: 70px;
+  margin: 70px 30px;
   justify-content: space-between;
   align-items: center;
   padding: 30px;
@@ -30,4 +27,29 @@
   padding: 12px;
   color: #2d303b;
   width: 220px;
+}
+
+@media screen and (max-width: 800px) {
+  .bannerBlock {
+    display: block;
+    border: 3px solid #f5f699;
+    border-radius: 10px;
+  }
+
+  .contentBlock {
+    width: 100%;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .buttonBlock {
+    justify-content: flex-end;
+  }
+
+  .yellowBtnBlock{
+    color: #f5f699;
+    font-weight: 700;
+    background-color: transparent;
+    margin-top: 30px;
+  }
 }

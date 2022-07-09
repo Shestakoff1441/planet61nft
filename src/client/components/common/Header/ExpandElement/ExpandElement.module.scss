@@ -1,11 +1,15 @@
-.arrowElement {
-    margin-left: 10px;
-  width: 30px;
-  height: 30px;
+.expanedElement {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  min-height: 22px;
+  min-width: 22px;
+  max-width: 22px;
+  max-height: 22px;
 }
 
-@media screen and (min-width: 986px) {
-  .arrowElement {
+@media screen and (min-width: 701px) {
+  .expanedElement {
     display: none;
   }
 }

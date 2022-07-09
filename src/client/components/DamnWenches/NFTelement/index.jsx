@@ -1,5 +1,7 @@
-import LinkComponent from "../../common/LinkComponent";
+// import LinkComponent from "../../common/LinkComponent";
+import ViewButton from "../../common/ViewButton";
 import styles from "./NFTelement.module.scss";
+ViewButton;
 
 const NFTElement = ({
   name = "",
@@ -10,15 +12,13 @@ const NFTElement = ({
 }) => {
   return (
     <div className={styles.container}>
-      <div
-        className={styles.imageBlock}
-        style={{ backgroundImage: `url(${image.src})` }}
-      ></div>
+      <img src={image.src} alt="" className={styles.image} />
       <div className={styles.infoBlock}>
         <span className={styles.name}>{name}</span>
         <div className={styles.description}>{text}</div>
       </div>
-      <LinkComponent text={buttonText} href={href} classes={styles.linkTo} />
+
+      <ViewButton text={buttonText} href={href} classes={styles.viewBtnStyle}/>
     </div>
   );
 };

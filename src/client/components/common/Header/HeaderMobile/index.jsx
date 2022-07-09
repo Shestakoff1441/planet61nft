@@ -1,43 +1,27 @@
+import Image from "next/image";
 import React from "react";
-import LinkComponent from "../../LinkComponent";
 import styles from "./HeaderMobile.module.scss";
+import close from "../../../../assets/images/close.svg";
+import classNames from "classnames";
+import Navigation from "../Navigation";
 
-const navigationLinks = [
-  { text: "WOW" },
-  { text: "PROVENANCE" },
-  { text: "ABOUT US" },
-  { text: "WIKI" },
-  { text: "ANALYTICS" }
-];
-const iconList = [
-  { text: "discord" },
-  { text: "twitter" },
-  { text: "instagram" },
-  { text: "facebook" },
-  { text: "bred" }
-];
-
-const HeaderMobile = () => {
+const HeaderMobile = ({ onClose, isOpen }) => {
   return (
     <div className={styles.mobileHeaderContainer}>
-      <div className={styles.mobileHeaderNav}>
-        {navigationLinks.map((link) => (
-          <LinkComponent
-            text={link.text}
-            href="/"
-            key={link.text}
-            classes={[styles.iconLink]}
-          />
-        ))}
-      </div>
-      <div className={styles.mobileSocialBlock}>
-        {iconList.map((icon) => (
-          <LinkComponent
-            {...icon}
-            key={icon.text}
-            classes={[styles.iconLink]}
-          />
-        ))}
+      <div
+        className={classNames(styles.navigationMenu, {
+          [styles.visible]: isOpen
+        })}
+      >
+        <div className={styles.mobileHeaderClose}>
+          <span onClick={onClose} className={styles.closeBtn}>
+            <Image src={close.src} height={22} width={22} alt="" />
+          </span>
+        </div>
+        <Navigation
+          containerStyles={styles.navBlockStyles}
+          linkStyles={styles.navLinkStyles}
+        />
       </div>
     </div>
   );

@@ -12,9 +12,7 @@ const InitialSection = () => {
     <div className={styles.sectionContainer}>
       <div id="large-header" className={styles.largeHeader}>
         <canvas id="demo-canvas"></canvas>
-        <h1 className={styles.mainTitle}>
-          PLANET <span className={styles.thin}>61</span>
-        </h1>
+        <h1 className={styles.mainTitle}>PLANET 61</h1>
         <div className={styles.buttonsBlock}>
           <LinkComponent
             text="VIEW ON MARKETPLACE"

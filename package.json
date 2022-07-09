@@ -32,7 +32,8 @@
     "react-dom": "^18.0.0",
     "react-simply-carousel": "^8.2.1",
     "react-slick": "^0.29.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "swiper": "^8.3.0"
   },
   "devDependencies": {
     "eslint": "^8.19.0",

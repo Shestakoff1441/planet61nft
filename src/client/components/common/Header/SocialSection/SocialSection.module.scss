@@ -1,19 +1,9 @@
-.socialContainer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.socialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.iconLink{
-    width: 20px;
-    height: 20px;
-   
+.iconLink {
+  width: 30px;
+  height: 30px;
 }
-.iconWidth{
-    background-color: red;
-}
-
-@media screen and (max-width: 1190px) {
-    .socialContainer {
-      display: none;
-    }
-  }

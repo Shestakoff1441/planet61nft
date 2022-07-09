@@ -1,5 +1,4 @@
 import Section from "../common/Section";
-// import Slider from "../common/SliderComponent";
 import styles from "./AfterMarsColonization.module.scss";
 import CollectionBanner from "../common/CollectionBanner";
 import cart1 from "../../assets/images/14.png";
@@ -13,6 +12,7 @@ import cart8 from "../../assets/images/63.png";
 import cart9 from "../../assets/images/85.png";
 
 import Carousel from "../common/Carousel";
+import ViewButton from "../common/ViewButton";
 
 const sliderElements = [
   { url: cart3 },
@@ -25,6 +25,7 @@ const sliderElements = [
   { url: cart8 },
   { url: cart9 }
 ];
+
 const SecondSection = () => {
   return (
     <Section>
@@ -39,17 +40,40 @@ const SecondSection = () => {
           they stumbled upon her.... Be part of the colony and build a new world
           with us
         </div>
-        <div className={styles.carouselContainer}>
-          <Carousel slides={sliderElements} />
+        <div className={styles.viewBtnContainer}>
+          <ViewButton text="VIEW COLLECTION" classes={styles.viewBtn} />
         </div>
-        {/* <Slider slides={sliderElements} /> */}
+
+        <Carousel slides={sliderElements} cStyles={styles.carouselContainer} />
+        <div className={styles.mobilePictureBlock}>
+          <img
+            className={styles.picture}
+            src={cart1.src}
+            alt=""
+            layout="fill"
+          />
+
+          <img
+            className={styles.picture}
+            src={cart2.src}
+            alt=""
+            layout="fill"
+          />
+
+          <img
+            className={styles.picture}
+            src={cart3.src}
+            alt=""
+            layout="fill"
+          />
+        </div>
       </div>
       <CollectionBanner
         href="https://www.binance.com/fr/nft/profile/planet61-3949254e9009569f223e41a9c530aef2"
         btnText="CHOOSE ANDROMEDA"
-        bannerText="1000 years after Mars colonization. New race comes up with the specific
-        climat on Mars. This is limited collection with 2000 NFT. Choose your
-        version of Andromeda and be a part of Meta Universe"
+        bannerText="1000 years after Mars colonisation. New race comes up with the specific climat
+        on Mars. This is limited collection with 2000 NFT. Choose your version of Andromeda and be 
+        a part of Meta Universe"
       />
     </Section>
   );

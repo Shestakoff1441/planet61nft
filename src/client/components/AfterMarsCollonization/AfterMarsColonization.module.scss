@@ -7,19 +7,92 @@
 }
 
 .sectionTitle {
-  font-size: 60px;
+  text-align: center;
+  font-size: 48px;
   line-height: 50px;
 }
 
 .sectionDescription {
-  width: 80%;
+  padding: 0 30px;
   margin: 30px 0 100px 0;
   font-size: 22px;
 }
 
 .carouselContainer {
+  display: flex;
+  align-items: center;
   width: 1100px;
-  height: 430px;
+  // height: 430px;
+}
+
+.nextBtn {
+  margin-left: 15px;
+  height: 80px;
+  width: 30px;
+  background-image: url("../../assets//images/arrow.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.prevBtn {
+  margin-right: 15px;
+  height: 80px;
+  min-width: 30px;
+  background-image: url("../../assets//images/arrowLeft.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.mobilePictureBlock {
+  display: flex;
+  flex-direction: column;
+}
+
+.picture {
+  display: none;
+  padding: 30px;
+  width: 100%;
+  height: auto;
+}
+.viewBtnContainer {
+  display: none;
+  margin-bottom: 50px;
+  width: 80%;
+  justify-content: center;
+}
+.viewBtn{
+  width: 80%;
+}
+
+
+@media screen and (max-width: 1260px) {
+  .carouselContainer {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .carouselContainer {
+    width: 800px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .carouselContainer {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .sectionTitle{
+    font-size: 30px;
+  }
+  .picture {
+    display: flex;
+  }
+  .viewBtnContainer{
+    display: flex;
+  }
 }
 
 // .slick-center {

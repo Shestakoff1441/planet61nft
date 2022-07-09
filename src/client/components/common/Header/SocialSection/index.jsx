@@ -1,8 +1,8 @@
 import LinkComponent from "../../LinkComponent";
-import facebook from "../../../../assets/images/facebook.png";
-import twitter from "../../../../assets/images/twitter.png";
-import instagram from "../../../../assets/images/instagram.png";
-import telegram from "../../../../assets/images/telegram.png";
+import facebook from "../../../../assets/images/icons/Facebook-Blue-Logo.svg";
+import twitter from "../../../../assets/images/icons/Twitter-Logo.svg";
+import instagram from "../../../../assets/images/icons/Instagram-Logo.svg";
+import discord from "../../../../assets/images/icons/Discord_Color-Logo.svg";
 
 import styles from "./SocialSection.module.scss";
 
@@ -23,7 +23,11 @@ const SocialSection = () => {
       text: "facebook",
       href: "https://www.facebook.com/Planet61-110635601604045"
     },
-    { image: telegram, text: "telegram", href: "/" }
+    {
+      image: discord,
+      text: "discord",
+      href: "https://www.facebook.com/Planet61-110635601604045"
+    }
   ];
 
   return (

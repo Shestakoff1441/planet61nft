@@ -6,7 +6,7 @@ import styles from "./LinkComponent.module.scss";
 
 const ImageLink = ({ href = "/", image, classes }) => {
   return (
-    <div className={classnames([styles.imageSize, classes ? classes : []])}>
+    <div className={classnames([styles.imageElement, classes ? classes : []])}>
       <Link href={href || "/"} passHref>
         <Image src={image.src} layout="fill" objectFit="contain" alt="" />
       </Link>

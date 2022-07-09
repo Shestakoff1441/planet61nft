@@ -1,15 +1,13 @@
-import classnames from "classnames";
+import Image from "next/image";
+
+import burgerMenu from "../../../../assets/images/burgerMenu.svg";
 import styles from "./ExpandElement.module.scss";
 
-const ExpandElement = ({ isExpanded, onClick }) => {
+const ExpandElement = ({ onClick }) => {
   return (
-    <span
-      onClick={onClick}
-      className={classnames(styles.arrowElement, {
-        [styles.basicViewExpand]: !isExpanded,
-        [styles.expandView]: isExpanded
-      })}
-    ></span>
+    <span onClick={onClick} className={styles.expanedElement}>
+      <Image src={burgerMenu.src} height={22} width={22} alt="" />
+    </span>
   );
 };
 

@@ -6,7 +6,11 @@ import ImagesSection from "./ImagesSection";
 import styles from "./DamnWenches.module.scss";
 
 const DamnWenches = () => (
-  <Section background={frida} bgc="#120B20">
+  <Section
+    background={frida}
+    bgc="#120B20"
+    customStyles={styles.sectionCustomStyles}
+  >
     <div className={styles.container} id="dw">
       <div className={styles.sectionTitle}>DAMN WENCHES</div>
       <div className={styles.sectionDescription}>

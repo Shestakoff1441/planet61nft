@@ -1,18 +1,49 @@
 .header {
   display: flex;
   position: fixed;
-  top: 0;
   width: 100%;
   z-index: 10;
   justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   padding: 8px 12px;
   height: 70px;
   color: #fff;
 }
+.logoExpandElemBlock{
+  display: flex;
+  align-items: center;
+}
 .socialBtnBlock {
   display: flex;
-  width: 15%;
   justify-content: center;
   align-items: center;
+}
+
+.header_visible {
+  display: flex;
+  top: 0;
+  transition: top 2.4s;
+}
+
+.header_hidden {
+  display: none;
+  top: -70px;
+  transition: top 2.4s;
+}
+
+@media screen and (max-width: 800px) {
+  .socialBtnBlock {
+    display: none;
+  }
+  .header{
+    background-color: transparent;
+    
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .socialBtnBlock {
+    display: flex;
+  }
 }
