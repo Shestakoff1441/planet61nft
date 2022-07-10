@@ -6,20 +6,21 @@ import styles from "./Header.module.scss";
 import ExpandElement from "./ExpandElement";
 import HeaderMobile from "./HeaderMobile";
 import classnames from "classnames";
-function useScrollDirection() {
-  const [scrollDirection, setScrollDirection] = React.useState(null);
+
+const useScrollDirection = () => {
+  const [scrollDirection, setScrollDirection] = useState(null);
 
   useEffect(() => {
     let lastScrollY = window.pageYOffset;
 
     const updateScrollDirection = () => {
       const scrollY = window.pageYOffset;
-      const direction = scrollY > lastScrollY ? "down" : "up";
+      const isUpperScroll = scrollY > lastScrollY ? true : false;
       if (
-        direction !== scrollDirection &&
+        isUpperScroll !== scrollDirection &&
         (scrollY - lastScrollY > 5 || scrollY - lastScrollY < -5)
       ) {
-        setScrollDirection(direction);
+        setScrollDirection(isUpperScroll);
       }
       lastScrollY = scrollY > 0 ? scrollY : 0;
     };
@@ -30,7 +31,7 @@ function useScrollDirection() {
   }, [scrollDirection]);
 
   return scrollDirection;
-}
+};
 
 const HeaderComponent = () => {
   const [isExpanded, setExpanded] = useState(false);
@@ -38,7 +39,7 @@ const HeaderComponent = () => {
   const scrollDirection = useScrollDirection();
 
   const cls =
-    scrollDirection === "down" ? styles.header_hidden : styles.header_visible;
+    scrollDirection === true ? styles.header_hidden : styles.header_visible;
 
   const DesktopHeader = () => (
     <header className={classnames(styles.header, cls)}>
