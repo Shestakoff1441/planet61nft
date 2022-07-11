@@ -4,6 +4,11 @@
   justify-content: center;
 }
 .iconLink {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
+}
+@media screen and (max-width:800px){
+  .iconLink{
+    margin: 0;
+  }
 }

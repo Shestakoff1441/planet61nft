@@ -1,8 +1,8 @@
 import LinkComponent from "../../LinkComponent";
-import facebook from "../../../../assets/images/icons/Facebook-Blue-Logo.svg";
+import facebook from "../../../../assets/images/icons/Facebooko-Black-Logo.svg";
 import twitter from "../../../../assets/images/icons/Twitter-Logo.svg";
-import instagram from "../../../../assets/images/icons/Instagram-Logo.svg";
-import discord from "../../../../assets/images/icons/Discord_Color-Logo.svg";
+import instagram from "../../../../assets/images/icons/Instagram-Black-Logo.svg";
+import discord from "../../../../assets/images/icons/Discord_Black-Logo.svg";
 
 import styles from "./SocialSection.module.scss";
 

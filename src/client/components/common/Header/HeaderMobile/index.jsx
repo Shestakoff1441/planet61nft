@@ -19,6 +19,7 @@ const HeaderMobile = ({ onClose, isOpen }) => {
           </span>
         </div>
         <Navigation
+          onClick={onClose}
           containerStyles={styles.navBlockStyles}
           linkStyles={styles.navLinkStyles}
         />

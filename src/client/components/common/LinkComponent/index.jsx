@@ -13,9 +13,12 @@ const ImageLink = ({ href = "/", image, classes }) => {
     </div>
   );
 };
-const BasicLink = ({ href = "/", text = "", classes }) => {
+const BasicLink = ({ href = "/", text = "", classes, onClick }) => {
   return (
-    <div className={classnames([styles.linkElement, classes ? classes : []])}>
+    <div
+      className={classnames([styles.linkElement, classes ? classes : []])}
+      onClick={onClick}
+    >
       <Link href={href}>{text}</Link>
     </div>
   );
