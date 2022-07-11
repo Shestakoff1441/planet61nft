@@ -1,5 +1,5 @@
 import LinkComponent from "../../LinkComponent";
-import facebook from "../../../../assets/images/icons/Facebooko-Black-Logo.svg";
+import opensea from "../../../../assets/images/icons/OpenSea-icon.svg";
 import twitter from "../../../../assets/images/icons/Twitter-Logo.svg";
 import instagram from "../../../../assets/images/icons/Instagram-Black-Logo.svg";
 import discord from "../../../../assets/images/icons/Discord_Black-Logo.svg";
@@ -19,9 +19,9 @@ const SocialSection = () => {
       href: "https://www.instagram.com/planet61nft/"
     },
     {
-      image: facebook,
-      text: "facebook",
-      href: "https://www.facebook.com/Planet61-110635601604045"
+      image: opensea,
+      text: "opensea",
+      href: "https://opensea.io/Planet61"
     },
     {
       image: discord,
