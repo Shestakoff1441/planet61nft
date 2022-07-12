@@ -1,6 +1,12 @@
 export const navigationLinks = [
-  { text: "1000 AMC", href: "#amc" },
-  { text: "LOST IN UNIVERSE", href: "#liu" },
-  { text: "DAMN WENCHES", href: "#dw" },
-  { text: "ROADMAP", href: "#rm" }
+  { title: "1000 AMC", href: "#amc", isLink: true },
+  { title: "ROADMAP", href: "#rm", isLink: true },
+  {
+    title: "COLLECTIONS",
+    isLink: false,
+    subTitles: [
+      { title: "LOST IN UNIVERSE", href: "/liu" },
+      { title: "DAMN WENCHES", href: "/dm" }
+    ]
+  }
 ];

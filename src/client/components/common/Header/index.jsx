@@ -24,9 +24,9 @@ const useScrollDirection = () => {
       }
       lastScrollY = scrollY > 0 ? scrollY : 0;
     };
-    window.addEventListener("scroll", updateScrollDirection); // add event listener
+    window.addEventListener("scroll", updateScrollDirection);
     return () => {
-      window.removeEventListener("scroll", updateScrollDirection); // clean up
+      window.removeEventListener("scroll", updateScrollDirection);
     };
   }, [scrollDirection]);
 
@@ -53,8 +53,10 @@ const HeaderComponent = () => {
       </div>
     </header>
   );
+  console.log(process.env.NEXT_PUBLIC_NFTPORT_API_KEY)
   return (
     <>
+      {/* {process.env.WEBSITE_TITLE} */}
       <DesktopHeader />
       <HeaderMobile onClose={changeExpand} isOpen={isExpanded} />
     </>

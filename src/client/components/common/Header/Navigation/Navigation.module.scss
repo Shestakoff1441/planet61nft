@@ -12,19 +12,41 @@
   align-items: center;
   margin: 0 20px 0 0;
   font-size: 14px;
-  color: #101423;
+  color: #fff;
+}
+
+.expandedContainer {
+  cursor: pointer;
+}
+.extendedMenu {
+  position: absolute;
+  top: 70px;
+  color: #fff;
+  background-color: #1a213a;
+  width: auto;
+  padding: 20px;
+}
+.subNavigationElement {
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+.iconExpandedArrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
 }
 
 @media screen and (max-width: 800px) {
   .navigation {
     width: auto;
   }
-  .navigationElement{
-    color: #fff;
-  }
 }
 @media screen and (max-width: 701px) {
   .navigation {
     display: none;
+  }
+  .extendedMenu {
+    top: 220px;
   }
 }

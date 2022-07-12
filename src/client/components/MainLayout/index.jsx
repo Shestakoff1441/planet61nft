@@ -1,6 +1,6 @@
 import InitialSection from "../InitialSection";
 import AfterMarsColonization from "../AfterMarsCollonization";
-import DamnWenches from "../DamnWenches";
+// import DamnWenches from "../DamnWenches";
 // import LostInUniverse from "../LostInUniverse";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
@@ -15,7 +15,7 @@ const MainLayout = () => {
       </Head>
       <InitialSection />
       <AfterMarsColonization />
-      <DamnWenches />
+      {/* <DamnWenches /> */}
       {/* <LostInUniverse /> */}
     </main>
   );

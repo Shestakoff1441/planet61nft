@@ -5,7 +5,7 @@
   z-index: 10;
   justify-content: space-between;
   align-items: center;
-  background-color: #fff;
+  background-color: #1A213A;
   padding: 8px 12px;
   height: 70px;
   color: #fff;
@@ -35,10 +35,6 @@
 @media screen and (max-width: 800px) {
   .socialBtnBlock {
     display: none;
-  }
-  .header{
-    background-color: transparent;
-    
   }
 }
 
