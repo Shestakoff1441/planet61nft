@@ -13,8 +13,10 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  //   server.use('/api', routes.getArtistId)
   server.get("*", (req, res) => {
+    if (req.headers.host.includes("www")) {
+      res.redirect("https://planet61nft.com");
+    }
     return handle(req, res);
   });
 
@@ -22,6 +24,6 @@ app.prepare().then(() => {
     if (err) {
       throw err;
     }
-    console.log(`> Ready on http://localhost:${port}`);
+    // console.log(`> Ready on http://localhost:${port}`);
   });
 });
