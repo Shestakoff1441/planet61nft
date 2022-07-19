@@ -7,8 +7,11 @@
   width: 36px;
   height: 36px;
 }
-@media screen and (max-width:800px){
-  .iconLink{
+.connectWallet {
+  display: flex;
+}
+@media screen and (max-width: 800px) {
+  .iconLink {
     margin: 0;
   }
 }

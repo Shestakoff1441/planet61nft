@@ -53,7 +53,7 @@ const HeaderComponent = () => {
       </div>
     </header>
   );
-  console.log(process.env.NEXT_PUBLIC_NFTPORT_API_KEY)
+
   return (
     <>
       {/* {process.env.WEBSITE_TITLE} */}

@@ -31,11 +31,11 @@ const ExpandedMenu = ({ link }) => {
     >
       <span>{link.title}</span>
       {extendedMenu ? (
-        <img src={ArrowUp.src} alt="" className={styles.iconExpandedArrow}/>
-      ):(
-        <img src={ArrowDown.src} alt="" className={styles.iconExpandedArrow}/>
+        <img src={ArrowUp.src} alt="" className={styles.iconExpandedArrow} />
+      ) : (
+        <img src={ArrowDown.src} alt="" className={styles.iconExpandedArrow} />
       )}
-      
+
       {/* <ArrowDown /> */}
       {extendedMenu && (
         <div className={styles.extendedMenu}>
@@ -65,7 +65,7 @@ const Navigation = ({ containerStyles, linkStyles, onClick }) => (
           classes={classNames(styles.navigationElement, linkStyles)}
         />
       ) : (
-        <ExpandedMenu link={link} />
+        <ExpandedMenu link={link} key={link.title} />
       )
     )}
   </nav>
