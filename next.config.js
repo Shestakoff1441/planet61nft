@@ -1,7 +1,7 @@
 const path = require("path");
 
 const withImages = require("next-images");
-const withTM = require("next-transpile-modules")(["@madzadev/image-slider"]);
+const withTM = require("next-transpile-modules")([]);
 module.exports = withImages(withTM());
 
 module.exports = {
