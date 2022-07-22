@@ -7,9 +7,6 @@ import cart3 from "../../assets/images/38.png";
 import cart4 from "../../assets/images/39.png";
 import cart5 from "../../assets/images/47.png";
 import cart6 from "../../assets/images/54.png";
-import cart7 from "../../assets/images/59.png";
-import cart8 from "../../assets/images/63.png";
-import cart9 from "../../assets/images/85.png";
 
 import Carousel from "../common/Carousel";
 import ViewButton from "../common/ViewButton";
@@ -20,10 +17,7 @@ const sliderElements = [
   { url: cart1 },
   { url: cart5 },
   { url: cart6 },
-  { url: cart7 },
   { url: cart2 },
-  { url: cart8 },
-  { url: cart9 }
 ];
 
 const SecondSection = () => {

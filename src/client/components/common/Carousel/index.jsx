@@ -46,24 +46,12 @@ const Carousel = ({ slides, cStyles }) => {
             pagination={true}
             modules={[EffectCoverflow, Navigation]}
             className="mySwiper"
-            
-            // slidesPerView={3}
-            // initialSlide={1}
             loop
             breakpoints={{
-              // 400: {
-              //   slidesPerView: 1,
-              //   spaceBetween: 10
-              // },
               770: {
                 slidesPerView: 2,
                 spaceBetween: 50
               },
-              // 900: {
-              //   slidesPerView: 2,
-              //   centeredSlides: true,
-              //   spaceBetween: 50
-              // },
               1180: {
                 slidesPerView: 3,
                 spaceBetween: 50
@@ -72,12 +60,6 @@ const Carousel = ({ slides, cStyles }) => {
           >
             {slides.map((el, index) => (
               <SwiperSlide key={`${index}`}>
-                {/* <div
-                className={styles.slideElement}
-                style={{
-                  backgroundImage: `url(${el.url.src})`
-                }}
-              /> */}
                 <img src={el.url.src} className={styles.slideElement} />
               </SwiperSlide>
             ))}

@@ -10,7 +10,6 @@
     "slicemachine": "start-slicemachine"
   },
   "dependencies": {
-    "@madzadev/image-slider": "^1.0.9",
     "@prismicio/client": "^6.4.3",
     "@prismicio/helpers": "^2.3.0",
     "@prismicio/next": "^0.1.2",
@@ -21,8 +20,6 @@
     "classnames": "^2.3.1",
     "compression": "^1.7.4",
     "cross-env": "^7.0.3",
-    "embla-carousel-autoplay": "^6.2.0",
-    "embla-carousel-react": "^6.2.0",
     "express": "^4.17.3",
     "gsap": "^3.10.4",
     "next": "^12.1.4",
@@ -30,8 +27,6 @@
     "next-transpile-modules": "^9.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-simply-carousel": "^8.2.1",
-    "react-slick": "^0.29.0",
     "request": "^2.88.2",
     "swiper": "^8.3.0"
   },
