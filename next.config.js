@@ -1,7 +1,8 @@
 const path = require("path");
 
 const withImages = require("next-images");
-module.exports = withImages();
+const withTM = require("next-transpile-modules")([]);
+module.exports = withImages(withTM());
 
 module.exports = {
   sassOptions: {

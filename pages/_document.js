@@ -5,13 +5,21 @@ export default function Document() {
     <Html>
       <Head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={true.toString()}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
           rel="stylesheet"
         ></link>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={true.toString()}
+        />
         <link
           href="https://fonts.googleapis.com/css2?family=Risque&family=Rubik+Mono+One&display=swap"
           rel="stylesheet"
@@ -19,7 +27,7 @@ export default function Document() {
         <link
           rel="stylesheet"
           type="text/css"
-          charset="UTF-8"
+          charSet="UTF-8"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css"
         />
         <link
@@ -27,6 +35,8 @@ export default function Document() {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <script src="/metamask-onboarding.bundle.js" async />
+        <script src="/web3.min.js" async />
       </Head>
       <body>
         <Main />
