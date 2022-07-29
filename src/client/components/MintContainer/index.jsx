@@ -572,7 +572,6 @@ const contractAddress = "0x22e7c4E56b410a6fC7707FDC7e4E4f982415841a";
 function App() {
   const [currentAccount, setCurrentAccount] = useState("");
   const [timer, setTimer] = useState(0);
-  const [status, setStatus] = useState("");
 
   const checkWalletIsConnected = async () => {
     const { ethereum } = window;
@@ -606,23 +605,23 @@ function App() {
   };
 
   const getRequiredData = async () => {
-    let whiteListed = null;
+    // let whiteListed = null;
     if (window.ethereum) {
       window.web3 = new Web3(window.ethereum);
       window.contract = new web3.eth.Contract(abi, contractAddress);
       window.info = await window.contract.methods.getInfo().call();
       setTimer(Number(info.runtimeConfig.publicMintStart));
       try {
-        const merkleData = await merkleProof(
-          currentAccount,
-          "rinkeby",
-          contractAddress
-        );
-        if (currentAccount && merkleData.body.length) {
-          whiteListed = await contract.methods
-            .isWhitelisted(currentAccount, JSON.parse(merkleData.body))
-            .call();
-        }
+        // const merkleData = await merkleProof(
+        //   currentAccount,
+        //   "rinkeby",
+        //   contractAddress
+        // );
+        // if (currentAccount && merkleData.body.length) {
+        //   whiteListed = await contract.methods
+        //     .isWhitelisted(currentAccount, JSON.parse(merkleData.body))
+        //     .call();
+        // }
       } catch (err) {
         console.log(err);
       }
@@ -647,10 +646,10 @@ function App() {
         .call();
       // console.log("publ ", publicMintActive);
       if (publicMintActive) {
-        const mintTransaction = await window.contract.methods.mint(5).send({
-          from: contractAddress.toLowerCase(),
-          value: value.toString()
-        });
+        // const mintTransaction = await window.contract.methods.mint(5).send({
+        //   from: contractAddress.toLowerCase(),
+        //   value: value.toString()
+        // });
         // console.log("minttrans ", mintTransaction);
       } else if (presaleMintActive) {
         const merkleData = await merkleProof(

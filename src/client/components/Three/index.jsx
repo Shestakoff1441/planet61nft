@@ -4,8 +4,8 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import VertexShader from "./shaders/vertex.glsl";
 import FragmentShader from "./shaders/fragment.glsl";
 import styles from "./GalaxyScreen.module.scss";
-import Logo from "../../assets/images/Logo.svg";
-import * as dat from "lil-gui";
+// import Logo from "../../assets/images/Logo.svg";
+// import * as dat from "lil-gui";
 import { useEffect } from "react";
 import LinkComponent from "../common/LinkComponent";
 
@@ -218,15 +218,14 @@ const SpaceThree = () => {
   return (
     <>
       <div className={styles.main}>
-        <h1>Vot tak vot</h1>
+        <h1>PLANET 61</h1>
       </div>
       <div className={styles.second}>
         <p>
-          The Earth has always been threatened by something... but the
-          irrevocably expanding sun has done its job. People were forced to
-          explore the endless expanse of space in search of a new home until
-          they stumbled upon her.... Be part of the colony and build a new world
-          with us
+          In 1961, exactly 61 years ago, man first went into low Earth orbit,
+          making a breakthrough on the way to conquering the Cosmos. PLANET61 is
+          a community that shares a passion for space, technology and art Join
+          us and discover new horizonts of your consciousness
         </p>
       </div>
       <LinkComponent

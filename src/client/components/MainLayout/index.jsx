@@ -1,4 +1,4 @@
-import InitialSection from "../InitialSection";
+// import InitialSection from "../InitialSection";
 import AfterMarsColonization from "../AfterMarsCollonization";
 // import dynamic from "next/dynamic";
 import styles from "./MainLayout.module.scss";
