@@ -35,6 +35,16 @@ export default function Document() {
           type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
         />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin={true.toString()}
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap"
+          rel="stylesheet"
+        />
         <script src="/metamask-onboarding.bundle.js" async />
         <script src="/web3.min.js" async />
       </Head>

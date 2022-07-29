@@ -22,13 +22,15 @@
     "cross-env": "^7.0.3",
     "express": "^4.17.3",
     "gsap": "^3.10.4",
+    "lil-gui": "^0.17.0",
     "next": "^12.1.4",
     "next-images": "^1.8.4",
     "next-transpile-modules": "^9.0.0",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "request": "^2.88.2",
-    "swiper": "^8.3.0"
+    "swiper": "^8.3.0",
+    "three": "^0.142.0"
   },
   "devDependencies": {
     "eslint": "^8.19.0",

@@ -1,12 +1,12 @@
 import styles from "./Carousel.module.scss";
 
-import SwiperCore, { Navigation, EffectCoverflow } from "swiper";
+import SwiperCore, { Navigation, EffectCoverflow, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import { useState, useEffect } from "react";
 
-SwiperCore.use([Navigation]);
+SwiperCore.use([Navigation, Autoplay]);
 
 const Carousel = ({ slides, cStyles }) => {
   const [domLoaded, setDomLoaded] = useState(false);
@@ -35,13 +35,15 @@ const Carousel = ({ slides, cStyles }) => {
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
+            speed={1000}
             slidesPerView={2}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             coverflowEffect={{
-              rotate: 50,
+              rotate: 100,
               stretch: 0,
-              depth: 100,
-              modifier: 1,
-              slideShadows: true
+              depth: 10,
+              modifier: 2,
+              slideShadows: false
             }}
             pagination={true}
             modules={[EffectCoverflow, Navigation]}

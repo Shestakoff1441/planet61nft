@@ -1,0 +1,56 @@
+
+.main  {
+  top: 100px;
+  left: 50px;
+  color: #fff;
+  font-size: calc(16px + 1.2vw);
+  font-weight: 700;
+  font-family: "Stick No Bills";
+  margin-bottom: 30px;
+  position: absolute;
+  animation: showLeft 3s;
+  z-index: 100;
+}
+
+.second  {
+  top: 240px;
+  color: #fff;
+  left:50px;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: "Stick No Bills";
+  width: 350px;
+  font-weight: 700;
+  position: absolute;
+  animation: showLeft2 2.5s;
+  z-index: 100;
+}
+
+@keyframes showLeft {
+  from {
+    top: -100%;
+  }
+
+  to {
+    bottom: 50px;
+  }
+}
+@keyframes showLeft2 {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 50px;
+  }
+}
+
+// @keyframes showRight {
+//   from {
+//     right: -100%;
+//   }
+
+//   to {
+//     right: 0;
+//   }
+// }

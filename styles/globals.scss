@@ -3,7 +3,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: Josefin Sans, sans-serif !important;
-  background-color: #130c20;
+  background-color: #000000;
+  // overflow-y: hidden !important;
   // scroll-behavior: smooth;
 }
 
@@ -23,3 +24,6 @@ a {
 .swiper-wrapper {
   padding: 50px 0;
 }
+// canvas {
+//   touch-action: pan-y;
+// }

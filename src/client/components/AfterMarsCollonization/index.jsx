@@ -17,23 +17,24 @@ const sliderElements = [
   { url: cart1 },
   { url: cart5 },
   { url: cart6 },
-  { url: cart2 },
+  { url: cart2 }
 ];
+
 
 const SecondSection = () => {
   return (
-    <Section>
+    <Section bgc="#000000">
       <div className={styles.container} id="amc">
         <div className={styles.sectionTitle}>
-          1000 YEARS AFTER MARS COLONIZATION
+          ANDROMEDA
         </div>
-        <div className={styles.sectionDescription}>
+        {/* <div className={styles.sectionDescription}>
           The Earth has always been threatened by something... but the
           irrevocably expanding sun has done its job. People were forced to
           explore the endless expanse of space in search of a new home until
           they stumbled upon her.... Be part of the colony and build a new world
           with us
-        </div>
+        </div> */}
         <div className={styles.viewBtnContainer}>
           <ViewButton text="VIEW COLLECTION" classes={styles.viewBtn} />
         </div>

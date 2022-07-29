@@ -8,6 +8,8 @@
 
 .sectionTitle {
   text-align: center;
+  color: #8CB2C7;
+  font-family: "Stick No Bills";
   font-size: 48px;
   line-height: 50px;
 }
@@ -59,10 +61,9 @@
   width: 80%;
   justify-content: center;
 }
-.viewBtn{
+.viewBtn {
   width: 80%;
 }
-
 
 @media screen and (max-width: 1260px) {
   .carouselContainer {
@@ -83,13 +84,13 @@
 }
 
 @media screen and (max-width: 800px) {
-  .sectionTitle{
+  .sectionTitle {
     font-size: 30px;
   }
   .picture {
     display: flex;
   }
-  .viewBtnContainer{
+  .viewBtnContainer {
     display: flex;
   }
 }
