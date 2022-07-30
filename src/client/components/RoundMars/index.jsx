@@ -8,7 +8,6 @@ import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import styles from "./RoundEarth.module.scss";
 import GlobeLandScape from "../../assets/EarthLandScape/mars2.jpeg";
 
-import Section from "../common/Section";
 const RoundEarth = () => {
   useEffect(() => {
     const sizes = {

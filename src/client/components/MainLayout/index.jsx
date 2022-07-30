@@ -12,9 +12,6 @@ import Three from "../Three";
 const RoundEarth = dynamic(() => import("../RoundEarth"), {
   ssr: false
 });
-const RoundMars = dynamic(() => import("../RoundMars"), {
-  ssr: false
-});
 
 const MainLayout = () => {
   return (
