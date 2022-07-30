@@ -35,9 +35,9 @@ const Carousel = ({ slides, cStyles }) => {
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
-            speed={1000}
+            speed={1200}
             slidesPerView={2}
-            autoplay={{ delay: 3000, disableOnInteraction: false }}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
             coverflowEffect={{
               rotate: 100,
               stretch: 0,

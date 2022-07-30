@@ -1,6 +1,7 @@
 // import InitialSection from "../InitialSection";
 import AfterMarsColonization from "../AfterMarsCollonization";
-// import dynamic from "next/dynamic";
+// import RoundEarth from "../RoundEarth";
+import dynamic from "next/dynamic";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
 import Three from "../Three";
@@ -8,6 +9,12 @@ import Three from "../Three";
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
 // });
+const RoundEarth = dynamic(() => import("../RoundEarth"), {
+  ssr: false
+});
+const RoundMars = dynamic(() => import("../RoundMars"), {
+  ssr: false
+});
 
 const MainLayout = () => {
   return (
@@ -21,6 +28,7 @@ const MainLayout = () => {
       {/* <InitialSection /> */}
       <Three />
       <AfterMarsColonization />
+      <RoundEarth />
     </main>
   );
 };
