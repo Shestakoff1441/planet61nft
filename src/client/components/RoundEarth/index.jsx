@@ -26,8 +26,7 @@ const RoundEarth = () => {
       0.1,
       1000
     );
-    console.log(parentElement.offsetWidth);
-    console.log(canvas);
+    
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(parentElement.offsetWidth / 2, innerHeight / 2);

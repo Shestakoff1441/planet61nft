@@ -34,7 +34,6 @@ const Timer = ({ time }) => {
       const nowTimeStr = countdown(time, 1000);
       const nextTimeStr = countdown(time);
       if (nextTimeStr === STOP_TIMER) {
-        console.log("STOP TIMER");
         clearInterval(timer);
       }
       for (let i = 0; i < flippers.length; i++) {

@@ -1,5 +1,6 @@
 // import InitialSection from "../InitialSection";
 import AfterMarsColonization from "../AfterMarsCollonization";
+import MindMap from "../MindMap";
 // import RoundEarth from "../RoundEarth";
 import dynamic from "next/dynamic";
 import styles from "./MainLayout.module.scss";
@@ -24,8 +25,9 @@ const MainLayout = () => {
       {/* <MintContainer /> */}
       {/* <InitialSection /> */}
       <Three />
-      <AfterMarsColonization />
       <RoundEarth />
+      <AfterMarsColonization />
+      <MindMap />
     </main>
   );
 };
