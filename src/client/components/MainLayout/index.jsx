@@ -25,8 +25,8 @@ const MainLayout = () => {
       {/* <MintContainer /> */}
       {/* <InitialSection /> */}
       <Three />
-      <RoundEarth />
       <AfterMarsColonization />
+      <RoundEarth />
       <MindMap />
     </main>
   );

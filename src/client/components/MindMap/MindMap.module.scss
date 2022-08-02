@@ -65,7 +65,7 @@
   color: #000;
   background: rgb(204, 189, 189);
   width: 100%;
-  height: 400px;
+  height: 350px;
   border-radius: 10px;
   animation: opace 0.3s linear;
 }
@@ -92,4 +92,9 @@
 
 .descriptionDescribe {
   text-align: left;
+}
+@media screen and (max-width: 1100px){
+  .mindMapElement{
+    width: 100%;
+  }
 }

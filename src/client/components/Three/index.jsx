@@ -185,7 +185,7 @@ const SpaceThree = () => {
     const controls = new OrbitControls(camera, canvas);
     controls.enabled = true;
     controls.autoRotate = true;
-    controls.autoRotateSpeed = 0.5;
+    controls.autoRotateSpeed = 1.5;
     controls.minZoom = 3;
     controls.enableZoom = false;
     controls.maxDistance = 3;
