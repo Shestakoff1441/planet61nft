@@ -27,7 +27,11 @@ const RoundPlanets = () => {
       1000
     );
 
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    const renderer = new THREE.WebGLRenderer({
+      canvas,
+      // antialias: true,
+      alpha: true
+    });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(
       parentElement.offsetWidth / 2,
@@ -127,7 +131,25 @@ const RoundPlanets = () => {
           </div>
         </div>
       </div>
+
       <RoundMars />
+
+      <div className={styles.finalMarsSection}>
+        <div className={styles.finalMarsSectionTitle}>
+          8000 years after colonization
+        </div>
+        <br />
+        <div className={styles.finalMarsSectionDescription}>
+          So, the mission of terraforming Mars remains unfulfilled until now.
+          Man failed to change the Red Planet, making colonization comfortable
+          and sustainable, but over time, man himself has changed.
+        </div>
+        <br />
+        <div className={styles.finalMarsSectionConclusion}>
+          In the process of evolution, the human species has undergone
+          significant changes, thus giving rise to a new race called Andromeda.
+        </div>
+      </div>
     </div>
   );
 };

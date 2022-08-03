@@ -9,7 +9,7 @@ import styles from "../RoundPlanets/RoundPlanets.module.scss";
 import GlobeLandScape from "../../assets/EarthLandScape/mars2.jpeg";
 import classnames from "classnames";
 
-const RoundEarth = () => {
+const RoundMars = () => {
   useEffect(() => {
     const sizes = {
       width: window.innerWidth,
@@ -27,7 +27,11 @@ const RoundEarth = () => {
       1000
     );
 
-    const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
+    const renderer = new THREE.WebGLRenderer({
+      canvas,
+      // antialias: true,
+      alpha: true
+    });
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(
       parentElement.offsetWidth / 2,
@@ -130,4 +134,4 @@ const RoundEarth = () => {
   );
 };
 
-export default RoundEarth;
+export default RoundMars;

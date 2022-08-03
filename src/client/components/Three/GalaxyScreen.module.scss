@@ -1,6 +1,6 @@
 
 .main  {
-  top: 100px;
+  top: 130px;
   left: 50px;
   color: #fff;
   font-size: calc(16px + 1.2vw);
@@ -10,6 +10,10 @@
   position: absolute;
   animation: showLeft 3s;
   z-index: 100;
+}
+
+.title{
+  font-size: 60px;
 }
 
 .second  {

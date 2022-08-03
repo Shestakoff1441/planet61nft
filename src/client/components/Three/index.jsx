@@ -16,7 +16,7 @@ const SpaceThree = () => {
     const scene = new THREE.Scene();
 
     const parameters = {};
-    parameters.count = 500000;
+    parameters.count = 200000;
     parameters.size = 3;
     parameters.radius = 5;
     parameters.branches = 7;
@@ -218,7 +218,7 @@ const SpaceThree = () => {
   return (
     <>
       <div className={styles.main}>
-        <h1>PLANET 61</h1>
+        <div className={styles.title}>PLANET 61</div>
       </div>
       <div className={styles.second}>
         <p>

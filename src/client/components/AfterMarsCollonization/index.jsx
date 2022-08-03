@@ -23,7 +23,7 @@ const sliderElements = [
 
 const SecondSection = () => {
   return (
-    <Section bgc="#000000">
+    <Section>
       <div className={styles.container} id="amc">
         <div className={styles.sectionTitle}>
           ANDROMEDA
