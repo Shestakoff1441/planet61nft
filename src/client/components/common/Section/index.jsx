@@ -16,7 +16,7 @@ const Section = ({
   background: { src } = "",
   title = "",
   titleSize = 2,
-  bgc,
+  // bgc,
   children,
   customStyles
 }) => {
@@ -27,11 +27,11 @@ const Section = ({
       className={classes(styles.section, customStyles)}
       style={{
         backgroundImage: `url(${src})`,
-        backgroundColor: bgc ? bgc : "#1A213A"
+        // backgroundColor: bgc ? bgc : "#1A213A"
       }}
     >
       <div className={styles.sectionContainer}>
-        {title ? text : null}
+        <div className={styles.sectionTitle}>{title ? text : null}</div>
         {children}
       </div>
     </section>
