@@ -5,6 +5,7 @@ import SocialSection from "./SocialSection";
 import styles from "./Header.module.scss";
 import ExpandElement from "./ExpandElement";
 import HeaderMobile from "./HeaderMobile";
+import ConnectWalletButton from "../ConnectWalletButton";
 import classnames from "classnames";
 
 const useScrollDirection = () => {
@@ -49,6 +50,7 @@ const HeaderComponent = () => {
       </div>
       <Navigation />
       <div className={styles.socialBtnBlock}>
+        <ConnectWalletButton />
         <SocialSection />
       </div>
     </header>

@@ -2,7 +2,7 @@
 import AfterMarsColonization from "../AfterMarsCollonization";
 import MindMap from "../MindMap";
 // import RoundEarth from "../RoundEarth";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
 import Three from "../Three";
@@ -10,9 +10,9 @@ import Three from "../Three";
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
 // });
-const RoundEarth = dynamic(() => import("../RoundEarth"), {
-  ssr: false
-});
+// const RoundEarth = dynamic(() => import("../RoundPlanets"), {
+//   ssr: false
+// });
 
 const MainLayout = () => {
   return (
@@ -26,7 +26,6 @@ const MainLayout = () => {
       {/* <InitialSection /> */}
       <Three />
       <AfterMarsColonization />
-      <RoundEarth />
       <MindMap />
     </main>
   );

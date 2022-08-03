@@ -5,11 +5,11 @@ import fragmentShader from "./shaders/fragment.glsl";
 import atmopsphereVertex from "./shaders/atmVertex.glsl";
 import atmopsphereFragment from "./shaders/atmFragment.glsl";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import styles from "./RoundEarth.module.scss";
+import styles from "./RoundPlanets.module.scss";
 import GlobeLandScape from "../../assets/EarthLandScape/earth.jpg";
 import RoundMars from "../RoundMars";
-import Section from "../common/Section";
-const RoundEarth = () => {
+
+const RoundPlanets = () => {
   useEffect(() => {
     const sizes = {
       width: window.innerWidth,
@@ -29,7 +29,10 @@ const RoundEarth = () => {
 
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(parentElement.offsetWidth / 2, innerHeight / 2);
+    renderer.setSize(
+      parentElement.offsetWidth / 2,
+      parentElement.offsetWidth / 2
+    );
 
     const sphere = new THREE.Mesh(
       new THREE.SphereGeometry(5, 50, 50),
@@ -86,7 +89,7 @@ const RoundEarth = () => {
     animate();
   }, []);
   return (
-    <Section bgc="#000">
+    <div className={styles.roundPlanetsContainer}>
       <div className={styles.roundEarthContainer} id="roundEarthContainer">
         <canvas
           id="earthCanvas"
@@ -125,8 +128,8 @@ const RoundEarth = () => {
         </div>
       </div>
       <RoundMars />
-    </Section>
+    </div>
   );
 };
 
-export default RoundEarth;
+export default RoundPlanets;

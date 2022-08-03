@@ -7,9 +7,9 @@ import cart3 from "../../assets/images/38.png";
 import cart4 from "../../assets/images/39.png";
 import cart5 from "../../assets/images/47.png";
 import cart6 from "../../assets/images/54.png";
-
 import Carousel from "../common/Carousel";
 import ViewButton from "../common/ViewButton";
+import RoundEarth from "../RoundPlanets";
 
 const sliderElements = [
   { url: cart3 },
@@ -70,6 +70,7 @@ const SecondSection = () => {
         on Mars. This is limited collection with 2000 NFT. Choose your version of Andromeda and be 
         a part of Meta Universe"
       />
+      <RoundEarth />
     </Section>
   );
 };

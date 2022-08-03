@@ -35,14 +35,14 @@ const MindMap = () => {
               <div
                 className={styles.mindMapElement}
                 key={section}
+                style={{
+                  backgroundImage: `url(${sections[section].background})`
+                }}
                 onClick={() => setSectionDescription(sections[section])}
               >
                 <div
-                  style={{
-                    backgroundImage: `url(${sections[section].background})`
-                  }}
                   className={classnames(
-                    styles[section],
+                    // styles[section],
                     styles.backgroundStyles
                   )}
                 ></div>

@@ -5,8 +5,9 @@ import fragmentShader from "./shaders/fragment.glsl";
 import atmopsphereVertex from "./shaders/atmVertex.glsl";
 import atmopsphereFragment from "./shaders/atmFragment.glsl";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import styles from "./RoundEarth.module.scss";
+import styles from "../RoundPlanets/RoundPlanets.module.scss";
 import GlobeLandScape from "../../assets/EarthLandScape/mars2.jpeg";
+import classnames from "classnames";
 
 const RoundEarth = () => {
   useEffect(() => {
@@ -28,7 +29,10 @@ const RoundEarth = () => {
 
     const renderer = new THREE.WebGLRenderer({ canvas, antialias: true });
     renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(parentElement.offsetWidth / 2, innerHeight / 2);
+    renderer.setSize(
+      parentElement.offsetWidth / 2,
+      parentElement.offsetWidth / 2
+    );
 
     const sphere = new THREE.Mesh(
       new THREE.SphereGeometry(4.5, 30, 30),
@@ -85,7 +89,10 @@ const RoundEarth = () => {
     animate();
   }, []);
   return (
-    <div className={styles.roundEarthContainer} id="roundEarthContainer">
+    <div
+      className={classnames(styles.roundEarthContainer, styles.marsBlock)}
+      id="roundEarthContainer"
+    >
       <canvas
         id="marsCanvas"
         // style={{ width: "100vw", height: "100vh" }}
