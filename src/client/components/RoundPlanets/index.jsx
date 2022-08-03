@@ -31,7 +31,7 @@ const RoundPlanets = () => {
     renderer.setPixelRatio(window.devicePixelRatio);
     renderer.setSize(
       parentElement.offsetWidth / 2,
-      parentElement.offsetWidth / 2
+      parentElement.offsetWidth / 3.8
     );
 
     const sphere = new THREE.Mesh(
