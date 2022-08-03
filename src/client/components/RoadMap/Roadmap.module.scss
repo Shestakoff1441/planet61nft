@@ -1,0 +1,31 @@
+.roadmapContainer {
+  //   display: flex;
+}
+.rightBorderBlock {
+  width: 50%;
+  box-sizing: inherit;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  border-bottom: 2px solid wheat;
+  border-right: 2px solid wheat;
+}
+
+.leftBorderBlock {
+  @extend .rightBorderBlock;
+  border-right: none;
+  border-left: 2px solid wheat;
+}
+
+.emtyBlock {
+  @extend .rightBorderBlock;
+  border-bottom: none;
+  border-right: none;
+}
+
+.stageTitles {
+  font-size: 28px;
+  color: wheat;
+}
