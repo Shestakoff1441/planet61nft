@@ -1,31 +1,108 @@
-.roadmapContainer {
-  //   display: flex;
+.roadmapItem {
+  display: flex;
+  position: relative;
+  // padding-bottom: 120px;
+  min-height: 330px;
 }
-.rightBorderBlock {
+.roadMapBlockContent {
+  display: flex;
+  justify-content: flex-end;
   width: 50%;
-  box-sizing: inherit;
-  display: inline-flex;
+  border-right: 1px solid #f6ae18;
+}
+.infoRoadmapStep {
+  margin-right: 50px;
+  text-align: right;
+}
+.infoRoadmapStepReverse {
+  text-align: left;
+  margin-right: 0;
+  margin-left: 50px;
+}
+.pictureBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+}
+.reverse {
+  flex-direction: row-reverse;
+}
+.reverseBlock {
+  justify-content: flex-start;
+  border-left: 1px solid #f6ae18;
+  border-right: none;
+}
+
+.stagePhase {
+  margin: 14px 0 40px;
+  text-transform: uppercase;
+  font-size: 22px;
+  color: #f6ae18;
+}
+
+.goalBlock {
+  display: flex;
+  margin-bottom: 15px;
+  align-items: flex-start;
+}
+
+.stageDescription {
+  display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+}
+
+.stageGoal {
+  text-align: left;
+}
+
+.whitecircle {
+  min-width: 6px;
+  max-width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  margin-top: 5px;
+  background: #fff;
+  border-radius: 50%;
+}
+.numberOfStage {
+  display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px;
-  border-bottom: 2px solid wheat;
-  border-right: 2px solid wheat;
+  position: absolute;
+  left: 50%;
+  color: #f6ae18;
+  height: 50px;
+  padding-left: 4px;
+  padding-right: 4px;
+  min-width: 50px;
+  transform: translateX(-50%);
+  border-radius: 999px;
+  border: 3px solid #f6ae18;
+  background-color: black;
 }
 
-.leftBorderBlock {
-  @extend .rightBorderBlock;
-  border-right: none;
-  border-left: 2px solid wheat;
+.stageLineLeft {
+  width: 1px;
+  height: 180px;
+  position: absolute;
+  left: 49%;
+  top: 70px;
+  background: #f6ae18;
 }
 
-.emtyBlock {
-  @extend .rightBorderBlock;
-  border-bottom: none;
-  border-right: none;
-}
-
-.stageTitles {
-  font-size: 28px;
-  color: wheat;
+.stageLineRight {
+  width: 1px;
+  height: 180px;
+  position: absolute;
+  right: 49%;
+  top: 120px;
+  background: #f6ae18;
 }

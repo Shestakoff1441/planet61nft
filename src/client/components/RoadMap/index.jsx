@@ -1,55 +1,59 @@
 import Section from "../common/Section";
+import frida from "../../assets/images/frida.svg";
+import { roadmapData } from "./roadmapData";
+import classnames from "classnames";
 import styles from "./Roadmap.module.scss";
 
-import frida from "../../assets/images/frida.svg";
-import classnames from "classnames";
-
-const WithRightBorder = () => (
-  <div className={classnames(styles.rightBorderBlock)}>
-    <div className={styles.stageTitles}>
-      <div className={styles.stageNumber}>Stage1</div>
-      <div className={styles.stageName}>Mint</div>
+const RoadmapItem = ({ reverse, title, goals, stage, img }) => (
+  <div
+    className={classnames(styles.roadmapItem, {
+      [styles.reverse]: reverse
+    })}
+  >
+    <div className={styles.numberOfStage}>{stage}</div>
+    <div className={styles.stageLineLeft} />
+    <div className={styles.stageLineRight} />
+    <div
+      className={classnames(styles.roadMapBlockContent, {
+        [styles.reverseBlock]: reverse
+      })}
+    >
+      <div
+        className={classnames(styles.infoRoadmapStep, {
+          [styles.infoRoadmapStepReverse]: reverse
+        })}
+      >
+        <div className={styles.stagePhase}>{title}</div>
+        <div className={styles.stageDescription}>
+          {goals.map((goal) => (
+            <div className={styles.goalBlock}>
+              <div className={styles.whitecircle} />
+              <span className={styles.stageGoal}>{goal}</span>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
-    <ul className={styles.goalsList}>
-      <li>1</li>
-      <li>2</li>
-    </ul>
+    <div className={styles.pictureBlock}>
+      <img src={img} alt="" />
+    </div>
   </div>
 );
 
-const WithLeftBorder = () => (
-  <div className={classnames(styles.leftBorderBlock)}>
-    <div className={styles.stageTitles}>
-      <div className={styles.stageNumber}>Stage1</div>
-      <div className={styles.stageName}>Mint</div>
-    </div>
-    <ul className={styles.goalsList}>
-      <li>1</li>
-      <li>2</li>
-    </ul>
-  </div>
-);
-
-const EmptyBlock = () => <div className={styles.emtyBlock}>hello</div>;
-
-const data = [
-  { title: "hey", type: "right" },
-  { title: "" },
-  { title: "" },
-  { title: "hey", type: "left" }
-];
-
-const RoadmapBlock = {
-  right: WithRightBorder,
-  left: WithLeftBorder
-};
 const Roadmap = () => {
   return (
     <Section title="ROADMAP" background={frida}>
       <div className={styles.roadmapContainer}>
-        {data.map((el, index) => {
-          const RoadmapComponent = RoadmapBlock[el.type];
-          return el.title ? <RoadmapComponent /> : <EmptyBlock />;
+        {roadmapData.map((el, index) => {
+          return (
+            <RoadmapItem
+              stage={index + 1}
+              reverse={index % 2 !== 0}
+              title={el.title}
+              goals={el.goals}
+              img={el.image}
+            />
+          );
         })}
       </div>
     </Section>
