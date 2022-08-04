@@ -6,6 +6,7 @@ import MindMap from "../MindMap";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
 import Three from "../Three";
+import Roadmap from "../RoadMap";
 
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
@@ -27,6 +28,7 @@ const MainLayout = () => {
       <Three />
       <AfterMarsColonization />
       <MindMap />
+      <Roadmap />
     </main>
   );
 };

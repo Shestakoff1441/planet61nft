@@ -23,11 +23,8 @@ const sliderElements = [
 
 const SecondSection = () => {
   return (
-    <Section>
+    <Section title="ANDROMEDA">
       <div className={styles.container} id="amc">
-        <div className={styles.sectionTitle}>
-          ANDROMEDA
-        </div>
         {/* <div className={styles.sectionDescription}>
           The Earth has always been threatened by something... but the
           irrevocably expanding sun has done its job. People were forced to
