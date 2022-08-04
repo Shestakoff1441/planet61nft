@@ -4,7 +4,7 @@ import styles from "./Section.module.scss";
 const Section = ({
   background: { src } = "",
   title = "",
-  // bgc,
+  bgc,
   children,
   customStyles
 }) => {
@@ -14,7 +14,7 @@ const Section = ({
       className={classes(styles.section, customStyles)}
       style={{
         backgroundImage: `url(${src})`,
-        // backgroundColor: bgc ? bgc : "#1A213A"
+        backgroundColor: bgc ? bgc : "#0D0202"
       }}
     >
       <div className={styles.sectionContainer}>

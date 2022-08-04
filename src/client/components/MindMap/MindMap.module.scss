@@ -70,7 +70,8 @@
 }
 
 .descriptionTitle {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  font-size: 24px;
   color: #f6ae18;
 }
 @keyframes opace {
@@ -91,7 +92,10 @@
 }
 
 .descriptionDescribe {
+  padding: 0 70px;
   text-align: left;
+  font-size: 18px;
+  line-height: 20px;
 }
 @media screen and (max-width: 1100px) {
   .mindMapElement {

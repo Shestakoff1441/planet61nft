@@ -17,9 +17,9 @@ const MindMap = () => {
   };
 
   return (
-    <Section>
+    <Section title="MINDMAP" bgc="rgb(22 10 21)">
       <div className={styles.mindMapContainer} id="mm">
-        <div className={styles.MindMapTitle}>MINDMAP</div>
+        {/* <div className={styles.MindMapTitle}>MINDMAP</div> */}
         <div className={styles.MindMapDescription}>
           Planet61 is a project born out of love for space, technology and art.
           We are watching with curiosity and awe the desire of man to master the

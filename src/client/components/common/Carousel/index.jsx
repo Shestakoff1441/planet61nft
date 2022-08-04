@@ -14,24 +14,24 @@ const Carousel = ({ slides, cStyles }) => {
   useEffect(() => {
     setDomLoaded(true);
   }, []);
-  const SwiperButtonNext = () => (
-    <span data-test-id="my-btn-next" className={styles.nextBtn} />
-  );
+  // const SwiperButtonNext = () => (
+  //   <span data-test-id="my-btn-next" className={styles.nextBtn} />
+  // );
 
-  const SwiperButtonPrev = () => (
-    <span data-test-id="my-btn-prev" className={styles.prevBtn} />
-  );
+  // const SwiperButtonPrev = () => (
+  //   <span data-test-id="my-btn-prev" className={styles.prevBtn} />
+  // );
 
   return (
     <div className={styles.carouselWrapper}>
-      <SwiperButtonPrev />
+      {/* <SwiperButtonPrev /> */}
       <div className={cStyles}>
         {domLoaded && (
           <Swiper
-            navigation={{
-              nextEl: "[data-test-id=my-btn-next]",
-              prevEl: "[data-test-id=my-btn-prev]"
-            }}
+            // navigation={{
+            //   nextEl: "[data-test-id=my-btn-next]",
+            //   prevEl: "[data-test-id=my-btn-prev]"
+            // }}
             effect={"coverflow"}
             grabCursor={true}
             centeredSlides={true}
@@ -68,7 +68,7 @@ const Carousel = ({ slides, cStyles }) => {
           </Swiper>
         )}
       </div>
-      <SwiperButtonNext />
+      {/* <SwiperButtonNext /> */}
     </div>
   );
 };

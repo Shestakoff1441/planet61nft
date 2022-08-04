@@ -6,7 +6,7 @@ import RoadmapItem from "./RoadmapItem";
 
 const Roadmap = () => {
   return (
-    <Section title="ROADMAP" background={frida}>
+    <Section title="ROADMAP" background={frida} bgc="#050514">
       <div>
         {roadmapData.map((el, index) => {
           return (
