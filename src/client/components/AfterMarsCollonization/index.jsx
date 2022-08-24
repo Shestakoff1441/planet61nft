@@ -1,4 +1,4 @@
-import { useEffect, useState, useLayoutEffect } from "react";
+import { useEffect, useState } from "react";
 import Section from "../common/Section";
 import styles from "./AfterMarsColonization.module.scss";
 import CollectionBanner from "../common/CollectionBanner";
@@ -9,7 +9,6 @@ import cart4 from "../../assets/images/39.png";
 import cart5 from "../../assets/images/47.png";
 import cart6 from "../../assets/images/54.png";
 import Carousel from "../common/Carousel";
-import ViewButton from "../common/ViewButton";
 import RoundedPlanets from "../RoundPlanets";
 
 const sliderElements = [
