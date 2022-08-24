@@ -5,7 +5,7 @@ import MindMap from "../MindMap";
 // import dynamic from "next/dynamic";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
-import Three from "../Three";
+import GalaxyScreen from "../GalaxyScreen";
 import Roadmap from "../RoadMap";
 
 // const MintContainer = dynamic(() => import("../MintContainer"), {
@@ -15,7 +15,10 @@ import Roadmap from "../RoadMap";
 //   ssr: false
 // });
 
+
+
 const MainLayout = () => {
+
   return (
     <main className={styles.main}>
       <Head>
@@ -25,9 +28,9 @@ const MainLayout = () => {
       </Head>
       {/* <MintContainer /> */}
       {/* <InitialSection /> */}
-      <Three />
+      <GalaxyScreen />
       <AfterMarsColonization />
-      <MindMap />
+       <MindMap /> 
       <Roadmap />
     </main>
   );

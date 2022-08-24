@@ -14,10 +14,11 @@
 
 .title{
   font-size: 60px;
+  color: #f6ae18;
 }
 
 .second  {
-  top: 240px;
+  top: 220px;
   color: #fff;
   left:50px;
   font-size: 16px;
@@ -46,6 +47,12 @@
 
   to {
     left: 50px;
+  }
+}
+
+@media screen and (max-width:701px) {
+  .second{
+    width: 270px;
   }
 }
 

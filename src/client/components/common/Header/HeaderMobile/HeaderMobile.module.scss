@@ -42,8 +42,19 @@
   transform: translate3d(0, 0, 0);
 }
 
+.socialSectionStyles {
+  justify-content: flex-start;
+  margin-left: 12px;
+}
+
 @media screen and (min-width: 701px) {
   .navBlockStyles {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 701px) {
+  .socialSectionStyles {
     display: flex;
   }
 }

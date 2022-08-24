@@ -3,10 +3,10 @@ import opensea from "../../../../assets/images/icons/OpenSea-icon.svg";
 import twitter from "../../../../assets/images/icons/Twitter-Logo.svg";
 import instagram from "../../../../assets/images/icons/Instagram-Black-Logo.svg";
 import discord from "../../../../assets/images/icons/Discord_Black-Logo.svg";
-
 import styles from "./SocialSection.module.scss";
+import classnames from "classnames";
 
-const SocialSection = () => {
+const SocialSection = ({ classes }) => {
   const iconList = [
     {
       image: twitter,
@@ -31,7 +31,7 @@ const SocialSection = () => {
   ];
 
   return (
-    <div className={styles.socialContainer}>
+    <div className={classnames(styles.socialContainer, classes)}>
       {iconList.map((icon) => (
         <LinkComponent {...icon} key={icon.text} classes={[styles.iconLink]} />
       ))}

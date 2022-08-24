@@ -2,9 +2,16 @@
   min-width: 185px;
   color: wheat;
   background: transparent;
+  font-weight: 600;
   border: 1px solid wheat;
   padding: 10px;
   border-radius: 10px;
   margin: 0 20px;
   cursor: pointer;
+}
+
+@media screen and (max-width:701px){
+  .connectWalletButton{
+    margin: 0 10px;
+  }
 }

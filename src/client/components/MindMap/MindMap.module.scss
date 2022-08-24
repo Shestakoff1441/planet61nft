@@ -100,5 +100,16 @@
 @media screen and (max-width: 1100px) {
   .mindMapElement {
     width: 100%;
+
+    span{
+      font-size: 32px;
+    }
+  }
+}
+@media screen and (max-width: 601px) {
+  .mindMapElement {
+    span{
+      font-size: 32px;
+    }
   }
 }

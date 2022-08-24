@@ -7,6 +7,7 @@ import atmopsphereFragment from "./shaders/atmFragment.glsl";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import styles from "./RoundPlanets.module.scss";
 import GlobeLandScape from "../../assets/EarthLandScape/earth.jpg";
+import staticEarth from "../../assets/images/earthStatic.svg";
 import RoundMars from "../RoundMars";
 
 const RoundPlanets = () => {
@@ -71,7 +72,10 @@ const RoundPlanets = () => {
       camera.updateProjectionMatrix();
 
       // Update renderer
-      renderer.setSize(parentElement.offsetWidth / 2, innerHeight / 2);
+      renderer.setSize(
+        parentElement.offsetWidth / 2,
+        parentElement.offsetWidth / 3.8
+      );
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     });
     atmosphere.scale.set(1.1, 1.1, 1.1);
@@ -130,6 +134,9 @@ const RoundPlanets = () => {
             Pandemics do not stop in the world.
           </div>
         </div>
+      </div>
+      <div className={styles.mobileStaticPlanet}>
+        <img src={staticEarth.src} alt="" />
       </div>
 
       <RoundMars />

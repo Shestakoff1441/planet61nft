@@ -221,12 +221,10 @@ const SpaceThree = () => {
         <div className={styles.title}>PLANET 61</div>
       </div>
       <div className={styles.second}>
-        <p>
-          In 1961, exactly 61 years ago, man first went into low Earth orbit,
-          making a breakthrough on the way to conquering the Cosmos. PLANET61 is
-          a community that shares a passion for space, technology and art Join
-          us and discover new horizonts of your consciousness
-        </p>
+        In 1961, exactly 61 years ago, man first went into low Earth orbit,
+        making a breakthrough on the way to conquering the Cosmos. PLANET61 is a
+        community that shares a passion for space, technology and art Join us
+        and discover new horizonts of your consciousness
       </div>
       <LinkComponent
         text="VIEW ON MARKETPLACE"

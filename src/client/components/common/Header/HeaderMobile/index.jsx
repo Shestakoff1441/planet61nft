@@ -4,6 +4,7 @@ import styles from "./HeaderMobile.module.scss";
 import close from "../../../../assets/images/close.svg";
 import classNames from "classnames";
 import Navigation from "../Navigation";
+import SocialSection from "../SocialSection";
 
 const HeaderMobile = ({ onClose, isOpen }) => {
   return (
@@ -23,6 +24,7 @@ const HeaderMobile = ({ onClose, isOpen }) => {
           containerStyles={styles.navBlockStyles}
           linkStyles={styles.navLinkStyles}
         />
+        <SocialSection classes={styles.socialSectionStyles} />
       </div>
     </div>
   );

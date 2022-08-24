@@ -2,9 +2,10 @@
   display: flex;
   margin: 70px 30px;
   justify-content: space-between;
+  border-radius: 10px;
+  background-color: #393736;
   align-items: center;
   padding: 30px;
-  border: 2px solid #f6ae18;
 }
 
 .contentBlock {
@@ -30,10 +31,14 @@
   width: 220px;
 }
 
+.connectWalletStyles{
+  border: 1px solid white;
+  color: #fff;
+}
+
 @media screen and (max-width: 800px) {
   .bannerBlock {
     display: block;
-    border: 2px solid #f6ae18;
     border-radius: 10px;
   }
 
@@ -53,5 +58,9 @@
     font-weight: 700;
     font-size: 14px;
     background-color: transparent;
+  }
+
+  .connectWalletStyles{
+    margin-top: 40px;
   }
 }

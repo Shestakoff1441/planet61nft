@@ -27,7 +27,6 @@
   img {
     width: 300px;
     height: 300px;
-    border-radius: 50%;
   }
 }
 .reverse {
@@ -105,4 +104,25 @@
   right: 49%;
   top: 120px;
   background: #f6ae18;
+}
+
+@media screen and (max-width: 601px) {
+  .pictureBlock {
+    img {
+      width: 230px;
+      height: 230px;
+    }
+  }
+}
+
+@media screen and (max-width: 461px) {
+  .pictureBlock {
+    img {
+      width: 180px;
+      height: 180px;
+    }
+  }
+  .infoRoadmapStep{
+    margin-right: 20px;
+  }
 }

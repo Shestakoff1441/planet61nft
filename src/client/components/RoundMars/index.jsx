@@ -7,6 +7,7 @@ import atmopsphereFragment from "./shaders/atmFragment.glsl";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import styles from "../RoundPlanets/RoundPlanets.module.scss";
 import GlobeLandScape from "../../assets/EarthLandScape/mars2.jpeg";
+import marsStatic from "../../assets/images/marsStatic.svg";
 import classnames from "classnames";
 
 const RoundMars = () => {
@@ -71,10 +72,10 @@ const RoundMars = () => {
       camera.updateProjectionMatrix();
 
       // Update renderer
-      renderer.setSize(parentElement.offsetWidth / 2, innerHeight / 2);
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setSize(388, 388);
+      // renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     });
-    atmosphere.scale.set(1.1, 1.1, 1.1);
+    atmosphere.scale.set(1, 1, 1);
     scene.add(sphere);
     scene.add(atmosphere);
     camera.position.z = 10;
@@ -129,6 +130,9 @@ const RoundMars = () => {
           rainfall dominated by drought and lack of drinking water. Pandemics do
           not stop in the world.
         </div>
+      </div>
+      <div className={styles.mobileStaticPlanet}>
+        <img src={marsStatic.src} alt="" />
       </div>
     </div>
   );

@@ -6,30 +6,54 @@
   display: flex;
   font-family: Monserat;
 }
-.paragraphText{
+.paragraphText {
   font-size: 20px;
 }
 
-.yearTitle{
+.yearTitle {
   font-size: 28px;
 }
 
-.marsBlock{
+.infoBlock {
+  padding: 0 30px;
+}
+
+.marsBlock {
   margin-top: 70px;
 }
 
-.finalMarsSection{
-  margin: 170px 185px 0;
+.mobileStaticPlanet {
+  display: none;
+  justify-content: center;
+}
+
+.finalMarsSection {
+  margin: 170px 40px 0;
   width: 60%;
   font-family: Monserat;
   font-size: 20px;
 }
-.finalMarsSectionTitle{
+.finalMarsSectionTitle {
   text-transform: uppercase;
   font-size: 28px;
 }
-// @media screen and (max-width: 800px){
-//   .roundEarthContainer{
-//     flex-direction: column;
-//   }
-// }
+@media screen and (max-width: 1200px) {
+  .mobileStaticPlanet {
+    display: flex;
+    margin-top: 75px;
+  }
+  .roundEarthContainer {
+    flex-direction: column;
+    align-items: center;
+
+    canvas {
+      display: none;
+    }
+  }
+
+  .yearTitle {
+    text-align: center;
+    font-size: 32px;
+    margin: 30px 0;
+  }
+}

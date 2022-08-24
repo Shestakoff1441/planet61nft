@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
+import classnames from "classnames";
 import styles from "./ConnectWalletButton.module.scss";
-const ConnectWalletButton = () => {
+const ConnectWalletButton = ({ walletStyles }) => {
   const [currentAccount, setCurrentAccount] = useState("");
   const checkWalletIsConnected = async () => {
     const { ethereum } = window;
@@ -67,7 +68,7 @@ const ConnectWalletButton = () => {
   }, [currentAccount]);
   return (
     <button
-      className={styles.connectWalletButton}
+      className={classnames(styles.connectWalletButton, walletStyles)}
       onClick={connectWalletHandler}
     >
       {currentAccount ? (
@@ -75,7 +76,7 @@ const ConnectWalletButton = () => {
         "..." +
         String(currentAccount).substring(38)
       ) : (
-        <span>Connect Wallets</span>
+        <span>Connect Wallet</span>
       )}
     </button>
   );
