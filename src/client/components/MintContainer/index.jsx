@@ -564,45 +564,45 @@
 
 import { useEffect, useState } from "react";
 import { abi } from "./abi";
-import { merkleProof } from "./merkleProof";
+// import { merkleProof } from "./merkleProof";
 import Timer from "./Timer";
 
 const contractAddress = "0x22e7c4E56b410a6fC7707FDC7e4E4f982415841a";
 
 function App() {
-  const [currentAccount, setCurrentAccount] = useState("");
+  const [currentAccount] = useState("");
   const [timer, setTimer] = useState(0);
 
-  const checkWalletIsConnected = async () => {
-    const { ethereum } = window;
-    if (!ethereum) {
-      return;
-    }
-    const accounts = await ethereum.request({ method: "eth_accounts" });
+  // const checkWalletIsConnected = async () => {
+  //   const { ethereum } = window;
+  //   if (!ethereum) {
+  //     return;
+  //   }
+  //   const accounts = await ethereum.request({ method: "eth_accounts" });
 
-    if (accounts.length !== 0) {
-      const account = accounts[0];
-      setCurrentAccount(account);
-    } else {
-      console.log("No authorized account found");
-    }
-  };
+  //   if (accounts.length !== 0) {
+  //     const account = accounts[0];
+  //     setCurrentAccount(account);
+  //   } else {
+  //     console.log("No authorized account found");
+  //   }
+  // };
 
-  const connectWalletHandler = async () => {
-    const { ethereum } = window;
-    if (!ethereum) {
-      window.open("https://metamask.io/");
-    }
+  // const connectWalletHandler = async () => {
+  //   const { ethereum } = window;
+  //   if (!ethereum) {
+  //     window.open("https://metamask.io/");
+  //   }
 
-    try {
-      const accounts = await ethereum.request({
-        method: "eth_requestAccounts"
-      });
-      setCurrentAccount(accounts[0]);
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  //   try {
+  //     const accounts = await ethereum.request({
+  //       method: "eth_requestAccounts"
+  //     });
+  //     setCurrentAccount(accounts[0]);
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
   const getRequiredData = async () => {
     // let whiteListed = null;
@@ -628,106 +628,92 @@ function App() {
     }
   };
   useEffect(() => {
-    checkWalletIsConnected();
+    // checkWalletIsConnected();
     getRequiredData();
-    addWalletListener();
+    // addWalletListener();
   }, [currentAccount]);
 
-  const mintNftHandler = async () => {
-    let url = "";
-    try {
-      const amount = 4;
-      const value = BigInt(info.deploymentConfig.mintPrice) * BigInt(amount);
-      const publicMintActive = await window.contract.methods
-        .mintingActive()
-        .call();
-      const presaleMintActive = await window.contract.methods
-        .presaleActive()
-        .call();
-      // console.log("publ ", publicMintActive);
-      if (publicMintActive) {
-        // const mintTransaction = await window.contract.methods.mint(5).send({
-        //   from: contractAddress.toLowerCase(),
-        //   value: value.toString()
-        // });
-        // console.log("minttrans ", mintTransaction);
-      } else if (presaleMintActive) {
-        const merkleData = await merkleProof(
-          currentAccount,
-          "rinkeby",
-          contractAddress
-        );
-        const presaleMintTransaction = await window.contract.methods
-          .presaleMint(amount, JSON.parse(merkleData.body))
-          .send({ from: currentAccount, value: value.toString() });
-        console.log("presaleMintTransaction", presaleMintTransaction);
-        if (presaleMintTransaction) {
-          url = `https://rinkeby.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
-          console.log("url", url);
+  // const mintNftHandler = async () => {
+  //   let url = "";
+  //   try {
+  //     const amount = 4;
+  //     const value = BigInt(info.deploymentConfig.mintPrice) * BigInt(amount);
+  //     const publicMintActive = await window.contract.methods
+  //       .mintingActive()
+  //       .call();
+  //     const presaleMintActive = await window.contract.methods
+  //       .presaleActive()
+  //       .call();
+  //     // console.log("publ ", publicMintActive);
+  //     if (publicMintActive) {
+  //       // const mintTransaction = await window.contract.methods.mint(5).send({
+  //       //   from: contractAddress.toLowerCase(),
+  //       //   value: value.toString()
+  //       // });
+  //       // console.log("minttrans ", mintTransaction);
+  //     } else if (presaleMintActive) {
+  //       const merkleData = await merkleProof(
+  //         currentAccount,
+  //         "rinkeby",
+  //         contractAddress
+  //       );
+  //       const presaleMintTransaction = await window.contract.methods
+  //         .presaleMint(amount, JSON.parse(merkleData.body))
+  //         .send({ from: currentAccount, value: value.toString() });
+  //       console.log("presaleMintTransaction", presaleMintTransaction);
+  //       if (presaleMintTransaction) {
+  //         url = `https://rinkeby.etherscan.io/tx/${presaleMintTransaction.transactionHash}`;
+  //         console.log("url", url);
 
-          console.log(
-            "Minted successfully!",
-            `Transaction Hash: ${presaleMintTransaction.transactionHash}`
-          );
-        } else {
-          console.log("min_failed");
-        }
-        console.log("presaleMintTransaction ", presaleMintTransaction);
-      }
-    } catch (err) {
-      console.log(err);
-    }
-  };
+  //         console.log(
+  //           "Minted successfully!",
+  //           `Transaction Hash: ${presaleMintTransaction.transactionHash}`
+  //         );
+  //       } else {
+  //         console.log("min_failed");
+  //       }
+  //       console.log("presaleMintTransaction ", presaleMintTransaction);
+  //     }
+  //   } catch (err) {
+  //     console.log(err);
+  //   }
+  // };
 
-  const mintNftButton = () => {
-    return (
-      <button onClick={mintNftHandler} className="cta-button mint-nft-button">
-        Mint NFT
-      </button>
-    );
-  };
-  const addWalletListener = () => {
-    if (window.ethereum) {
-      window.ethereum.on("accountsChanged", (accounts) => {
-        if (accounts.length > 0) {
-          setCurrentAccount(accounts[0]);
-        } else {
-          setCurrentAccount("");
-        }
-      });
-    } else {
-      setStatus(
-        <p>
-          {" "}
-          🦊{" "}
-          <a
-            target="_blank"
-            href={"https://metamask.io/download.html"}
-            rel="noreferrer"
-          >
-            You must install Metamask, a virtual Ethereum wallet, in your
-            browser.
-          </a>
-        </p>
-      );
-    }
-  };
+  // const mintNftButton = () => {
+  //   return (
+  //     <button onClick={mintNftHandler} className="cta-button mint-nft-button">
+  //       Mint NFT
+  //     </button>
+  //   );
+  // };
+  // const addWalletListener = () => {
+  //   if (window.ethereum) {
+  //     window.ethereum.on("accountsChanged", (accounts) => {
+  //       if (accounts.length > 0) {
+  //         setCurrentAccount(accounts[0]);
+  //       } else {
+  //         setCurrentAccount("");
+  //       }
+  //     });
+  //   } else {
+  //     setStatus(
+  //       <p>
+  //         {" "}
+  //         🦊{" "}
+  //         <a
+  //           target="_blank"
+  //           href={"https://metamask.io/download.html"}
+  //           rel="noreferrer"
+  //         >
+  //           You must install Metamask, a virtual Ethereum wallet, in your
+  //           browser.
+  //         </a>
+  //       </p>
+  //     );
+  //   }
+  // };
 
-  return (
-    <div className="main-app" style={{ marginTop: "100px" }}>
-      <button id="walletButton" onClick={connectWalletHandler}>
-        {currentAccount ? (
-          String(currentAccount).substring(0, 6) +
-          "..." +
-          String(currentAccount).substring(38)
-        ) : (
-          <span>Connect Wallets</span>
-        )}
-      </button>
-      <Timer time={timer} />
-      {currentAccount && mintNftButton()}
-    </div>
-  );
+  return <Timer time={timer} />;
 }
 
 export default App;

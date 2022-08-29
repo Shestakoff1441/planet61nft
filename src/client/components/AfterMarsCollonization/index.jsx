@@ -11,6 +11,8 @@ import cart6 from "../../assets/images/54.png";
 import Carousel from "../common/Carousel";
 import RoundedPlanets from "../RoundPlanets";
 
+
+
 const sliderElements = [
   { url: cart3 },
   { url: cart4 },

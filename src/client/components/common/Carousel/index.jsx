@@ -52,11 +52,11 @@ const Carousel = ({ slides, cStyles }) => {
             breakpoints={{
               770: {
                 slidesPerView: 2,
-                spaceBetween: 50
+                spaceBetween: 10
               },
               1180: {
                 slidesPerView: 3,
-                spaceBetween: 50
+                spaceBetween: 10
               }
             }}
           >
