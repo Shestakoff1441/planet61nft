@@ -11,7 +11,7 @@
 }
 
 .yearTitle {
-  font-size: 28px;
+  font-size: 32px;
 }
 
 .infoBlock {
@@ -20,6 +20,11 @@
 
 .marsBlock {
   margin-top: 70px;
+}
+
+.paragraphText{
+  font-size: 18px;
+  font-weight: normal;
 }
 
 .mobileStaticPlanet {
@@ -31,11 +36,13 @@
   margin: 170px 40px 0;
   width: 60%;
   font-family: Monserat;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: normal;
 }
 .finalMarsSectionTitle {
   text-transform: uppercase;
-  font-size: 28px;
+  font-family: Monserat;
+  font-size: 32px;
 }
 @media screen and (max-width: 1200px) {
   .mobileStaticPlanet {

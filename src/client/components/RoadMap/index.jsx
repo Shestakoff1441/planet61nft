@@ -1,10 +1,10 @@
 import Section from "../common/Section";
-import frida from "../../assets/images/frida.svg";
+import bg from "../../assets/images/bga.svg";
 import { roadmapData } from "./roadmapData";
 import RoadmapItem from "./RoadmapItem";
 
 const Roadmap = () => (
-  <Section title="ROADMAP" background={frida} bgc="#050514">
+  <Section title="ROADMAP" background={bg} bgc="#050514">
     <div>
       {roadmapData.map((el, index) => (
         <RoadmapItem

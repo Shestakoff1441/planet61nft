@@ -1,6 +1,6 @@
 .container {
   display: flex;
-  min-height: 690px;
+  min-height: 615px;
   background-image: url("../../assets//images/skyelement.svg");
   background-size: cover;
   flex-direction: column;
@@ -93,6 +93,7 @@
   }
   .picture {
     display: flex;
+    padding: 0;
   }
   .viewBtnContainer {
     display: flex;

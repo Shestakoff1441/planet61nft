@@ -17,7 +17,7 @@ const MindMap = () => {
   };
 
   return (
-    <Section title="MINDMAP" bgc="rgb(22 10 21)">
+    <Section title="MINDMAP" bgc="rgb(22 10 21)" customStyles={styles.mindmapSectionPadd}>
       <div className={styles.mindMapContainer} id="mm">
         {/* <div className={styles.MindMapTitle}>MINDMAP</div> */}
         <div className={styles.MindMapDescription}>

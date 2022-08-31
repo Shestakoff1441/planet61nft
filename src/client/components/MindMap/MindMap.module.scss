@@ -26,22 +26,26 @@
   margin: 10px;
   height: 350px;
   background-size: cover;
+  border: 1px solid #fff;
   border-radius: 10px;
-  opacity: 0.6;
   &:hover {
     cursor: pointer;
-    opacity: 1;
+    border-color: #f6ae18;
+    span{
+      color: #f6ae18;
+    }
   }
 
   span {
     position: absolute;
     z-index: 1000;
-    min-width: 350px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // min-width: 350px;
+    font-family: "Stick No Bills";
+    bottom: 40px;
+    right: 40px;
+    // transform: translate(-50%, -50%);
     color: #fff;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: bold;
   }
 }
@@ -72,6 +76,11 @@
   font-size: 24px;
   color: #f6ae18;
 }
+
+// .mindmapSectionPadd{
+//   padding-top: 70px;
+// }
+
 @keyframes opace {
   from {
     opacity: 0;

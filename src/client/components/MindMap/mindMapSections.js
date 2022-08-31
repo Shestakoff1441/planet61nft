@@ -1,7 +1,7 @@
-import SavePlanetBackground from "../../assets/EarthLandScape/savePlanet.webp";
-import CollaborationBackground from "../../assets/EarthLandScape/collaboration.webp";
-import GiveAwayBackground from "../../assets/EarthLandScape/giveAway.jpeg";
-import CommunityBackground from "../../assets/EarthLandScape/community.webp";
+import SavePlanetBackground from "../../assets/EarthLandScape/spp.jpg";
+// import CollaborationBackground from "../../assets/EarthLandScape/collaboration.webp";
+// import GiveAwayBackground from "../../assets/EarthLandScape/giveAway.jpeg";
+// import CommunityBackground from "../../assets/EarthLandScape/community.webp";
 export const sections = {
   savePlanet: {
     title: "SAVE PLANET",
@@ -11,19 +11,19 @@ export const sections = {
   },
   community: {
     title: "COMMUNITY",
-    background: CommunityBackground.src,
+    background: SavePlanetBackground.src,
     description:
       "WE FORM A COMMUNITY THAT SHARES OUR GOALS AND INTERESTS IN STRIVING TO MAKE THE WORLD BETTER AND MORE INTERESTING.<br></br>WE STRIVE TO UNITE TALENTED PEOPLE WHO LOVE TO CREATE AMBITIOUS PROJECTS IN THE FIELD OF ART, INFORMATION TECHNOLOGY AND CHARITY PROJECTS.<br></br>BY JOINING PLANET61 YOU ARE TAKE A SMALL STEP FOR HUMAN, BUT A HUGE STEP FOR THE FUTURE OF HUMANITY AND OUR PLANET."
   },
   giveAway: {
     title: "GIVE AWAY",
-    background: GiveAwayBackground.src,
+    background: SavePlanetBackground.src,
     description:
       "WE HAVE A SERIES OF ONLINE AND OFFLINE EVENTS THAT MEMBERS OF THE PLANET61 COMMUNITY CAN ATTEND. IN ADDITION TO EXCITING EVENTS SUCH AS PROJECT LAUNCH CELEBRATIONS AND COMMUNITY ACHIEVEMENT CELEBRATIONS, WE WILL BE GIVEN UNIQUE PRIZES WHICH OUR NFT OWNERS WILL DEFINITELY LOVE. <br></br>AND AFTER THE COLLECTION IS REALIZED, WE WILL DRAW A SPACE SUPER PRIZE WHICH WILL LEAVE THE LUCKY OWNER DELIGHTED. BUT MORE ABOUT THIS LATER)"
   },
   collaboration: {
     title: "COLLABORATION",
-    background: CollaborationBackground.src,
+    background: SavePlanetBackground.src,
     description:
       "SOON WE WILL INTRODUCE THE SPACE COLLECTION OF ‘ANDROMEDA SPC T-SHIRTS’ WHICH WE DEVELOPED TOGETHER WITH A TALENTED CLOTHING DESIGNER!<br></br>THE COLLECTION WILL BE PRESENTED IN THE ONLINE STORE, WHERE EACH COMMUNITY MEMBER WILL BE PERSONALIZED DISCOUNT. AND WE WILL DONATE ANOTHER 10% OF THE COST OF EVERY T-SHIRT TO TEAMSEAS"
   }
