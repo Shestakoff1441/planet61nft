@@ -1,4 +1,4 @@
-import SavePlanetBackground from "../../assets/EarthLandScape/spp.jpg";
+import SavePlanetBackground from "../../assets/EarthLandScape/svp.jpg";
 // import CollaborationBackground from "../../assets/EarthLandScape/collaboration.webp";
 // import GiveAwayBackground from "../../assets/EarthLandScape/giveAway.jpeg";
 // import CommunityBackground from "../../assets/EarthLandScape/community.webp";

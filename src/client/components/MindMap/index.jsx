@@ -46,17 +46,20 @@ const MindMap = () => {
               <div
                 className={styles.mindMapElement}
                 key={section}
-                style={{
-                  backgroundImage: `url(${sections[section].background})`
-                }}
+                style={
+                  {
+                    // backgroundImage: `url(${sections[section].background})`
+                  }
+                }
                 onClick={() => setSectionDescription(sections[section])}
               >
-                <div
+                <img
+                  src={sections[section].background}
                   className={classnames(
                     // styles[section],
-                    styles.backgroundStyles
+                    styles.mindmapImage
                   )}
-                ></div>
+                />
                 <span>{sections[section].title}</span>
               </div>
             ))}

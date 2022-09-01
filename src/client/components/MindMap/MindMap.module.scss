@@ -24,7 +24,6 @@
   position: relative;
   width: 48%;
   margin: 10px;
-  height: 350px;
   background-size: cover;
   border: 1px solid #fff;
   border-radius: 10px;
@@ -41,8 +40,8 @@
     z-index: 1000;
     // min-width: 350px;
     font-family: "Stick No Bills";
-    bottom: 40px;
-    right: 40px;
+    bottom: 25px;
+    right: 20px;
     // transform: translate(-50%, -50%);
     color: #fff;
     font-size: 30px;
@@ -106,6 +105,13 @@
   font-size: 18px;
   line-height: 20px;
   text-align: justify;
+}
+.mindmapImage{
+  width: 100%;
+  padding: 0;
+  height: auto;
+  max-height: 300px;
+  border-radius: 10px;
 }
 @media screen and (max-width: 1100px) {
   .mindMapElement {
