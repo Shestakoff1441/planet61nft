@@ -17,7 +17,7 @@ const RoundPlanets = () => {
       height: window.innerHeight
     };
     const canvas = document.querySelector("#earthCanvas");
-    const parentElement = document.querySelector("#roundEarthContainer");
+    // const parentElement = document.querySelector("#roundEarthContainer");
 
     const scene = new THREE.Scene();
 
@@ -33,11 +33,8 @@ const RoundPlanets = () => {
       // antialias: true,
       alpha: true
     });
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(
-      parentElement.offsetWidth / 2,
-      parentElement.offsetWidth / 3.8
-    );
+    // renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(520, 440);
 
     const sphere = new THREE.Mesh(
       new THREE.SphereGeometry(5, 50, 50),
@@ -64,19 +61,16 @@ const RoundPlanets = () => {
 
     window.addEventListener("resize", () => {
       // Update sizes
-      sizes.width = window.innerWidth;
-      sizes.height = window.innerHeight;
+      // sizes.width = window.innerWidth;
+      // sizes.height = window.innerHeight;
 
       // Update camera
-      camera.aspect = sizes.width / sizes.height;
-      camera.updateProjectionMatrix();
+      // camera.aspect = sizes.width / sizes.height;
+      // camera.updateProjectionMatrix();
 
       // Update renderer
-      renderer.setSize(
-        parentElement.offsetWidth / 2,
-        parentElement.offsetWidth / 3.8
-      );
-      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.setSize(520, 440);
+      // renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     });
     atmosphere.scale.set(1.1, 1.1, 1.1);
     scene.add(sphere);

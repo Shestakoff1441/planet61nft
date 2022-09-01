@@ -4,7 +4,6 @@ import SwiperCore, { EffectCoverflow, Autoplay } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-// import { useState, useEffect } from "react";
 
 SwiperCore.use([Autoplay]);
 
@@ -60,7 +59,7 @@ const Carousel = ({ slides, cStyles }) => {
         >
           {slides.map((el, index) => (
             <SwiperSlide key={`${index}`}>
-              <img src={el.url.src} className={styles.slideElement} />
+              <img src={el.url.src} className={styles.slideElement} alt="" />
             </SwiperSlide>
           ))}
         </Swiper>

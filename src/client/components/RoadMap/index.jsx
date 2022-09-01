@@ -5,9 +5,10 @@ import RoadmapItem from "./RoadmapItem";
 
 const Roadmap = () => (
   <Section title="ROADMAP" background={bg} bgc="#050514">
-    <div>
+    <div id="rm">
       {roadmapData.map((el, index) => (
         <RoadmapItem
+          key={el.title}
           stage={index + 1}
           reverse={index % 2 !== 0}
           title={el.title}

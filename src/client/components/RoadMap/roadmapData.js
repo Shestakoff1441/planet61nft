@@ -2,6 +2,7 @@ import nobackAndromeda_1 from "../../assets/images/noBack_1.svg";
 import nobackAndromeda_2 from "../../assets/images/noBack_2.svg";
 import nobackAndromeda_3 from "../../assets/images/noBack_3.svg";
 import nobackAndromeda_4 from "../../assets/images/noBack_4.svg";
+import nobackAndromeda_5 from "../../assets/images/noBack_5.svg";
 
 export const roadmapData = [
   {
@@ -32,7 +33,7 @@ export const roadmapData = [
   },
   {
     title: "100% sold out",
-    image: nobackAndromeda_1.src,
+    image: nobackAndromeda_5.src,
     goals: [
       "Publish collection on marketplace",
       "We will raffle between all Andromeda holders awesome super prize. What is it? exclusive 6-day tour to the Baikonur Cosmodrome, where you can watch the launch of the spacecraft (we also cover the cost of plane tickets regardless of your location)",

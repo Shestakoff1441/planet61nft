@@ -1,4 +1,3 @@
-
 import classnames from "classnames";
 import styles from "./RoadmapItem.module.scss";
 
@@ -24,7 +23,7 @@ const RoadmapItem = ({ reverse, title, goals, stage, img }) => (
         <div className={styles.stagePhase}>{title}</div>
         <div className={styles.stageDescription}>
           {goals.map((goal) => (
-            <div className={styles.goalBlock}>
+            <div className={styles.goalBlock} key={goal}>
               <div className={styles.whitecircle} />
               <span className={styles.stageGoal}>{goal}</span>
             </div>

@@ -17,7 +17,7 @@ const RoundMars = () => {
       height: window.innerHeight
     };
     const canvas = document.querySelector("#marsCanvas");
-    const parentElement = document.querySelector("#roundEarthContainer");
+    // const parentElement = document.querySelector("#roundEarthContainer");
 
     const scene = new THREE.Scene();
 
@@ -33,11 +33,8 @@ const RoundMars = () => {
       // antialias: true,
       alpha: true
     });
-    renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(
-      parentElement.offsetWidth / 2,
-      parentElement.offsetWidth / 3.8
-    );
+    // renderer.setPixelRatio(window.devicePixelRatio);
+    renderer.setSize(520, 440);
 
     const sphere = new THREE.Mesh(
       new THREE.SphereGeometry(4.5, 30, 30),
@@ -64,15 +61,15 @@ const RoundMars = () => {
 
     window.addEventListener("resize", () => {
       // Update sizes
-      sizes.width = window.innerWidth;
-      sizes.height = window.innerHeight;
+      // sizes.width = window.innerWidth;
+      // sizes.height = window.innerHeight;
 
       // Update camera
-      camera.aspect = sizes.width / sizes.height;
+      // camera.aspect = sizes.width / sizes.height;
       camera.updateProjectionMatrix();
 
       // Update renderer
-      renderer.setSize(388, 388);
+      renderer.setSize(520, 440);
       // renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     });
     atmosphere.scale.set(1, 1, 1);

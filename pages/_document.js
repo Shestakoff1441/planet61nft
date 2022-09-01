@@ -45,6 +45,10 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200&display=swap"
           rel="stylesheet"
         />
+        <link
+          href="http://fonts.cdnfonts.com/css/montserrat"
+          rel="stylesheet"
+        />
         <script src="/metamask-onboarding.bundle.js" async />
         <script src="/web3.min.js" async />
       </Head>

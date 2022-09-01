@@ -25,8 +25,8 @@
   justify-content: center;
   width: 50%;
   img {
-    width: 300px;
-    height: 300px;
+    width: 313px;
+    height: 313px;
   }
 }
 .reverse {
@@ -39,6 +39,7 @@
 }
 
 .stagePhase {
+  min-width: 140px;
   margin: 14px 0 40px;
   text-transform: uppercase;
   font-size: 22px;
@@ -56,6 +57,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
+  font-size: 13px;
 }
 
 .stageGoal {
@@ -118,11 +120,19 @@
 @media screen and (max-width: 461px) {
   .pictureBlock {
     img {
-      width: 180px;
-      height: 180px;
+      width: 189px;
+      height: 189px;
     }
   }
   .infoRoadmapStep{
+    margin-right: 20px;
+  }
+
+  .infoRoadmapStepReverse{
+    margin-left: 35px;
+  }
+
+  .stagePhase{
     margin-right: 20px;
   }
 }

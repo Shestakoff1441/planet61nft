@@ -188,7 +188,7 @@ const SpaceThree = () => {
     scene.add(camera);
 
     const controls = new OrbitControls(camera, canvas);
-    controls.enabled = true;
+    controls.enabled = window.innerWidth > 961 ? true : false;
     controls.autoRotate = true;
     controls.autoRotateSpeed = 1.5;
     controls.minZoom = 3;
@@ -231,7 +231,7 @@ const SpaceThree = () => {
         community that shares a passion for space, technology and art Join us
         and discover new horizonts of your consciousness
       </div>
-      <MintContainer/>
+      <MintContainer />
       <LinkComponent
         text="VIEW ON MARKETPLACE"
         classes={styles.initialSectionButton}

@@ -11,8 +11,6 @@ import cart6 from "../../assets/images/54.png";
 import Carousel from "../common/Carousel";
 import RoundedPlanets from "../RoundPlanets";
 
-
-
 const sliderElements = [
   { url: cart3 },
   { url: cart4 },
@@ -24,7 +22,9 @@ const sliderElements = [
 
 const AfterMarsCollonization = () => {
   const [currentPicture, setCurrentPicture] = useState("");
+  const [isRenderSlider, setIsRenderSlider] = useState(false);
   useEffect(() => {
+    setIsRenderSlider(true);
     let number = 0;
     const interval = setInterval(() => {
       number++;
@@ -37,16 +37,19 @@ const AfterMarsCollonization = () => {
   return (
     <Section title="ANDROMEDA">
       <div className={styles.container} id="amc">
-        <Carousel slides={sliderElements} cStyles={styles.carouselContainer} />
-
-        <div className={styles.mobilePictureBlock}>
-          <img
-            className={styles.picture}
-            src={currentPicture}
-            alt=""
-            layout="fill"
+        {isRenderSlider && (
+          <Carousel
+            slides={sliderElements}
+            cStyles={styles.carouselContainer}
           />
-        </div>
+        )}
+
+        <img
+          className={styles.picture}
+          src={currentPicture}
+          alt=""
+          layout="fill"
+        />
       </div>
 
       <RoundedPlanets />
@@ -54,7 +57,9 @@ const AfterMarsCollonization = () => {
         href="https://www.binance.com/fr/nft/profile/planet61-3949254e9009569f223e41a9c530aef2"
         btnText="CHOOSE ANDROMEDA"
         bannerText="This is limited collection of 2000 NFT. 
-We represent what will the new race look like. How the human being has evolved over 8000 years in the process of adapting life under the influence of radiation, weak gravity, lack of oxygen?  We represrnt Andromeda"
+          We represent what will the new race look like. How the human being has evolved over 8000 
+          years in the process of adapting life under the influence of radiation, weak gravity, lack of oxygen?  
+          We represrnt Andromeda"
       />
     </Section>
   );
