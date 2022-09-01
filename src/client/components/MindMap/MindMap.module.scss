@@ -116,6 +116,12 @@
     }
   }
 }
+
+@media screen and (max-width:801px){
+  .MindMapDescription{
+    padding: 0;
+  }
+}
 @media screen and (max-width: 601px) {
   .mindMapElement {
     span {

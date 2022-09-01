@@ -3,16 +3,16 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import VertexShader from "./shaders/vertex.glsl";
 import FragmentShader from "./shaders/fragment.glsl";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import styles from "./GalaxyScreen.module.scss";
 // import Logo from "../../assets/images/Logo.svg";
 // import * as dat from "lil-gui";
 import { useEffect } from "react";
 import LinkComponent from "../common/LinkComponent";
 
-const MintContainer = dynamic(() => import("../MintContainer"), {
-  ssr: false
-});
+// const MintContainer = dynamic(() => import("../MintContainer"), {
+//   ssr: false
+// });
 
 const SpaceThree = () => {
   useEffect(() => {
@@ -188,8 +188,9 @@ const SpaceThree = () => {
     scene.add(camera);
 
     const controls = new OrbitControls(camera, canvas);
-    controls.enabled = window.innerWidth > 961 ? true : false;
+    controls.enabled = true;
     controls.autoRotate = true;
+    controls.enableRotate = true;
     controls.autoRotateSpeed = 1.5;
     controls.minZoom = 3;
     controls.enableZoom = false;
@@ -231,7 +232,7 @@ const SpaceThree = () => {
         community that shares a passion for space, technology and art Join us
         and discover new horizonts of your consciousness
       </div>
-      <MintContainer />
+      {/* <MintContainer /> */}
       <LinkComponent
         text="VIEW ON MARKETPLACE"
         classes={styles.initialSectionButton}

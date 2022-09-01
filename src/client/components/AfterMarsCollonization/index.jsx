@@ -22,9 +22,9 @@ const sliderElements = [
 
 const AfterMarsCollonization = () => {
   const [currentPicture, setCurrentPicture] = useState("");
-  const [isRenderSlider, setIsRenderSlider] = useState(false);
+  // const [isRenderSlider, setIsRenderSlider] = useState(false);
   useEffect(() => {
-    setIsRenderSlider(true);
+    // setIsRenderSlider(true);
     let number = 0;
     const interval = setInterval(() => {
       number++;
@@ -37,12 +37,12 @@ const AfterMarsCollonization = () => {
   return (
     <Section title="ANDROMEDA">
       <div className={styles.container} id="amc">
-        {isRenderSlider && (
+        {/* {isRenderSlider && ( */}
           <Carousel
             slides={sliderElements}
             cStyles={styles.carouselContainer}
           />
-        )}
+        {/* )} */}
 
         <img
           className={styles.picture}

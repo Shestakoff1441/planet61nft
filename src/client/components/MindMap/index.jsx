@@ -14,10 +14,21 @@ const MindMap = () => {
 
   const setSectionDescription = (section) => {
     setActiveSection(section);
+    setTimeout(() => {
+      const getSection = document.getElementById(section.title);
+      if (getSection) {
+        getSection.scrollIntoView(100);
+        window.scrollBy(0, -70);
+      }
+    }, 0);
   };
 
   return (
-    <Section title="MINDMAP" bgc="rgb(22 10 21)" customStyles={styles.mindmapSectionPadd}>
+    <Section
+      title="MINDMAP"
+      bgc="rgb(22 10 21)"
+      customStyles={styles.mindmapSectionPadd}
+    >
       <div className={styles.mindMapContainer} id="mm">
         {/* <div className={styles.MindMapTitle}>MINDMAP</div> */}
         <div className={styles.MindMapDescription}>
@@ -53,7 +64,7 @@ const MindMap = () => {
         )}
         {activeSection.description && (
           <>
-            <div className={styles.sectionDescription}>
+            <div className={styles.sectionDescription} id={activeSection.title}>
               <span
                 className={styles.closeDescriptionSection}
                 onClick={() => setSectionDescription(initilActiveSectionValue)}

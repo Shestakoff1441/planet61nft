@@ -36,6 +36,7 @@ const Carousel = ({ slides, cStyles }) => {
           speed={1200}
           slidesPerView={2}
           autoplay={{ delay: 2000, disableOnInteraction: false }}
+          spaceBetween={10}
           coverflowEffect={{
             rotate: 100,
             stretch: 0,
@@ -46,16 +47,16 @@ const Carousel = ({ slides, cStyles }) => {
           modules={[Autoplay, EffectCoverflow]}
           className="mySwiper"
           loop
-          breakpoints={{
-            770: {
-              slidesPerView: 2,
-              spaceBetween: 10
-            },
-            1180: {
-              slidesPerView: 3,
-              spaceBetween: 10
-            }
-          }}
+          // breakpoints={{
+          //   770: {
+          //     slidesPerView: 2,
+          //     spaceBetween: 10
+          //   },
+          //   1180: {
+          //     slidesPerView: 3,
+          //     spaceBetween: 10
+          //   }
+          // }}
         >
           {slides.map((el, index) => (
             <SwiperSlide key={`${index}`}>
