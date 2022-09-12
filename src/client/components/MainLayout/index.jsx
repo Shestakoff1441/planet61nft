@@ -1,4 +1,3 @@
-
 import AfterMarsColonization from "../AfterMarsCollonization";
 import MindMap from "../MindMap";
 // import RoundEarth from "../RoundEarth";
@@ -7,6 +6,7 @@ import styles from "./MainLayout.module.scss";
 import Head from "next/head";
 import GalaxyScreen from "../GalaxyScreen";
 import Roadmap from "../RoadMap";
+import QuestionSection from "../QuestionSection";
 
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
@@ -15,10 +15,7 @@ import Roadmap from "../RoadMap";
 //   ssr: false
 // });
 
-
-
 const MainLayout = () => {
-
   return (
     <main className={styles.main}>
       <Head>
@@ -29,8 +26,9 @@ const MainLayout = () => {
       {/* <MintContainer /> */}
       <GalaxyScreen />
       <AfterMarsColonization />
-       <MindMap /> 
+      <MindMap />
       <Roadmap />
+      <QuestionSection />
     </main>
   );
 };
