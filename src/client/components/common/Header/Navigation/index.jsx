@@ -53,14 +53,16 @@ import classNames from "classnames";
 //   );
 // };
 
-const Navigation = ({ containerStyles, linkStyles, onClick }) => (
+const Navigation = ({ containerStyles, linkStyles, onClick, mobile }) => (
   <nav className={classNames(styles.navigation, containerStyles)}>
     {navigationLinks.map((link) => (
       <LinkComponent
+        mobile={mobile}
         onClick={onClick}
         text={link.title}
         href={link.href}
         key={link.title}
+        id={link.href}
         classes={classNames(styles.navigationElement, linkStyles)}
       />
     ))}

@@ -1,8 +1,8 @@
-import nobackAndromeda_1 from "../../assets/images/noBack_1.svg";
-import nobackAndromeda_2 from "../../assets/images/noBack_2.svg";
-import nobackAndromeda_3 from "../../assets/images/noBack_3.svg";
-import nobackAndromeda_4 from "../../assets/images/noBack_4.svg";
-import nobackAndromeda_5 from "../../assets/images/noBack_5.svg";
+import nobackAndromeda_1 from "../../assets/images/Andromeda_No_Background_1.png";
+import nobackAndromeda_2 from "../../assets/images/Andromeda_No_Background_2.png";
+import nobackAndromeda_3 from "../../assets/images/Andromeda_No_Background_3.png";
+import nobackAndromeda_4 from "../../assets/images/Andromeda_No_Background_4.png";
+import nobackAndromeda_5 from "../../assets/images/Andromeda_No_Background_5.png";
 
 export const roadmapData = [
   {

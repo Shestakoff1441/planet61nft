@@ -13,6 +13,7 @@
 
 .infoBlock {
   padding: 0 30px;
+  width: 70%;
 }
 
 .marsBlock {
@@ -22,7 +23,6 @@
 .paragraphText{
   font-size: 18px;
   font-weight: normal;
-  text-align: justify;
 }
 
 .mobileStaticPlanet {
@@ -49,6 +49,13 @@
   width: 480px !important;
   height: 480px !important;
 }
+
+.desktopPlanetBlock{
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 @media screen and (max-width: 1200px) {
   .mobileStaticPlanet {
     display: flex;
@@ -67,6 +74,9 @@
     canvas {
       display: none;
     }
+    .desktopPlanetBlock{
+      display: none;
+    }
   }
 
   .yearTitle {
@@ -76,6 +86,16 @@
   }
 }
 
+@media screen and (max-width: 1201px) {
+  .infoBlock{
+    padding: 0;
+    width: 100%;
+  }
+
+  .finalMarsSection{
+    padding: 0;
+  }
+}
 @media screen and (max-width: 801px) {
   .infoBlock{
     padding: 0;

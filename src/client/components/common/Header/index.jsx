@@ -39,6 +39,19 @@ const HeaderComponent = () => {
   const changeExpand = () => setExpanded(() => !isExpanded);
   const scrollDirection = useScrollDirection();
 
+  const scrollSmoothTo = (elementId, isMobile) => {
+    const element = document.getElementById(elementId);
+    if (element) {
+      element.scrollIntoView({
+        block: "start"
+      });
+    }
+
+    if (isMobile) {
+      changeExpand();
+    }
+  };
+
   const cls =
     scrollDirection === true ? styles.header_hidden : styles.header_visible;
 
@@ -48,9 +61,11 @@ const HeaderComponent = () => {
         <ExpandElement onClick={changeExpand} isExpanded={isExpanded} />
         <Logo />
       </div>
-      <Navigation />
+
+      <Navigation onClick={scrollSmoothTo} />
+      <ConnectWalletButton />
+
       <div className={styles.socialBtnBlock}>
-        <ConnectWalletButton />
         <SocialSection />
       </div>
     </header>
@@ -59,7 +74,7 @@ const HeaderComponent = () => {
     <>
       {/* {process.env.WEBSITE_TITLE} */}
       <DesktopHeader />
-      <HeaderMobile onClose={changeExpand} isOpen={isExpanded} />
+      <HeaderMobile toNavigate={scrollSmoothTo} isOpen={isExpanded} mobile />
     </>
   );
 };

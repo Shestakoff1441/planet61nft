@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   // padding-bottom: 120px;
-  min-height: 330px;
+  min-height: 332px;
 }
 .roadMapBlockContent {
   display: flex;
@@ -119,10 +119,10 @@
 
 @media screen and (max-width: 461px) {
   .pictureBlock {
-    img {
-      width: 189px;
-      height: 189px;
-    }
+    // img {
+    //   width: 189px;
+    //   height: 189px;
+    // }
   }
   .infoRoadmapStep{
     margin-right: 20px;

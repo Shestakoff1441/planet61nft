@@ -7,24 +7,24 @@ export const sections = {
     title: "SAVE PLANET",
     background: SavePlanetBackground.src,
     description:
-      "WE PRESENT SUCH A PAINFUL BUT AT THE SAME TIME REALISTIC SCENARIO OF THE EARTH'S FUTURE TO REMIND HUMAN THAT THE TIME HAS COME TO REJECT UNCONSCIOUS CONSUMPTION AND START DOING CONCRETE ACTIONS FOR ASSPENSION OF OUR PLANET.<br></br> THE PLANET61 COMMUNITY SUPPORTS A NUMBER OF PROJECTS INCLUDING TEAMTREES AND TEAMSEAS. BY BECOMING NFT OWNER, YOU MAKE THE EARTH GREENER AND THE OCEANS CLEANER. WE ARE CURRENTLY DEVELOPING OUR OWN PROJECT NAMED 'PLANET61.ENERGY', WHICH IS ASSOCIATED WITH THE CONSUMPTION OF SOLAR ENERGY"
+      "We present such a painful but at the same time realistic scenario of the earth's future to remind human that the time has come to reject unconscious consumption and start doing concrete actions for asspension of our planet.<br></br> The planet61 community supports a number of projects including teamtrees and teamseas. By becoming nft owner, you make the earth greener and the oceans cleaner. We are currently developing our own project named 'planet61.energy', which is associated with the consumption of solar energy"
   },
   community: {
     title: "COMMUNITY",
     background: SavePlanetBackground.src,
     description:
-      "WE FORM A COMMUNITY THAT SHARES OUR GOALS AND INTERESTS IN STRIVING TO MAKE THE WORLD BETTER AND MORE INTERESTING.<br></br>WE STRIVE TO UNITE TALENTED PEOPLE WHO LOVE TO CREATE AMBITIOUS PROJECTS IN THE FIELD OF ART, INFORMATION TECHNOLOGY AND CHARITY PROJECTS.<br></br>BY JOINING PLANET61 YOU ARE TAKE A SMALL STEP FOR HUMAN, BUT A HUGE STEP FOR THE FUTURE OF HUMANITY AND OUR PLANET."
+      "We form a community that shares our goals and interests in striving to make the world better and more interesting.<br></br> We strive to unite talented people who love to create ambitious projects in the field of art, information technology and charity projects.<br></br> By joining planet61 you are take a small step for human, but a huge step for the future of humanity and our planet."
   },
   giveAway: {
     title: "GIVE AWAY",
     background: SavePlanetBackground.src,
     description:
-      "WE HAVE A SERIES OF ONLINE AND OFFLINE EVENTS THAT MEMBERS OF THE PLANET61 COMMUNITY CAN ATTEND. IN ADDITION TO EXCITING EVENTS SUCH AS PROJECT LAUNCH CELEBRATIONS AND COMMUNITY ACHIEVEMENT CELEBRATIONS, WE WILL BE GIVEN UNIQUE PRIZES WHICH OUR NFT OWNERS WILL DEFINITELY LOVE. <br></br>AND AFTER THE COLLECTION IS REALIZED, WE WILL DRAW A SPACE SUPER PRIZE WHICH WILL LEAVE THE LUCKY OWNER DELIGHTED. BUT MORE ABOUT THIS LATER)"
+      "We have a series of online and offline events that members of the planet61 community can attend. In addition to exciting events such as project launch celebrations and community achievement celebrations, we will be given unique prizes which our nft owners will definitely love.<br></br> And after the collection is realized, we will draw a space super prize which will leave the lucky owner delighted. But more about this later."
   },
   collaboration: {
     title: "COLLABORATION",
     background: SavePlanetBackground.src,
     description:
-      "SOON WE WILL INTRODUCE THE SPACE COLLECTION OF ‘ANDROMEDA SPC T-SHIRTS’ WHICH WE DEVELOPED TOGETHER WITH A TALENTED CLOTHING DESIGNER!<br></br>THE COLLECTION WILL BE PRESENTED IN THE ONLINE STORE, WHERE EACH COMMUNITY MEMBER WILL BE PERSONALIZED DISCOUNT. AND WE WILL DONATE ANOTHER 10% OF THE COST OF EVERY T-SHIRT TO TEAMSEAS"
+      "Soon we will introduce the space collection of ‘andromeda spc t-shirts’ which we developed together with a talented clothing designer! <br></br> The collection will be presented in the online store, where each community member will be personalized discount. And we will donate another 10% of the cost of every t-shirt to teamseas."
   }
 };

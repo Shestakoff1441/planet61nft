@@ -33,7 +33,7 @@ const SocialSection = ({ classes }) => {
   return (
     <div className={classnames(styles.socialContainer, classes)}>
       {iconList.map((icon) => (
-        <LinkComponent {...icon} key={icon.text} classes={[styles.iconLink]} />
+        <LinkComponent {...icon} key={icon.text} classes={[styles.iconLink]} blank/>
       ))}
     </div>
   );

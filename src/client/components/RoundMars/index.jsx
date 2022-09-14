@@ -1,104 +1,94 @@
-import { useEffect } from "react";
-import * as THREE from "three";
-import vertexShader from "./shaders/vertex.glsl";
-import fragmentShader from "./shaders/fragment.glsl";
-import atmopsphereVertex from "./shaders/atmVertex.glsl";
-import atmopsphereFragment from "./shaders/atmFragment.glsl";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-import styles from "../RoundPlanets/RoundPlanets.module.scss";
-import GlobeLandScape from "../../assets/EarthLandScape/mars2.jpeg";
+// import { useEffect } from "react";
+// import * as THREE from "three";
+// import vertexShader from "./shaders/vertex.glsl";
+// import fragmentShader from "./shaders/fragment.glsl";
+// import atmopsphereVertex from "./shaders/atmVertex.glsl";
+// import atmopsphereFragment from "./shaders/atmFragment.glsl";
+// import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
+
+// import GlobeLandScape from "../../assets/EarthLandScape/mars2.jpeg";
 import marsStatic from "../../assets/images/marsStatic.svg";
 import classnames from "classnames";
+import styles from "../RoundPlanets/RoundPlanets.module.scss";
 
 const RoundMars = () => {
-  useEffect(() => {
-    const sizes = {
-      width: window.innerWidth,
-      height: window.innerHeight
-    };
-    const canvas = document.querySelector("#marsCanvas");
-    // const parentElement = document.querySelector("#roundEarthContainer");
+  // useEffect(() => {
+  //   const sizes = {
+  //     width: window.innerWidth,
+  //     height: window.innerHeight
+  //   };
+  //   const canvas = document.querySelector("#marsCanvas");
 
-    const scene = new THREE.Scene();
+  //   const scene = new THREE.Scene();
 
-    const camera = new THREE.PerspectiveCamera(
-      75,
-      sizes.width / sizes.height,
-      0.1,
-      1000
-    );
+  //   const camera = new THREE.PerspectiveCamera(
+  //     75,
+  //     sizes.width / sizes.height,
+  //     0.1,
+  //     1000
+  //   );
 
-    const renderer = new THREE.WebGLRenderer({
-      canvas,
-      // antialias: true,
-      alpha: true
-    });
-    // renderer.setPixelRatio(window.devicePixelRatio);
-    renderer.setSize(520, 440);
+  //   const renderer = new THREE.WebGLRenderer({
+  //     canvas,
+  //     // antialias: true,
+  //     alpha: true
+  //   });
+  //   renderer.setSize(520, 440);
 
-    const sphere = new THREE.Mesh(
-      new THREE.SphereGeometry(4.5, 30, 30),
-      new THREE.ShaderMaterial({
-        vertexShader,
-        fragmentShader,
-        uniforms: {
-          globeTexture: {
-            value: new THREE.TextureLoader().load(GlobeLandScape.src)
-          }
-        }
-      })
-    );
+  //   const sphere = new THREE.Mesh(
+  //     new THREE.SphereGeometry(4.5, 30, 30),
+  //     new THREE.ShaderMaterial({
+  //       vertexShader,
+  //       fragmentShader,
+  //       uniforms: {
+  //         globeTexture: {
+  //           value: new THREE.TextureLoader().load(GlobeLandScape.src)
+  //         }
+  //       }
+  //     })
+  //   );
 
-    const atmosphere = new THREE.Mesh(
-      new THREE.SphereGeometry(4.5, 30, 30),
-      new THREE.ShaderMaterial({
-        vertexShader: atmopsphereVertex,
-        fragmentShader: atmopsphereFragment,
-        blending: THREE.AdditiveBlending,
-        side: THREE.BackSide
-      })
-    );
+  //   const atmosphere = new THREE.Mesh(
+  //     new THREE.SphereGeometry(4.5, 30, 30),
+  //     new THREE.ShaderMaterial({
+  //       vertexShader: atmopsphereVertex,
+  //       fragmentShader: atmopsphereFragment,
+  //       blending: THREE.AdditiveBlending,
+  //       side: THREE.BackSide
+  //     })
+  //   );
 
-    window.addEventListener("resize", () => {
-      // Update sizes
-      // sizes.width = window.innerWidth;
-      // sizes.height = window.innerHeight;
+  //   window.addEventListener("resize", () => {
+  //     camera.updateProjectionMatrix();
+  //     renderer.setSize(520, 440);
+  //   });
+  //   atmosphere.scale.set(1, 1, 1);
+  //   scene.add(sphere);
+  //   scene.add(atmosphere);
+  //   camera.position.z = 10;
+  //   const controls = new OrbitControls(camera, canvas);
+  //   controls.enabled = true;
+  //   controls.enableZoom = false;
 
-      // Update camera
-      // camera.aspect = sizes.width / sizes.height;
-      camera.updateProjectionMatrix();
-
-      // Update renderer
-      renderer.setSize(520, 440);
-      // renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    });
-    atmosphere.scale.set(1, 1, 1);
-    scene.add(sphere);
-    scene.add(atmosphere);
-    camera.position.z = 10;
-    const controls = new OrbitControls(camera, canvas);
-    controls.enabled = true;
-    // controls.autoRotateSpeed = 0.5;
-    // controls.minZoom = 30;
-    controls.enableZoom = false;
-
-    const animate = () => {
-      requestAnimationFrame(animate);
-      controls.update();
-      renderer.render(scene, camera);
-      sphere.rotation.y += 0.004;
-    };
-    animate();
-  }, []);
+  //   const animate = () => {
+  //     requestAnimationFrame(animate);
+  //     controls.update();
+  //     renderer.render(scene, camera);
+  //     sphere.rotation.y += 0.004;
+  //   };
+  //   animate();
+  // }, []);
   return (
     <div
       className={classnames(styles.roundEarthContainer, styles.marsBlock)}
       id="roundEarthContainer"
     >
-      <canvas
+      {/* <canvas
         id="marsCanvas"
-        // style={{ width: "100vw", height: "100vh" }}
-      ></canvas>
+      ></canvas> */}
+      <div className={styles.desktopPlanetBlock}>
+        <img src={marsStatic.src} alt="" />
+      </div>
       <div className={styles.infoBlock}>
         <div className={styles.yearTitle}> 2261</div>
         <br></br>

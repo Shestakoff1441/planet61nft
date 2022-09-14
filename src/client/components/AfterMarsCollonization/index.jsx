@@ -35,13 +35,10 @@ const AfterMarsCollonization = () => {
   }, []);
 
   return (
-    <Section title="ANDROMEDA">
-      <div className={styles.container} id="amc">
+    <Section title="ANDROMEDA" id="amc">
+      <div className={styles.container}>
         {/* {isRenderSlider && ( */}
-          <Carousel
-            slides={sliderElements}
-            cStyles={styles.carouselContainer}
-          />
+        <Carousel slides={sliderElements} cStyles={styles.carouselContainer} />
         {/* )} */}
 
         <img

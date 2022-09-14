@@ -4,8 +4,8 @@ import { roadmapData } from "./roadmapData";
 import RoadmapItem from "./RoadmapItem";
 
 const Roadmap = () => (
-  <Section title="ROADMAP" background={bg} bgc="#050514">
-    <div id="rm">
+  <Section title="ROADMAP" background={bg} bgc="#050514" id="rm">
+    <div>
       {roadmapData.map((el, index) => (
         <RoadmapItem
           key={el.title}

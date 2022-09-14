@@ -39,7 +39,11 @@
 }
 
 @media screen and (max-width: 701px) {
-  .socialBtnBlock {
-    display: flex;
+  // .socialBtnBlock {
+  //   display: flex;
+  // }
+
+  .header{
+    justify-content: space-between;
   }
 }

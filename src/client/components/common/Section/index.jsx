@@ -4,16 +4,16 @@ import styles from "./Section.module.scss";
 const Section = ({
   background: { src } = "",
   title = "",
-  // bgc,
+  id,
   children,
   customStyles
 }) => {
-
   return (
     <section
+      id={id}
       className={classes(styles.section, customStyles)}
       style={{
-        backgroundImage: `url(${src})`,
+        backgroundImage: `url(${src})`
         // backgroundColor: bgc ? bgc : "#0D0202"
       }}
     >

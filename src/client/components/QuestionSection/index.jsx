@@ -21,19 +21,19 @@ const vars = {
 
 const QuestionSection = () => {
   return (
-    <Section title="QUESTIONS">
-      <CAccordion style={vars}>
-        {questionSectionData.map(({ question, response }, index) => (
-          <CAccordionItem
-            itemKey={index}
-            className={style.itemStyles}
-            key={question}
-          >
-            <CAccordionHeader>{question}</CAccordionHeader>
-            <CAccordionBody>{response}</CAccordionBody>
-          </CAccordionItem>
-        ))}
-      </CAccordion>
+    <Section title="QUESTIONS" id="qs">
+        <CAccordion style={vars}>
+          {questionSectionData.map(({ question, response }, index) => (
+            <CAccordionItem
+              itemKey={index}
+              className={style.itemStyles}
+              key={question}
+            >
+              <CAccordionHeader>{question}</CAccordionHeader>
+              <CAccordionBody>{response}</CAccordionBody>
+            </CAccordionItem>
+          ))}
+        </CAccordion>
     </Section>
   );
 };

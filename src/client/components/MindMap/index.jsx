@@ -17,8 +17,8 @@ const MindMap = () => {
     setTimeout(() => {
       const getSection = document.getElementById(section.title);
       if (getSection) {
-        getSection.scrollIntoView(100);
-        window.scrollBy(0, -70);
+        getSection.scrollIntoView("alignToTop");
+        // window.scrollBy(0, 0);
       }
     }, 0);
   };
@@ -28,6 +28,7 @@ const MindMap = () => {
       title="MINDMAP"
       bgc="rgb(22 10 21)"
       customStyles={styles.mindmapSectionPadd}
+      id="mm"
     >
       <div className={styles.mindMapContainer} id="mm">
         {/* <div className={styles.MindMapTitle}>MINDMAP</div> */}
@@ -80,7 +81,7 @@ const MindMap = () => {
               <div
                 className={styles.descriptionDescribe}
                 dangerouslySetInnerHTML={{
-                  __html: activeSection.description.toLocaleLowerCase()
+                  __html: activeSection.description
                 }}
               ></div>
             </div>
