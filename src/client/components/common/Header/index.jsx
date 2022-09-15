@@ -37,6 +37,7 @@ const useScrollDirection = () => {
 const HeaderComponent = () => {
   const [isExpanded, setExpanded] = useState(false);
   const changeExpand = () => setExpanded(() => !isExpanded);
+
   const scrollDirection = useScrollDirection();
 
   const scrollSmoothTo = (elementId, isMobile) => {
