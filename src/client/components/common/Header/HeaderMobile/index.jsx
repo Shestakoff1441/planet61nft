@@ -6,7 +6,7 @@ import classNames from "classnames";
 import Navigation from "../Navigation";
 import SocialSection from "../SocialSection";
 
-const HeaderMobile = ({ toNavigate, isOpen, mobile }) => {
+const HeaderMobile = ({ toNavigate, isOpen, mobile, onClose }) => {
   return (
     <div className={styles.mobileHeaderContainer}>
       <div
@@ -15,8 +15,8 @@ const HeaderMobile = ({ toNavigate, isOpen, mobile }) => {
         })}
       >
         <div className={styles.mobileHeaderClose}>
-          <span onClick={toNavigate} className={styles.closeBtn}>
-            <Image src={close.src} height={36} width={36} alt="" />
+          <span onClick={onClose} className={styles.closeBtn}>
+            <Image src={close.src} height={20} width={20} alt="" />
           </span>
         </div>
         <Navigation

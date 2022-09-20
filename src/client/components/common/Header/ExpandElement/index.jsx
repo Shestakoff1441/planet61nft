@@ -6,7 +6,7 @@ import styles from "./ExpandElement.module.scss";
 const ExpandElement = ({ onClick }) => {
   return (
     <span onClick={onClick} className={styles.expanedElement}>
-      <Image src={burgerMenu.src} height={22} width={22} alt="" />
+      <Image src={burgerMenu.src} height={24} width={24} alt="" />
     </span>
   );
 };

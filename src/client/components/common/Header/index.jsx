@@ -59,7 +59,7 @@ const HeaderComponent = () => {
   const DesktopHeader = () => (
     <header className={classnames(styles.header, cls)}>
       <div className={styles.logoExpandElemBlock}>
-        <ExpandElement onClick={changeExpand} isExpanded={isExpanded} />
+        <ExpandElement onClick={changeExpand} />
         <Logo />
       </div>
 
@@ -73,9 +73,13 @@ const HeaderComponent = () => {
   );
   return (
     <>
-      {/* {process.env.WEBSITE_TITLE} */}
       <DesktopHeader />
-      <HeaderMobile toNavigate={scrollSmoothTo} isOpen={isExpanded} mobile />
+      <HeaderMobile
+        toNavigate={scrollSmoothTo}
+        isOpen={isExpanded}
+        mobile
+        onClose={changeExpand}
+      />
     </>
   );
 };

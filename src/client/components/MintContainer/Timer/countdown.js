@@ -8,10 +8,21 @@ export const countdown = (time, minusTime = 0) => {
   const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((diff % (1000 * 60)) / 1000);
 
-  const mDays = days < 10 ? `0${days}` : days;
-  const mHours = hours < 10 ? `0${hours}` : hours;
-  const mMinutes = minutes < 10 ? `0${minutes}` : minutes;
-  const mSeconds = seconds < 10 ? `0${seconds}` : seconds;
+  const mDays = days < 10 ? ["0", `${days}`] : days.toString().split("");
+  const mHours = hours < 10 ? ["0", `${hours}`] : hours.toString().split("");
+  const mMinutes =
+    minutes < 10 ? ["0", `${minutes}`] : minutes.toString().split("");
+  const mSeconds =
+    seconds < 10 ? ["0", `${seconds}`] : seconds.toString().split("");
 
-  return `${mDays}${mHours}${mMinutes}${mSeconds}`;
+  // return `${mDays}${mHours}${mMinutes}${mSeconds}`;
+  // if( !days && !hours && !minutes && !seconds) {
+  //   return 'hello'
+  // }
+  return {
+    days: mDays,
+    hours: mHours,
+    minutes: mMinutes,
+    seconds: mSeconds
+  };
 };

@@ -1,5 +1,5 @@
 // import { useEffect } from "react";
-// import styles from "./MintContainer.module.scss";
+
 
 // const MintContainer = () => {
 //   useEffect(() => {
