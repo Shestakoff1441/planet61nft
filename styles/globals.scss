@@ -23,7 +23,7 @@ a {
 }
 @media screen and (max-width: 801px) {
   canvas {
-    // touch-action: auto !important;
+    touch-action: auto !important;
   }
 }
 
