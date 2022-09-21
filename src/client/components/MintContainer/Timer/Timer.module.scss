@@ -28,7 +28,7 @@
   min-width: 546px;
   background: #000000;
   text-align: center;
-  padding: 25px;
+  padding: 25px 15px;
   border-radius: 10px;
 }
 .titleOfMintBlock {
@@ -42,6 +42,7 @@
 }
 .timeBlock {
   display: flex;
+  justify-content: center;
 }
 
 .uotSection {
@@ -76,7 +77,6 @@
 
 .connectWallet {
   margin-top: 60px;
-  width: 278px;
 }
 
 @keyframes showLeft {
@@ -101,14 +101,36 @@
 
 @media screen and (max-width: 800px) {
   .FlipClock {
-    display: none;
+    min-width: 500px;
+  }
+
+  .contentBlock{
+    min-width: 500px;
+    padding: 25px 0;
+  }
+  .uotCurrentTime{
+    min-width: 40px;
+    min-height: 50px;
+    font-size: 24px;
+    margin-right: 1px;
   }
   .uotSection {
-    margin-right: 8px;
+    margin: 0 4px;
   }
   .numberOfUot {
     min-width: 20px;
   }
+}
+@media screen and (max-width:601px) {
+   .FlipClock {
+    min-width: 90%;
+    margin: 0 auto;
+  }
+  .contentBlock{
+    min-width: 90%;
+    padding: 20px 10px;
+  }
+
 }
 
 @keyframes showLeftMobile {

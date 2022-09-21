@@ -3,7 +3,7 @@ import ConnectWalletButton from "../../common/ConnectWalletButton";
 import { countdown } from "../Timer/countdown";
 import styles from "./Timer.module.scss";
 const Timer = ({ time }) => {
-  const [currentTime, setCurrentTime] = useState([]);
+  const [currentTime, setCurrentTime] = useState(countdown(time || 1665865248));
   let timer;
   const runTimer = () => {
     timer = setInterval(() => {
@@ -21,7 +21,8 @@ const Timer = ({ time }) => {
   });
 
   return (
-    Object.keys(currentTime).length && (
+    Object.keys(currentTime).length &&
+    time > 0 && (
       <div className={styles.FlipClock}>
         <div className={styles.contentBlock}>
           <div className={styles.titleOfMintBlock}>{"Don't miss our drop"}</div>

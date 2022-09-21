@@ -1,6 +1,5 @@
 // import { useEffect } from "react";
 
-
 // const MintContainer = () => {
 //   useEffect(() => {
 //     let accounts;
@@ -568,10 +567,12 @@ import { abi } from "./abi";
 import Timer from "./Timer";
 
 const contractAddress = "0x22e7c4E56b410a6fC7707FDC7e4E4f982415841a";
+const mint_public_start_date =
+  new Date(process.env.NEXT_PUBLIC_MINT_START_DATE).getTime() / 1000;
 
 function App() {
   const [currentAccount] = useState("");
-  const [timer, setTimer] = useState(0);
+  // const [timer, setTimer] = useState(false);
 
   // const checkWalletIsConnected = async () => {
   //   const { ethereum } = window;
@@ -609,22 +610,23 @@ function App() {
     if (window.ethereum) {
       window.web3 = new Web3(window.ethereum);
       window.contract = new web3.eth.Contract(abi, contractAddress);
-      window.info = await window.contract.methods.getInfo().call();
-      setTimer(Number(info.runtimeConfig.publicMintStart));
-      try {
-        // const merkleData = await merkleProof(
-        //   currentAccount,
-        //   "rinkeby",
-        //   contractAddress
-        // );
-        // if (currentAccount && merkleData.body.length) {
-        //   whiteListed = await contract.methods
-        //     .isWhitelisted(currentAccount, JSON.parse(merkleData.body))
-        //     .call();
-        // }
-      } catch (err) {
-        console.log(err);
-      }
+      // const info = await window.contract.methods.getInfo().call();
+      // setTimer(Number(info.runtimeConfig.publicMintStart));
+      // try {
+      //   const merkleData = await merkleProof(
+      //     currentAccount,
+      //     "rinkeby",
+      //     contractAddress
+      //   );
+      //   if (currentAccount && merkleData.body.length) {
+      //     whiteListed = await contract.methods
+      //       .isWhitelisted(currentAccount, JSON.parse(merkleData.body))
+      //       .call();
+      //   }
+      // }
+      // catch (err) {
+      //   console.log(err);
+      // }
     }
   };
   useEffect(() => {
@@ -713,7 +715,7 @@ function App() {
   //   }
   // };
 
-  return <Timer time={timer} />;
+  return <Timer time={mint_public_start_date} />;
 }
 
 export default App;
