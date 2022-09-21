@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import Logo from "./Logo";
-import Navigation from "./Navigation";
+import Logo from "../Logo";
+import Navigation from "../Navigation";
 import SocialSection from "./SocialSection";
 import styles from "./Header.module.scss";
 import ExpandElement from "./ExpandElement";
@@ -60,7 +60,9 @@ const HeaderComponent = () => {
     <header className={classnames(styles.header, cls)}>
       <div className={styles.logoExpandElemBlock}>
         <ExpandElement onClick={changeExpand} />
-        <Logo />
+        <div className={styles.logoContainer}>
+          <Logo />
+        </div>
       </div>
 
       <Navigation onClick={scrollSmoothTo} />

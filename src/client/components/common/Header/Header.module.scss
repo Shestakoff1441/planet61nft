@@ -38,10 +38,18 @@
   }
 }
 
+.logoContainer{
+  margin-right: 15px;
+}
+
 @media screen and (max-width: 701px) {
   // .socialBtnBlock {
   //   display: flex;
   // }
+  .logoContainer{
+    margin-right: 0;
+    margin-left: 20px;
+  }
 
   .header{
     justify-content: space-between;

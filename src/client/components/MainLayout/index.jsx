@@ -7,6 +7,7 @@ import Head from "next/head";
 import GalaxyScreen from "../GalaxyScreen";
 import Roadmap from "../RoadMap";
 import QuestionSection from "../QuestionSection";
+import Footer from "../Footer";
 
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
@@ -28,6 +29,7 @@ const MainLayout = () => {
       <MindMap />
       <Roadmap />
       <QuestionSection />
+      <Footer/>
     </main>
   );
 };

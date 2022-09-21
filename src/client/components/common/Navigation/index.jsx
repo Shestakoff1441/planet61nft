@@ -1,9 +1,9 @@
 // import React, { useState, useEffect, useRef } from "react";
-import LinkComponent from "../../LinkComponent";
+import LinkComponent from "../LinkComponent";
 import styles from "./Navigation.module.scss";
 // import ArrowDown from "../../../../assets/images/icons/arrow-234.svg";
 // import ArrowUp from "../../../../assets/images/icons/north-arrow-235.svg";
-import { navigationLinks } from "../navigationLinks.js";
+import { navigationLinks } from "./navigationLinks.js";
 import classNames from "classnames";
 
 // const ExpandedMenu = ({ link }) => {

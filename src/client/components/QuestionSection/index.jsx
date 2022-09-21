@@ -8,7 +8,7 @@ import {
 import "@coreui/coreui/dist/css/coreui.min.css";
 import { questionSectionData } from "./questionSectionData";
 import downArrow from "../../assets/images/icons/arrow-234.svg";
-import style from "./QuestionSection.module.scss";
+import styles from "./QuestionSection.module.scss";
 
 const vars = {
   "--cui-accordion-btn-bg": "#17263c",
@@ -21,12 +21,12 @@ const vars = {
 
 const QuestionSection = () => {
   return (
-    <Section title="QUESTIONS" id="qs">
+    <Section title="QUESTIONS" id="qs" customStyles={styles.questionCustomstyles}>
         <CAccordion style={vars}>
           {questionSectionData.map(({ question, response }, index) => (
             <CAccordionItem
               itemKey={index}
-              className={style.itemStyles}
+              className={styles.itemStyles}
               key={question}
             >
               <CAccordionHeader>{question}</CAccordionHeader>

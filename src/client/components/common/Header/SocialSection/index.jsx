@@ -1,7 +1,7 @@
 import LinkComponent from "../../LinkComponent";
 import opensea from "../../../../assets/images/icons/OpenSea-icon.svg";
 import twitter from "../../../../assets/images/icons/Twitter-Logo.svg";
-import instagram from "../../../../assets/images/icons/Instagram-Black-Logo.svg";
+// import instagram from "../../../../assets/images/icons/Instagram-Black-Logo.svg";
 import discord from "../../../../assets/images/icons/Discord_Black-Logo.svg";
 import styles from "./SocialSection.module.scss";
 import classnames from "classnames";
@@ -13,11 +13,11 @@ const SocialSection = ({ classes }) => {
       text: "twitter",
       href: "https://twitter.com/Planet61NFT"
     },
-    {
-      image: instagram,
-      text: "instagram",
-      href: "https://www.instagram.com/planet61nft/"
-    },
+    // {
+    //   image: instagram,
+    //   text: "instagram",
+    //   href: "https://www.instagram.com/planet61nft/"
+    // },
     {
       image: opensea,
       text: "opensea",
