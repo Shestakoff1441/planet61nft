@@ -119,7 +119,7 @@ const ConnectWalletButton = ({ replaceTo, walletStyles }) => {
   const Component = components["mint"];
   return (
     <>
-      {replaceTo ? (
+      {replaceTo && currentAccount ? (
         <Component />
       ) : (
         <button
