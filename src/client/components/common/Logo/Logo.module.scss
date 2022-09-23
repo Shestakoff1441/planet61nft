@@ -16,8 +16,8 @@
   color: #fff;
 }
 
-// @media screen and (max-width: 701px) {
-//   .logo {
-//     margin-left: 20px;
-//   }
-// }
+@media screen and (min-width: 701px) {
+  .logo {
+    margin: 0 30px;
+  }
+}

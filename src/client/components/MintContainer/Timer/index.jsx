@@ -43,7 +43,10 @@ const Timer = ({ time }) => {
               </div>
             ))}
           </div>
-          <ConnectWalletButton walletStyles={styles.connectWallet} />
+          <ConnectWalletButton
+            walletStyles={styles.connectWallet}
+            replaceTo="mint"
+          />
         </div>
       </div>
     )

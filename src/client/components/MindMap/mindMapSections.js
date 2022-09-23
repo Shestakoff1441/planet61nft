@@ -1,7 +1,7 @@
 import SavePlanetBackground from "../../assets/EarthLandScape/svp.jpg";
-// import CollaborationBackground from "../../assets/EarthLandScape/collaboration.webp";
+import CollaborationBackground from "../../assets/images/collab.JPG";
 // import GiveAwayBackground from "../../assets/EarthLandScape/giveAway.jpeg";
-// import CommunityBackground from "../../assets/EarthLandScape/community.webp";
+import CommunityBackground from "../../assets/images/communityBag.JPG";
 export const sections = {
   savePlanet: {
     title: "SAVE PLANET",
@@ -11,7 +11,7 @@ export const sections = {
   },
   community: {
     title: "COMMUNITY",
-    background: SavePlanetBackground.src,
+    background: CommunityBackground.src,
     description:
       "We form a community that shares our goals and interests in striving to make the world better and more interesting.<br></br> We strive to unite talented people who love to create ambitious projects in the field of art, information technology and charity projects.<br></br> By joining planet61 you are take a small step for human, but a huge step for the future of humanity and our planet."
   },
@@ -23,7 +23,7 @@ export const sections = {
   },
   collaboration: {
     title: "COLLABORATION",
-    background: SavePlanetBackground.src,
+    background: CollaborationBackground.src,
     description:
       "Soon we will introduce the space collection of ‘andromeda spc t-shirts’ which we developed together with a talented clothing designer! <br></br> The collection will be presented in the online store, where each community member will be personalized discount. And we will donate another 10% of the cost of every t-shirt to teamseas."
   }

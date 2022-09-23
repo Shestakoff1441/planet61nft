@@ -99,7 +99,7 @@ const RoundMars = () => {
         </div>
         <br></br>
         <div className={styles.paragraphText}>
-          Mars is still the most colonizable planet in the solar system. And man
+          Mars is still the most colonizable planet in the Solar System. And man
           successfully builds the first settlements.
         </div>
         <br></br>
@@ -109,14 +109,9 @@ const RoundMars = () => {
           average temperature is -80 C. In addition to the cold, dry
           environment, lack of air and giant sandstorms, man will have to face
           high levels of solar radiation, which is extremely dangerous due to
-          the lack of an ozone layer on Mars.
+          the lack of the ozone layer on Mars.
         </div>
         <br></br>
-        <div className={styles.paragraphText}>
-          In Central Asia, Mediterranean, South Africa, Australia due to reduced
-          rainfall dominated by drought and lack of drinking water. Pandemics do
-          not stop in the world.
-        </div>
       </div>
       <div className={styles.mobileStaticPlanet}>
         <img src={marsStatic.src} alt="" />

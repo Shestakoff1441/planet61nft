@@ -89,32 +89,38 @@ const RoundPlanets = () => {
         <div className={styles.infoBlock}>
           <div className={styles.yearTitle}> 2161</div>
           <br></br>
-          <div className={styles.paragraphText}></div>
           <div className={styles.paragraphText}>
-            Many areas due to occurrence and high temperature become
+            The consequences of climate change have become irreversible.
+            Climatic zones are increasing, the maximum frequency and strength of
+            abnormal natural resources such as droughts and floods.
+          </div>
+          <br></br>
+          <div className={styles.paragraphText}>
+            Many areas due to occurrence of high temperature become
             uninhabitable. In the countries of the Persian Gulf air temperature
-            75 C. People still live in big circles megacities with a developed
-            air conditioning system, but with a developed infrastructure free at
+            is 75 C. People still live in big domed megacitie with a developed
+            air conditioning system, but with a advanced infrastructure free at
             night.
           </div>
           <br></br>
           <div className={styles.paragraphText}>
             Biological species of animals and plants are disappearing. Their
-            habitat rapidly changing, not allowing to adapt to these changes.
+            habitat is rapidly changing, not allowing to adapt to these changes.
             Insect migration brought to Europe, North America tropical diseases
             such as fever, malaria.
           </div>
           <br></br>
           <div className={styles.paragraphText}>
-            In Central Asia, Mediterranean, South Africa, Australia due to
-            reduced rainfall dominated by drought and lack of drinking water.
-            Pandemics do not stop in the world.
+            Such regions as Central Asia, Mediterranean, South Africa, Australia
+            suffer from drought and lack of drinking water due to reduced
+            rainfal. Pandemics do not stop in the world.
           </div>
           <br></br>
           <div className={styles.paragraphText}>
-            In Central Asia, Mediterranean, South Africa, Australia due to
-            reduced rainfall dominated by drought and lack of drinking water.
-            Pandemics do not stop in the world.
+            Due to the rise in the level of the World Ocean, coastal territories
+            of the continents and small islands go under water. A significant
+            area of ​​Europe, Japan, Indonesia is flooded, which will exacerbate
+            mass migration.
           </div>
         </div>
       </div>
@@ -132,7 +138,7 @@ const RoundPlanets = () => {
         <div className={styles.finalMarsSectionDescription}>
           So, the mission of terraforming Mars remains unfulfilled until now.
           Man failed to change the Red Planet, making colonization comfortable
-          and sustainable, but over time, man himself has changed.
+          and sustainable, but over time, humanity has been changed.
         </div>
         <br />
         <div className={styles.finalMarsSectionConclusion}>

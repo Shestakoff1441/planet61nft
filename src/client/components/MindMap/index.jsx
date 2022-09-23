@@ -15,10 +15,9 @@ const MindMap = () => {
   const setSectionDescription = (section) => {
     setActiveSection(section);
     setTimeout(() => {
-      const getSection = document.getElementById(section.title);
+      const getSection = document.getElementById("mm");
       if (getSection) {
         getSection.scrollIntoView("alignToTop");
-        // window.scrollBy(0, 0);
       }
     }, 0);
   };
@@ -35,11 +34,11 @@ const MindMap = () => {
         <div className={styles.MindMapDescription}>
           Planet61 is a project born out of love for space, technology and art.
           We are watching with curiosity and awe the desire of man to master the
-          Cosmos. We are constantly developing in the field of information
+          Cosmos. We are constantly growing in the field of information
           technology. We are inspired by art in its physical, abstract and
           digital forms. However, the main goal of our project is the formation
           and development of a conscious community that shares our interests in
-          striving to do something meaningful for planet Earth.
+          striving to do something meaningful for the planet Earth.
         </div>
         {!activeSection.description && (
           <div className={styles.mindMapItems}>
@@ -47,11 +46,6 @@ const MindMap = () => {
               <div
                 className={styles.mindMapElement}
                 key={section}
-                style={
-                  {
-                    // backgroundImage: `url(${sections[section].background})`
-                  }
-                }
                 onClick={() => setSectionDescription(sections[section])}
               >
                 <img
@@ -68,7 +62,15 @@ const MindMap = () => {
         )}
         {activeSection.description && (
           <>
-            <div className={styles.sectionDescription} id={activeSection.title}>
+            <div
+              className={styles.sectionDescription}
+              id={activeSection.title}
+              // style={{
+              //   backgroundImage: `url(${activeSection.background})`,
+              //   backgroundSize: "cover",
+              //   filter: "grayscale(85%)"
+              // }}
+            >
               <span
                 className={styles.closeDescriptionSection}
                 onClick={() => setSectionDescription(initilActiveSectionValue)}

@@ -58,6 +58,7 @@
 
 .sectionDescription {
   position: relative;
+  margin-bottom: 320px;
   display: flex;
   align-items: flex-start;
   padding: 80px 30px;
@@ -126,6 +127,18 @@
 @media screen and (max-width:801px){
   .MindMapDescription{
     padding: 0;
+  }
+
+  .sectionDescription{
+    background-color: #000;
+    animation: none;
+    z-index: 1000000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 0;
   }
 }
 @media screen and (max-width: 601px) {
