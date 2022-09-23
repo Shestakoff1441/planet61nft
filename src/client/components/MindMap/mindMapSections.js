@@ -1,6 +1,6 @@
 import SavePlanetBackground from "../../assets/EarthLandScape/svp.jpg";
 import CollaborationBackground from "../../assets/images/collab.JPG";
-// import GiveAwayBackground from "../../assets/EarthLandScape/giveAway.jpeg";
+import GiveAwayBackground from "../../assets/images/giveaway.JPG";
 import CommunityBackground from "../../assets/images/communityBag.JPG";
 export const sections = {
   savePlanet: {
@@ -17,7 +17,7 @@ export const sections = {
   },
   giveAway: {
     title: "GIVE AWAY",
-    background: SavePlanetBackground.src,
+    background: GiveAwayBackground.src,
     description:
       "We have a series of online and offline events that members of the planet61 community can attend. In addition to exciting events such as project launch celebrations and community achievement celebrations, we will be given unique prizes which our nft owners will definitely love.<br></br> And after the collection is realized, we will draw a space super prize which will leave the lucky owner delighted. But more about this later."
   },
