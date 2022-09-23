@@ -176,7 +176,7 @@ const SpaceThree = () => {
 
     // Base camera
     const camera = new THREE.PerspectiveCamera(
-      55,
+      75,
       sizes.width / sizes.height,
       0.01,
       1000
