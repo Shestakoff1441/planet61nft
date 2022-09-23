@@ -21,7 +21,7 @@ const vars = {
 
 const QuestionSection = () => {
   return (
-    <Section title="QUESTIONS" id="qs" customStyles={styles.questionCustomstyles}>
+    <Section title="FAQ" id="qs" customStyles={styles.questionCustomstyles}>
         <CAccordion style={vars}>
           {questionSectionData.map(({ question, response }, index) => (
             <CAccordionItem

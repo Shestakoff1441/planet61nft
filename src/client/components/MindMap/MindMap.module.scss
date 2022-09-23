@@ -1,5 +1,6 @@
 .mindMapContainer {
   font-family: Montserrat;
+  position: relative;
   text-align: center;
 }
 
@@ -10,7 +11,8 @@
   font-family: "Stick No Bills";
 }
 .MindMapDescription {
-  text-align: justify;
+  // text-align: justify;
+  text-align: left;
   font-size: 20px;
   padding: 0 30px;
   margin-bottom: 50px;
@@ -18,6 +20,7 @@
 }
 .mindMapItems {
   display: flex;
+  position: relative;
   flex-wrap: wrap;
 }
 .mindMapElement {
@@ -57,7 +60,7 @@
 }
 
 .sectionDescription {
-  position: relative;
+  position: absolute;
   margin-bottom: 320px;
   display: flex;
   align-items: flex-start;
@@ -105,9 +108,9 @@
   text-align: left;
   font-size: 18px;
   line-height: 20px;
-  text-align: justify;
+  // text-align: justify;
 }
-.mindmapImage{
+.mindmapImage {
   width: 100%;
   padding: 0;
   height: auto;
@@ -122,14 +125,8 @@
       font-size: 32px;
     }
   }
-}
 
-@media screen and (max-width:801px){
-  .MindMapDescription{
-    padding: 0;
-  }
-
-  .sectionDescription{
+  .sectionDescription {
     background-color: #000;
     animation: none;
     z-index: 1000000;
@@ -141,6 +138,12 @@
     margin-bottom: 0;
   }
 }
+
+@media screen and (max-width: 801px) {
+  .MindMapDescription {
+    padding: 0;
+  }
+}
 @media screen and (max-width: 601px) {
   .mindMapElement {
     span {
@@ -148,7 +151,7 @@
     }
   }
 
-  .descriptionTitle{
+  .descriptionTitle {
     padding: 0;
   }
   .descriptionDescribe {

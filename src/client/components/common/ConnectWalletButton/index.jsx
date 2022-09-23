@@ -38,7 +38,7 @@ const MintComponent = () => {
         <div className={styles.totalPriceBlock}>
           <span className={styles.priceTitle}>Price:</span>
           <span className={styles.totalPrice}>
-            {price * Number(quantityOfNft)}
+            {price * Number(quantityOfNft)} ETH
           </span>
         </div>
       </div>

@@ -14,12 +14,12 @@ const MindMap = () => {
 
   const setSectionDescription = (section) => {
     setActiveSection(section);
-    setTimeout(() => {
-      const getSection = document.getElementById("mm");
-      if (getSection) {
-        getSection.scrollIntoView("alignToTop");
-      }
-    }, 0);
+    // setTimeout(() => {
+    //   const getSection = document.getElementById("mm");
+    //   if (getSection) {
+    //     getSection.scrollIntoView("alignToTop");
+    //   }
+    // }, 0);
   };
 
   return (
@@ -29,7 +29,7 @@ const MindMap = () => {
       customStyles={styles.mindmapSectionPadd}
       id="mm"
     >
-      <div className={styles.mindMapContainer} id="mm">
+      <div className={styles.mindMapContainer}>
         {/* <div className={styles.MindMapTitle}>MINDMAP</div> */}
         <div className={styles.MindMapDescription}>
           Planet61 is a project born out of love for space, technology and art.
@@ -40,55 +40,58 @@ const MindMap = () => {
           and development of a conscious community that shares our interests in
           striving to do something meaningful for the planet Earth.
         </div>
-        {!activeSection.description && (
-          <div className={styles.mindMapItems}>
-            {Object.keys(sections).map((section) => (
-              <div
-                className={styles.mindMapElement}
-                key={section}
-                onClick={() => setSectionDescription(sections[section])}
-              >
-                <img
-                  src={sections[section].background}
-                  className={classnames(
-                    // styles[section],
-                    styles.mindmapImage
-                  )}
-                />
-                <span>{sections[section].title}</span>
-              </div>
-            ))}
-          </div>
-        )}
-        {activeSection.description && (
-          <>
+
+        <div className={styles.mindMapItems}>
+          {Object.keys(sections).map((section) => (
             <div
-              className={styles.sectionDescription}
-              id={activeSection.title}
-              // style={{
-              //   backgroundImage: `url(${activeSection.background})`,
-              //   backgroundSize: "cover",
-              //   filter: "grayscale(85%)"
-              // }}
+              style={{ opacity: activeSection.description ? 0 : 1 }}
+              className={styles.mindMapElement}
+              key={section}
+              onClick={() => setSectionDescription(sections[section])}
             >
-              <span
-                className={styles.closeDescriptionSection}
-                onClick={() => setSectionDescription(initilActiveSectionValue)}
-              >
-                <img src={close.src} alt="close" />
-              </span>
-              <div className={styles.descriptionTitle}>
-                {activeSection.title}
-              </div>
-              <div
-                className={styles.descriptionDescribe}
-                dangerouslySetInnerHTML={{
-                  __html: activeSection.description
-                }}
-              ></div>
+              <img
+                src={sections[section].background}
+                className={classnames(
+                  // styles[section],
+                  styles.mindmapImage
+                )}
+              />
+              <span>{sections[section].title}</span>
             </div>
-          </>
-        )}
+          ))}
+
+          {activeSection.description && (
+            <>
+              <div
+                className={styles.sectionDescription}
+                id={activeSection.title}
+                // style={{
+                //   backgroundImage: `url(${activeSection.background})`,
+                //   backgroundSize: "cover",
+                //   filter: "grayscale(85%)"
+                // }}
+              >
+                <span
+                  className={styles.closeDescriptionSection}
+                  onClick={() =>
+                    setSectionDescription(initilActiveSectionValue)
+                  }
+                >
+                  <img src={close.src} alt="close" />
+                </span>
+                <div className={styles.descriptionTitle}>
+                  {activeSection.title}
+                </div>
+                <div
+                  className={styles.descriptionDescribe}
+                  dangerouslySetInnerHTML={{
+                    __html: activeSection.description
+                  }}
+                ></div>
+              </div>
+            </>
+          )}
+        </div>
       </div>
     </Section>
   );
