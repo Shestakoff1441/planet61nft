@@ -95,14 +95,14 @@ const RoundPlanets = () => {
             abnormal natural resources such as droughts and floods.
           </div>
           <br></br>
-          <div className={styles.paragraphText}>
+          {/* <div className={styles.paragraphText}>
             Many areas due to occurrence of high temperature become
             uninhabitable. In the countries of the Persian Gulf air temperature
             is 75 C. People still live in big domed megacitie with a developed
             air conditioning system, but with a advanced infrastructure free at
             night.
           </div>
-          <br></br>
+          <br></br> */}
           <div className={styles.paragraphText}>
             Biological species of animals and plants are disappearing. Their
             habitat is rapidly changing, not allowing to adapt to these changes.
@@ -115,13 +115,13 @@ const RoundPlanets = () => {
             suffer from drought and lack of drinking water due to reduced
             rainfal. Pandemics do not stop in the world.
           </div>
-          <br></br>
+          {/* <br></br>
           <div className={styles.paragraphText}>
             Due to the rise in the level of the World Ocean, coastal territories
             of the continents and small islands go under water. A significant
             area of ​​Europe, Japan, Indonesia is flooded, which will exacerbate
             mass migration.
-          </div>
+          </div> */}
         </div>
       </div>
       <div className={styles.mobileStaticPlanet}>
@@ -140,11 +140,11 @@ const RoundPlanets = () => {
           Man failed to change the Red Planet, making colonization comfortable
           and sustainable, but over time, humanity has been changed.
         </div>
-        <br />
+        {/* <br />
         <div className={styles.finalMarsSectionConclusion}>
           In the process of evolution, the human species has undergone
           significant changes, thus giving rise to a new race called Andromeda.
-        </div>
+        </div> */}
       </div>
     </div>
   );

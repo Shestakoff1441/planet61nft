@@ -102,14 +102,14 @@ const RoundMars = () => {
           Mars is still the most colonizable planet in the Solar System. And man
           successfully builds the first settlements.
         </div>
-        <br></br>
         <div className={styles.paragraphText}>
-          The planned operation to “warm up” Mars by atomic bombing was not
+          {/* The planned operation to “warm up” Mars by atomic bombing was not
           successful, and man has to adapt to life on a cold planet, where the
-          average temperature is -80 C. In addition to the cold, dry
-          environment, lack of air and giant sandstorms, man will have to face
-          high levels of solar radiation, which is extremely dangerous due to
-          the lack of the ozone layer on Mars.
+          average temperature is -80 C.  */}
+          In addition to the cold, dry environment, lack of air and giant
+          sandstorms, man will have to face high levels of solar radiation,
+          which is extremely dangerous due to the lack of the ozone layer on
+          Mars.
         </div>
         <br></br>
       </div>

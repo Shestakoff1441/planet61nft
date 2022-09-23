@@ -10,14 +10,13 @@ const Section = ({
 }) => {
   return (
     <section
-      id={id}
       className={classes(styles.section, customStyles)}
       style={{
         backgroundImage: `url(${src})`
         // backgroundColor: bgc ? bgc : "#0D0202"
       }}
     >
-      <div className={styles.sectionContainer}>
+      <div className={styles.sectionContainer} id={id}>
         <div className={styles.sectionTitle}>{title}</div>
         {children}
       </div>

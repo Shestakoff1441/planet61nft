@@ -33,12 +33,11 @@ const MindMap = () => {
         {/* <div className={styles.MindMapTitle}>MINDMAP</div> */}
         <div className={styles.MindMapDescription}>
           Planet61 is a project born out of love for space, technology and art.
-          We are watching with curiosity and awe the desire of man to master the
-          Cosmos. We are constantly growing in the field of information
-          technology. We are inspired by art in its physical, abstract and
-          digital forms. However, the main goal of our project is the formation
-          and development of a conscious community that shares our interests in
-          striving to do something meaningful for the planet Earth.
+          We are constantly growing in the field of technologies. We are
+          inspired by art in its physical, abstract and digital forms. However,
+          the main goal of our project is the formation and development of a
+          conscious community that shares our interests in striving to do
+          something meaningful for the planet Earth.
         </div>
 
         <div className={styles.mindMapItems}>

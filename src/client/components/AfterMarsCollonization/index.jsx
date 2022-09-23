@@ -56,7 +56,7 @@ const AfterMarsCollonization = () => {
         bannerText="This is limited collection of 2061 NFT. 
           We represent what will the new race look like. How has the human being evolved over 8000 
           years in the process of adapting life under the influence of radiation, weak gravity, lack of oxygen?  
-          We represent Andromeda."
+          We represent new race - ANDROMEDA."
       />
     </Section>
   );

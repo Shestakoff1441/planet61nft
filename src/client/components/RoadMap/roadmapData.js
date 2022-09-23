@@ -28,7 +28,7 @@ export const roadmapData = [
     image: nobackAndromeda_4.src,
     goals: [
       "Together with TEAMSEAS remove 1000 pounds of trash from OCEAN and make Planet cleaner",
-      "We will raffle between all Andromeda holders 5 green phones"
+      // "We will raffle between all Andromeda holders 5 green phones"
     ]
   },
   {
