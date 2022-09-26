@@ -26,10 +26,11 @@
 }
 .contentBlock {
   min-width: 546px;
-  background: #000000;
+  background: rgba(0, 0, 0, 0.4);
   text-align: center;
   padding: 25px 15px;
   border-radius: 10px;
+  border: 1px solid wheat;
 }
 .titleOfMintBlock {
   text-align: center;
@@ -50,6 +51,8 @@
   margin: 0 4px;
 }
 .uotCurrentTime {
+  display: flex;
+  align-items: center;
   min-width: 50px;
   min-height: 60px;
   color: #fccc23;
@@ -63,6 +66,7 @@
 }
 
 .numberOfUot {
+  font-size: 20px;
   min-width: 33px;
   text-align: center;
 }
@@ -72,7 +76,7 @@
   color: #f5deb3;
   font-family: "Stick No Bills";
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 14px;
 }
 
 .connectWallet {
@@ -97,11 +101,11 @@
     transform: translate(-50%, 0);
     animation: showLeftMobile 2s;
   }
-  .nameOfUot{
+  .nameOfUot {
     font-size: 15px;
   }
 
-  .titleOfMintBlock{
+  .titleOfMintBlock {
     font-size: 26px;
   }
 }
@@ -111,11 +115,11 @@
     min-width: 500px;
   }
 
-  .contentBlock{
+  .contentBlock {
     min-width: 500px;
     padding: 25px 0;
   }
-  .uotCurrentTime{
+  .uotCurrentTime {
     min-width: 40px;
     min-height: 50px;
     font-size: 24px;
@@ -128,16 +132,15 @@
     min-width: 20px;
   }
 }
-@media screen and (max-width:601px) {
-   .FlipClock {
+@media screen and (max-width: 601px) {
+  .FlipClock {
     min-width: 90%;
     margin: 0 auto;
   }
-  .contentBlock{
+  .contentBlock {
     min-width: 90%;
     padding: 20px 10px;
   }
-
 }
 
 @keyframes showLeftMobile {

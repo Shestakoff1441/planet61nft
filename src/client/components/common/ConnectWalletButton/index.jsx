@@ -23,7 +23,7 @@ const MintComponent = () => {
               backgroundImage: "none",
               textAlign: "center",
               color: "#f6ae18",
-              background: "#000",
+              background: "transparent",
               marginLeft: "10px"
             }}
             options={[
