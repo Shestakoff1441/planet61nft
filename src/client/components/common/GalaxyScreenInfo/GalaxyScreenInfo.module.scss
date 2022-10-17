@@ -1,0 +1,90 @@
+.main {
+  top: 130px;
+  left: 50px;
+  color: #fff;
+  font-size: calc(16px + 1.2vw);
+  font-weight: 700;
+  font-family: "Stick No Bills";
+  margin-bottom: 30px;
+  position: absolute;
+  animation: showLeft 2.5s;
+  z-index: 100;
+}
+
+.title {
+  font-size: 48px;
+  color: #f6ae18;
+}
+
+.second {
+  top: 220px;
+  color: #fff;
+  left: 50px;
+  font-size: 16px;
+  line-height: 25px;
+  font-family: Montserrat;
+  width: 350px;
+  font-weight: 700;
+  position: absolute;
+  animation: showLeft2 2.5s;
+  z-index: 100;
+}
+
+@keyframes showLeft {
+  from {
+    top: -100%;
+  }
+
+  to {
+    bottom: 50px;
+  }
+}
+@keyframes showLeft2 {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 50px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .main {
+    top: 100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    .title {
+      font-size: 36px;
+    }
+  }
+
+  .second {
+    width: 100%;
+    top: 160px;
+    left: 0;
+    padding: 20px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @keyframes showLeft {
+    from {
+      top: -100%;
+    }
+
+    to {
+      top: 100px;
+    }
+  }
+  @keyframes showLeft2 {
+    from {
+      left: -100%;
+    }
+
+    to {
+      left: 0;
+    }
+  }
+}

@@ -1,8 +1,13 @@
+import classnames from "classnames";
 import { useEffect, useState } from "react";
-import ConnectWalletButton from "../../common/ConnectWalletButton";
+import ConnectWalletButton from "../../ConnectWalletButton";
+import LinkComponent from "../../LinkComponent";
+
 import { countdown } from "../Timer/countdown";
 import styles from "./Timer.module.scss";
-const Timer = ({ time }) => {
+import animateStyles from "./MintAnimation.module.scss";
+
+const Timer = ({ time, title, sepPage, render }) => {
   const [currentTime, setCurrentTime] = useState(countdown(time || 1665865248));
   let timer;
   const runTimer = () => {
@@ -23,9 +28,15 @@ const Timer = ({ time }) => {
   return (
     Object.keys(currentTime).length &&
     time > 0 && (
-      <div className={styles.FlipClock}>
+      <div
+        className={classnames(styles.FlipClock, {
+          [animateStyles.FlipClock]: sepPage
+        })}
+      >
         <div className={styles.contentBlock}>
-          <div className={styles.titleOfMintBlock}>{"Don't miss our drop"}</div>
+          <div className={styles.titleOfMintBlock}>
+            {title || "Don't miss our drop"}
+          </div>
           <div className={styles.timeBlock}>
             {Object.keys(currentTime).map((uot) => (
               <div key={uot}>
@@ -43,10 +54,30 @@ const Timer = ({ time }) => {
               </div>
             ))}
           </div>
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center"
+            }}
+          >
+            {sepPage ? (
+              <div style={{ marginTop: "60px", width: "100%" }}>
+                {render && render()}
+              </div>
+            ) : (
+              <div className={styles.connectWallet}>
+                <a href="/mint" target="_blank">
+                  MINT
+                </a>
+              </div>
+            )}
+          </div>
+
+          {/* <LinkComponent text="MINTER" />
           <ConnectWalletButton
             walletStyles={styles.connectWallet}
             replaceTo="mint"
-          />
+          /> */}
         </div>
       </div>
     )

@@ -14,7 +14,7 @@ const MintComponent = () => {
           <CFormSelect
             onChange={(e) => setQuantity(e.target.value)}
             style={{
-              width: "30px",
+              width: "40px",
               fontSize: "22px",
               height: "38px",
               border: "1px solid #f5deb3",

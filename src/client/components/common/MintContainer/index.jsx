@@ -570,7 +570,7 @@ const contractAddress = "0x22e7c4E56b410a6fC7707FDC7e4E4f982415841a";
 const mint_public_start_date =
   new Date(process.env.NEXT_PUBLIC_MINT_START_DATE).getTime() / 1000;
 
-function App() {
+function App(props) {
   const [currentAccount] = useState("");
   // const [timer, setTimer] = useState(false);
 
@@ -714,8 +714,8 @@ function App() {
   //     );
   //   }
   // };
-
-  return <Timer time={mint_public_start_date} />;
+console.log(props)
+  return <Timer time={mint_public_start_date} {...props}/>;
 }
 
 export default App;
