@@ -1,7 +1,5 @@
 import classnames from "classnames";
 import { useEffect, useState } from "react";
-import ConnectWalletButton from "../../ConnectWalletButton";
-import LinkComponent from "../../LinkComponent";
 
 import { countdown } from "../Timer/countdown";
 import styles from "./Timer.module.scss";
