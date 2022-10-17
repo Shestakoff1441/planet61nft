@@ -64,7 +64,17 @@ const Timer = ({ time, title, sepPage, render }) => {
               </div>
             ) : (
               <div className={styles.connectWallet}>
-                <a href="/mint" target="_blank">
+                <a
+                  href="/mint"
+                  target="_blank"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    width: "100%",
+                    height: "24px"
+                  }}
+                >
                   MINT
                 </a>
               </div>
