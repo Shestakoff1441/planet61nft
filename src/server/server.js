@@ -6,7 +6,6 @@ const dev = process.env.NODE_ENV !== "production";
 // const routes = require('./routes/getCities')
 const hostname = "localhost";
 const port = 3002;
-// when using middleware `hostname` and `port` must be provided below
 const app = next({ dev, hostname, port });
 const handle = app.getRequestHandler();
 
