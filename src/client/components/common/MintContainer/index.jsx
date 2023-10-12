@@ -714,7 +714,6 @@ function App(props) {
   //     );
   //   }
   // };
-console.log(props)
   return <Timer time={mint_public_start_date} {...props}/>;
 }
 

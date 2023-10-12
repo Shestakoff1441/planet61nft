@@ -1,5 +1,6 @@
 import GalaxyScreen from "../src/client/components/GalaxyScreen";
 import ConnectWalletButton from "../src/client/components/common/ConnectWalletButton";
+import HeaderComponent from "../src/client/components/common/Header";
 
 import dynamic from "next/dynamic";
 
@@ -12,6 +13,7 @@ const MintContainer = dynamic(
 const MintPage = () => {
   return (
     <>
+    <HeaderComponent/>
       <GalaxyScreen
         render={() => (
           <MintContainer
