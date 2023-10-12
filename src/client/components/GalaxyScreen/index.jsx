@@ -3,15 +3,8 @@ import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
 import VertexShader from "./shaders/vertex.glsl";
 import FragmentShader from "./shaders/fragment.glsl";
-// import dynamic from "next/dynamic";
-// import styles from "./GalaxyScreen.module.scss";
-
-// import * as dat from "lil-gui";
 import { useEffect } from "react";
 
-// const MintContainer = dynamic(() => import("../MintContainer"), {
-//   ssr: false
-// });
 
 const SpaceThree = (props) => {
   useEffect(() => {
@@ -222,16 +215,6 @@ const SpaceThree = (props) => {
   }, []);
   return (
     <>
-      {/* <div className={styles.main}>
-        <div className={styles.title}>PLANET 61</div>
-      </div>
-      <div className={styles.second}>
-        In 1961, exactly 61 years ago, man first went into low Earth orbit,
-        making a breakthrough on the way to conquering the Cosmos. PLANET61 is a
-        community that shares passion for space, technology and art. Join us
-        and discover new horizons of your consciousness
-      </div> */}
-      
       {props.render()}
       <canvas id="canvas" style={{ width: "100vw", height: "100vh" }}></canvas>
     </>

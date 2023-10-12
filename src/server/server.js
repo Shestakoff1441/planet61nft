@@ -24,6 +24,6 @@ app.prepare().then(() => {
     if (err) {
       throw err;
     }
-    console.log(`> Ready on http://localhosdsdt:${port}`);
+    console.log(`> Ready on http://localhost:${port}`);
   });
 });

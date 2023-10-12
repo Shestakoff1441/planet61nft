@@ -40,6 +40,7 @@ const MainLayout = () => {
           </>
         )}
       />
+      {/* <RoundEarth/> */}
       <AfterMarsColonization />
       <MindMap />
       <Roadmap />

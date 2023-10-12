@@ -8,28 +8,11 @@ import "swiper/css/navigation";
 SwiperCore.use([Autoplay]);
 
 const Carousel = ({ slides, cStyles }) => {
-  // const [domLoaded, setDomLoaded] = useState(false);
-
-  // useEffect(() => {
-  //   setDomLoaded(true);
-  // }, []);
-  // const SwiperButtonNext = () => (
-  //   <span data-test-id="my-btn-next" className={styles.nextBtn} />
-  // );
-
-  // const SwiperButtonPrev = () => (
-  //   <span data-test-id="my-btn-prev" className={styles.prevBtn} />
-  // );
-
   return (
     <div className={styles.carouselWrapper}>
       {/* <SwiperButtonPrev /> */}
       <div className={cStyles}>
         <Swiper
-          // navigation={{
-          //   nextEl: "[data-test-id=my-btn-next]",
-          //   prevEl: "[data-test-id=my-btn-prev]"
-          // }}
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
@@ -47,16 +30,6 @@ const Carousel = ({ slides, cStyles }) => {
           modules={[Autoplay, EffectCoverflow]}
           className="mySwiper"
           loop
-          // breakpoints={{
-          //   770: {
-          //     slidesPerView: 2,
-          //     spaceBetween: 10
-          //   },
-          //   1180: {
-          //     slidesPerView: 3,
-          //     spaceBetween: 10
-          //   }
-          // }}
         >
           {slides.map((el, index) => (
             <SwiperSlide key={`${index}`}>

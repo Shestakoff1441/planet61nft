@@ -6,6 +6,7 @@ import styles from "./Timer.module.scss";
 import animateStyles from "./MintAnimation.module.scss";
 
 const Timer = ({ time, title, sepPage, render }) => {
+
   const [currentTime, setCurrentTime] = useState(countdown(time || 1665865248));
   let timer;
   const runTimer = () => {
