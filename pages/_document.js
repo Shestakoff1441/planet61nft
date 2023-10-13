@@ -46,7 +46,7 @@ export default function Document() {
           rel="stylesheet"
         />
         <link
-          href="http://fonts.cdnfonts.com/css/montserrat"
+          href="https://fonts.cdnfonts.com/css/montserrat"
           rel="stylesheet"
         />
         <script src="/metamask-onboarding.bundle.js" async />
