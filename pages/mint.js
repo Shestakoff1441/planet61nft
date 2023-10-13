@@ -13,7 +13,7 @@ const MintContainer = dynamic(
 const MintPage = () => {
   return (
     <>
-    <HeaderComponent/>
+      <HeaderComponent />
       <GalaxyScreen
         render={() => (
           <MintContainer
