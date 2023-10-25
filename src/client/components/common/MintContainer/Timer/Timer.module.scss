@@ -144,11 +144,14 @@
 }
 @media screen and (max-width: 601px) {
   .FlipClock {
-    min-width: 90%;
+    min-width: 100%;
+    left: auto;
+    transform: initial;
     margin: 0 auto;
+    right: auto;
   }
   .contentBlock {
-    min-width: 90%;
+    min-width: 100%;
     padding: 0;
   }
   .uotCurrentTime {
