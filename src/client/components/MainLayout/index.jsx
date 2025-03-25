@@ -27,7 +27,7 @@ const MintContainer = dynamic(() => import("../common/MintContainer"), {
 const GA_MEASUREMENT_ID = "G-R6GH2KD393";
 
 const MainLayout = () => {
-  const { isWebView, detectedApp } = useWebViewDetector();
+  const { isWebView, detectedApp, userAgent } = useWebViewDetector();
   console.log("isWebView ", isWebView);
   console.log("detectedApp ", detectedApp);
   return (
@@ -50,14 +50,26 @@ const MainLayout = () => {
         `}
       </Script>
       <HeaderComponent />
-      <GalaxyScreen
+      {/* <GalaxyScreen
         render={() => (
           <>
             <GalaxyscreenInfo />
             <MintContainer />
           </>
         )}
-      />
+      /> */}
+      <div
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          background: "white",
+          color: "#000",
+          zIndex: 100000
+        }}
+      >
+        {userAgent?.toString()}
+      </div>
       {/* <RoundEarth/> */}
       <AfterMarsColonization />
       <MindMap />
