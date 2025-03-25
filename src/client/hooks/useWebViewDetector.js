@@ -58,6 +58,7 @@ export const useWebViewDetector = () => {
     const detectedApp =
       apps.find((app) => new RegExp(app.keyword, "i").test(userAgent))?.name ||
       null;
+    console.log("updated");
     if (isWebView) {
       alert("hello webview ", isWebView);
       alert("detectedApp ", detectedApp);
