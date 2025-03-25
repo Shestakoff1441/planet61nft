@@ -64,7 +64,7 @@ export const useWebViewDetector = () => {
       alert("detectedApp ", detectedApp);
     }
     setTimeout(() => {
-      alert("Referrer:", document?.referrer);
+      alert("Referrer:", !!window.Telegram);
     }, 3500);
 
     setResult({ isWebView, detectedApp, userAgent });
