@@ -13,6 +13,7 @@ import Footer from "../Footer";
 import HeaderComponent from "../common/Header";
 import dynamic from "next/dynamic";
 import Script from "next/script";
+import { useWebViewDetector } from "../../hooks/useWebViewDetector";
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
 // });
@@ -26,6 +27,7 @@ const MintContainer = dynamic(() => import("../common/MintContainer"), {
 const GA_MEASUREMENT_ID = "G-R6GH2KD393";
 
 const MainLayout = () => {
+  const { isWebView, detectedApp } = useWebViewDetector();
   return (
     <main className={styles.main}>
       <Head>
