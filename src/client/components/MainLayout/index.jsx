@@ -1,26 +1,26 @@
 import AfterMarsColonization from "../AfterMarsCollonization";
 import MindMap from "../MindMap";
-import GalaxyscreenInfo from "../common/GalaxyScreenInfo";
+// import GalaxyscreenInfo from "../common/GalaxyScreenInfo";
 // import RoundEarth from "../RoundEarth";
 // import dynamic from "next/dynamic";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
-import GalaxyScreen from "../GalaxyScreen";
+// import GalaxyScreen from "../GalaxyScreen";
 import Roadmap from "../RoadMap";
 
 import QuestionSection from "../QuestionSection";
 import Footer from "../Footer";
 import HeaderComponent from "../common/Header";
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 import Script from "next/script";
 import { useWebViewDetector } from "../../hooks/useWebViewDetector";
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
 // });
 
-const MintContainer = dynamic(() => import("../common/MintContainer"), {
-  ssr: false
-});
+// const MintContainer = dynamic(() => import("../common/MintContainer"), {
+//   ssr: false
+// });
 // const RoundEarth = dynamic(() => import("../RoundPlanets"), {
 //   ssr: false
 // });
