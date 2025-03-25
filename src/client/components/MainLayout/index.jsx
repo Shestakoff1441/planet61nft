@@ -14,6 +14,7 @@ import HeaderComponent from "../common/Header";
 // import dynamic from "next/dynamic";
 import Script from "next/script";
 import { useWebViewDetector } from "../../hooks/useWebViewDetector";
+
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
 // });
@@ -30,6 +31,7 @@ const MainLayout = () => {
   const { isWebView, detectedApp, userAgent } = useWebViewDetector();
   console.log("isWebView ", isWebView);
   console.log("detectedApp ", detectedApp);
+
   return (
     <main className={styles.main}>
       <Head>

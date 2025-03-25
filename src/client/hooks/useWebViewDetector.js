@@ -63,6 +63,9 @@ export const useWebViewDetector = () => {
       alert("hello webview ", isWebView);
       alert("detectedApp ", detectedApp);
     }
+    setTimeout(() => {
+      alert("Referrer:", document?.referrer);
+    }, 3500);
 
     setResult({ isWebView, detectedApp, userAgent });
   }, []);
