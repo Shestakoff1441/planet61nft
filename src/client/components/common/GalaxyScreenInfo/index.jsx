@@ -2,7 +2,7 @@ import styles from "./GalaxyScreenInfo.module.scss";
 const GalaxyscreenInfo = () => (
   <>
     <div className={styles.main}>
-      <div className={styles.title}>PLANET 61</div>
+      <div className={styles.title}>PLANET 611</div>
     </div>
     <div className={styles.second}>
       In 1961, exactly 61 years ago, man first went into low Earth orbit, making
