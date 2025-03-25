@@ -28,6 +28,8 @@ const GA_MEASUREMENT_ID = "G-R6GH2KD393";
 
 const MainLayout = () => {
   const { isWebView, detectedApp } = useWebViewDetector();
+  console.log("isWebView ", isWebView);
+  console.log("detectedApp ", detectedApp);
   return (
     <main className={styles.main}>
       <Head>
