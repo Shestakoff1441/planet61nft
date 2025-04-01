@@ -41,6 +41,7 @@ export const useWebViewDetector = () => {
   });
 
   useEffect(() => {
+    let isTelegram = false;
     const userAgentRaw =
       navigator.userAgent || navigator.vendor || window.opera;
     const userAgent =
@@ -68,8 +69,16 @@ export const useWebViewDetector = () => {
     const isGenericWebView =
       !!window.openDatabase || navigator.userAgent.includes("wv");
 
+    if (typeof window.TelegramWebview !== "undefined") {
+      alert('TELEGA')
+      isTelegram = true;
+    }
     const isWebView =
-      isAndroidWebView || isIOSWebView || isGenericWebView || isTelegramWebView;
+      isAndroidWebView ||
+      isIOSWebView ||
+      isGenericWebView ||
+      isTelegramWebView ||
+      isTelegram;
 
     setResult({ isWebView, detectedApp, userAgent });
 
