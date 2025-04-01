@@ -14,6 +14,8 @@ import HeaderComponent from "../common/Header";
 // import dynamic from "next/dynamic";
 import Script from "next/script";
 import { useWebViewDetector } from "../../hooks/useWebViewDetector";
+import { useEffect, useState } from "react";
+import { RedirectModal } from "../RedirectPoopup";
 
 // const MintContainer = dynamic(() => import("../MintContainer"), {
 //   ssr: false
@@ -28,9 +30,14 @@ import { useWebViewDetector } from "../../hooks/useWebViewDetector";
 const GA_MEASUREMENT_ID = "G-R6GH2KD393";
 
 const MainLayout = () => {
-  const { isWebView, detectedApp, userAgent } = useWebViewDetector();
-  console.log("isWebView ", isWebView);
-  console.log("detectedApp ", detectedApp);
+  const { isWebView, userAgent } = useWebViewDetector();
+  const [openRedirectPopup, setOpenRedirectPopup] = useState(false);
+
+  useEffect(() => {
+    if (isWebView) {
+      setOpenRedirectPopup(true);
+    }
+  }, [isWebView]);
 
   return (
     <main className={styles.main}>
@@ -52,6 +59,9 @@ const MainLayout = () => {
         `}
       </Script>
       <HeaderComponent />
+      {openRedirectPopup && (
+        <RedirectModal onClose={() => setOpenRedirectPopup(false)} />
+      )}
       {/* <GalaxyScreen
         render={() => (
           <>
