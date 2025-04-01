@@ -4,7 +4,22 @@ import styles from "./RedirectModal.module.scss"; // Importing external CSS file
 export const RedirectModal = ({ onClose }) => {
   const openInBrowser = () => {
     const url = window.location.href;
-    window.open(url, "_system");
+    if (window.navigator.userAgent.includes("Android")) {
+      // Open in external browser on Android
+      window.location.href = `intent://${url.replace(
+        /^https?:\/\//,
+        ""
+      )}#Intent;scheme=https;package=com.android.chrome;end;`;
+    } else if (
+      window.navigator.userAgent.includes("iPhone") ||
+      window.navigator.userAgent.includes("iPad")
+    ) {
+      // Open in external browser on iOS
+      window.open(url, "_blank", "noopener,noreferrer");
+    } else {
+      // Fallback for other platforms
+      window.open(url, "_blank");
+    }
   };
 
   return (
