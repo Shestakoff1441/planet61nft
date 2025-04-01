@@ -70,7 +70,7 @@ export const useWebViewDetector = () => {
       !!window.openDatabase || navigator.userAgent.includes("wv");
 
     if (typeof window.TelegramWebview !== "undefined") {
-      alert('TELEGA')
+      alert("TELEGA");
       isTelegram = true;
     }
     const isWebView =
