@@ -15,7 +15,8 @@ export const RedirectModal = ({ onClose }) => {
       window.navigator.userAgent.includes("iPad")
     ) {
       // Open in external browser on iOS
-      window.open(url, "_blank", "noopener,noreferrer");
+      // window.open(url, "_blank", "noopener,noreferrer");
+      window.location.href = url;
     } else {
       // Fallback for other platforms
       window.open(url, "_blank");
