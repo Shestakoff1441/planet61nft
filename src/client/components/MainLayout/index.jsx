@@ -2,7 +2,7 @@ import AfterMarsColonization from "../AfterMarsCollonization";
 import MindMap from "../MindMap";
 // import GalaxyscreenInfo from "../common/GalaxyScreenInfo";
 // import RoundEarth from "../RoundEarth";
-// import dynamic from "next/dynamic";
+import dynamic from "next/dynamic";
 import styles from "./MainLayout.module.scss";
 import Head from "next/head";
 // import GalaxyScreen from "../GalaxyScreen";
@@ -24,13 +24,13 @@ import { RedirectModal } from "../RedirectPoopup";
 // const MintContainer = dynamic(() => import("../common/MintContainer"), {
 //   ssr: false
 // });
-// const RoundEarth = dynamic(() => import("../RoundPlanets"), {
-//   ssr: false
-// });
+const RoundEarth = dynamic(() => import("../RoundPlanets"), {
+  ssr: false
+});
 const GA_MEASUREMENT_ID = "G-R6GH2KD393";
 
 const MainLayout = () => {
-  const { isWebView, userAgent } = useWebViewDetector();
+  const isWebView = useWebViewDetector();
   const [openRedirectPopup, setOpenRedirectPopup] = useState(false);
 
   useEffect(() => {
@@ -70,19 +70,7 @@ const MainLayout = () => {
           </>
         )}
       /> */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          background: "white",
-          color: "#000",
-          zIndex: 100000
-        }}
-      >
-        {userAgent?.toString()}
-      </div>
-      {/* <RoundEarth/> */}
+      <RoundEarth />
       <AfterMarsColonization />
       <MindMap />
       <Roadmap />

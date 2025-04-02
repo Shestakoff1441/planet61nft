@@ -34,11 +34,7 @@ const apps = [
 ];
 
 export const useWebViewDetector = () => {
-  const [result, setResult] = useState({
-    isWebView: false,
-    detectedApp: null,
-    userAgent: ""
-  });
+  const [result, setResult] = useState(false);
 
   useEffect(() => {
     let isTelegram = false;
@@ -47,17 +43,6 @@ export const useWebViewDetector = () => {
     const userAgent =
       typeof userAgentRaw === "string" ? userAgentRaw.toLowerCase() : "";
 
-    // 1. Проверяем Telegram WebView (если это Telegram Web App)
-    const isTelegramWebView =
-      typeof window.Telegram !== "undefined" ||
-      document.referrer.includes("t.me");
-
-    // 2. Проверяем по User-Agent (работает для Instagram, Facebook, Twitter)
-    const detectedApp =
-      apps.find((app) => new RegExp(app.keyword, "i").test(userAgent))?.name ||
-      null;
-
-    // 3. Проверяем WebView (Android/iOS)
     const isAndroidWebView = /Version\/[\d.]+.*Chrome\/[.0-9]* Mobile/.test(
       userAgent
     );
@@ -65,7 +50,6 @@ export const useWebViewDetector = () => {
       userAgent
     );
 
-    // 4. Дополнительная проверка на WebView (если нет явных маркеров)
     const isGenericWebView =
       !!window.openDatabase || navigator.userAgent.includes("wv");
 
@@ -79,22 +63,9 @@ export const useWebViewDetector = () => {
       isTelegram = true;
     }
     const isWebView =
-      isAndroidWebView ||
-      isIOSWebView ||
-      isGenericWebView ||
-      isTelegramWebView ||
-      isTelegram;
+      isAndroidWebView || isIOSWebView || isGenericWebView || isTelegram;
 
-    setResult({ isWebView, detectedApp, userAgent });
-
-    // Логируем
-    alert(
-      `UserAgent: ${userAgent}\n` +
-        `Referrer: ${document.referrer}\n` +
-        `Telegram WebApp: ${window.Telegram ? "Yes" : "No"}\n` +
-        `isWebView: ${isWebView ? "Yes" : "No"}\n` +
-        `Detected App: ${detectedApp || "Unknown"}`
-    );
+    setResult(isWebView);
   }, []);
 
   return result;
