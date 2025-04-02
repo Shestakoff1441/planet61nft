@@ -21,17 +21,17 @@ import { useState, useEffect } from "react";
 // Mozilla/5.0 (iPhone; CPU iPhone OS 15_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Mobile/15E148 [FBAN/FBIOS;FBDV/iPhone;FBMD/iPhone;FBSN/iOS;FBSV/15.0;FBSS/2;FBID/phone;FBLC/en_US;FBOP/5]
 
 // List of apps to check
-const apps = [
-  { name: "Facebook", keyword: "fban|fbav" },
-  { name: "Instagram", keyword: "instagram" },
-  { name: "Twitter", keyword: "twitter" },
-  { name: "TikTok", keyword: "tiktok" },
-  { name: "WeChat", keyword: "micromessenger" },
-  { name: "LinkedIn", keyword: "linkedin" },
-  { name: "Snapchat", keyword: "snapchat" },
-  { name: "Pinterest", keyword: "pinterest" },
-  { name: "Reddit", keyword: "reddit" }
-];
+// const apps = [
+//   { name: "Facebook", keyword: "fban|fbav" },
+//   { name: "Instagram", keyword: "instagram" },
+//   { name: "Twitter", keyword: "twitter" },
+//   { name: "TikTok", keyword: "tiktok" },
+//   { name: "WeChat", keyword: "micromessenger" },
+//   { name: "LinkedIn", keyword: "linkedin" },
+//   { name: "Snapchat", keyword: "snapchat" },
+//   { name: "Pinterest", keyword: "pinterest" },
+//   { name: "Reddit", keyword: "reddit" }
+// ];
 
 export const useWebViewDetector = () => {
   const [result, setResult] = useState(false);
