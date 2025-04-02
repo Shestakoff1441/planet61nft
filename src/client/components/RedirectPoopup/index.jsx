@@ -2,25 +2,37 @@ import React from "react";
 import styles from "./RedirectModal.module.scss"; // Importing external CSS file
 
 export const RedirectModal = ({ onClose }) => {
+  // const openInBrowser = () => {
+  //   const url = window.location.href;
+  //   if (window.navigator.userAgent.includes("Android")) {
+  //     // Open in external browser on Android
+  //     window.location.href = `intent://${url.replace(
+  //       /^https?:\/\//,
+  //       ""
+  //     )}#Intent;scheme=https;package=com.android.chrome;end;`;
+  //   } else if (
+  //     window.navigator.userAgent.includes("iPhone") ||
+  //     window.navigator.userAgent.includes("iPad")
+  //   ) {
+  //     // Open in external browser on iOS
+  //     // window.open(url, "_blank", "noopener,noreferrer");
+  //     window.location.href = url;
+  //   } else {
+  //     // Fallback for other platforms
+  //     window.open(url, "_blank");
+  //   }
+  // };
   const openInBrowser = () => {
     const url = window.location.href;
-    if (window.navigator.userAgent.includes("Android")) {
-      // Open in external browser on Android
-      window.location.href = `intent://${url.replace(
-        /^https?:\/\//,
-        ""
-      )}#Intent;scheme=https;package=com.android.chrome;end;`;
-    } else if (
-      window.navigator.userAgent.includes("iPhone") ||
-      window.navigator.userAgent.includes("iPad")
-    ) {
-      // Open in external browser on iOS
-      // window.open(url, "_blank", "noopener,noreferrer");
-      window.location.href = url;
-    } else {
-      // Fallback for other platforms
-      window.open(url, "_blank");
-    }
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    document.body.appendChild(link);
+    setTimeout(() => {
+      link.click();
+      document.body.removeChild(link);
+    }, 300);
   };
 
   return (
