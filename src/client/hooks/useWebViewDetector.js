@@ -69,8 +69,13 @@ export const useWebViewDetector = () => {
     const isGenericWebView =
       !!window.openDatabase || navigator.userAgent.includes("wv");
 
-    if (typeof window.TelegramWebview !== "undefined") {
-      alert("TELEGA");
+    if (
+      (userAgent.includes("android") &&
+        typeof window.TelegramWebview !== "undefined") ||
+      (userAgent.includes("iphone") &&
+        typeof window.TelegramWebviewProxy !== "undefined" &&
+        typeof window.TelegramWebviewProxyProto !== "undefined")
+    ) {
       isTelegram = true;
     }
     const isWebView =
