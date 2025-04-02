@@ -16,7 +16,7 @@ export const RedirectModal = ({ onClose }) => {
     ) {
       // Open in external browser on iOS
       // window.open(url, "_blank", "noopener,noreferrer");
-      window.location.href = url;
+      window.location.href = 'googlechrome://' + url.replace(/^https?:\/\//, '');
     } else {
       // Fallback for other platforms
       window.open(url, "_blank");
