@@ -35,7 +35,7 @@ export const RedirectModal = ({ onClose }) => {
       const intentUrl = `intent://${href.replace(
         /^https?:\/\//,
         ""
-      )}#Intent;scheme=https;package=com.android.chromee;S.browser_fallback_url=${encodeURIComponent(
+      )}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(
         href
       )};end;`;
       window.location.href = intentUrl;
