@@ -39,7 +39,7 @@ export const RedirectModal = ({ onClose }) => {
     }
 
     if (isIOS) {
-      window.location.href = `googlechrome://${href.replace(
+      window.location.href = `x-safari-https://${href.replace(
         /^https?:\/\//,
         ""
       )}`;
