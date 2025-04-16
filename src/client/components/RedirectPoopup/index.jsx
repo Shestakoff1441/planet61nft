@@ -31,14 +31,10 @@ export const RedirectModal = ({ onClose }) => {
     const isIOS = /iphone|ipad|ipod/.test(userAgent);
 
     if (isAndroid) {
-      // Сначала попытаемся открыть через intent для Chrome
-      const intentUrl = `intent://${href.replace(
+      window.location.href = `intent://${href.replace(
         /^https?:\/\//,
         ""
-      )}#Intent;scheme=https;package=com.android.chrome;S.browser_fallback_url=${encodeURIComponent(
-        href
-      )};end;`;
-      window.location.href = intentUrl;
+      )}#Intent;scheme=https;package=com.android.chrome;end;`;
       return;
     }
 
