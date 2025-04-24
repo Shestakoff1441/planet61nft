@@ -29,7 +29,7 @@ export const RedirectModal = ({ onClose }) => {
 
     const isAndroid = userAgent.includes("android");
     const isIOS = /iphone|ipad|ipod/.test(userAgent);
-
+    alert(userAgent)
     if (isAndroid) {
       window.location.href = `intent://${href.replace(
         /^https?:\/\//,
